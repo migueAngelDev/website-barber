@@ -2,7 +2,7 @@
 const containerHairstyles = document.getElementById("hairstyles-container");
 
 //SE BUSCA EL ARCHIVO .json PARA INICIAR LA FUNCIÓN QUE REÚNE LOS DATOS
-fetch("js/data.json")
+fetch("js/servicios/cortes/data.json")
     .then(response => response.json())
     .then(data => {
         //POR CADA OBJETO SE REALIZARÁ LA FUNCIÓN HAIRSTYLE
@@ -25,6 +25,9 @@ fetch("js/data.json")
             //AL h2 SE LE ADJUNTA EL VALOR DE "name" COLOCADO EN EL .json
             hairstyleName.innerHTML = hairstyle.name;
 
+            const hairstyleDescription = document.createElement("p");
+            hairstyleDescription.innerHTML = hairstyle.description;
+
             //SE AGREGA LA CONSTANTE QUE CONTENDRÁ EL PRECIO DEL CORTE, UTILIZO UN h3 PARA ELLO
             const hairstylePrice = document.createElement("h3");
             //AL h3 SE LE ADJUNTA EL VALOR DE "price" COLOCADO EN EL .json
@@ -33,6 +36,7 @@ fetch("js/data.json")
             //SE ESPECIFICA QUE LA IMAGEN, EL NOMBRE Y EL PRECIO SON HIJOS DEL DIV DE LA CARTA
             hairstyleDiv.appendChild(hairstyleImg);
             hairstyleDiv.appendChild(hairstyleName);
+            hairstyleDiv.appendChild(hairstyleDescription);
             hairstyleDiv.appendChild(hairstylePrice);
 
             //SE ESPECIFICA QUE EL DIV DE LA CARTA (AL QUE SE LE ACABAN DE ADJUNTAR LAS DEMÁS CONSTANTES), ES HIJO DEL ELEMENTO QUE PERTENECE A LA CONSTANTE CREADA AL INICIO DEL CÓDIGO (LA section EN EL HTML)
