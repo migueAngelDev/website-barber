@@ -2,117 +2,196 @@
     "hairstyles": [
         {
             "category": "mens",
-            "img": "img/hairstyles/mens_hairstyles.jpg",
-            "name": "Corte ###",
-            "price": "$##"
+            "img": "imgs/servicios/cortes/hairstyles/mens_hairstyles.jpg",
+            "name": "Corte clásico",
+            "description": "Corte de cabello corto y limpio que se caracteriza por tener los lados y la parte posterior recortados con una longitud uniforme y el cabello más largo en la parte superior.",
+            "price": "$100"
         },
         {
             "category": "mens",
-            "img": "img/hairstyles/mens_hairstyles.jpg",
-            "name": "Corte ###",
-            "price": "$##"
+            "img": "imgs/servicios/cortes/hairstyles/mens_hairstyles.jpg",
+            "name": "Corte desvanecido",
+            "description": "Corte en el que el cabello se corta gradualmente más corto en los lados, mientras que el cabello en la parte superior se deja más largo.",
+            "price": "$100"
         },
         {
             "category": "mens",
-            "img": "img/hairstyles/mens_hairstyles.jpg",
-            "name": "Corte ###",
-            "price": "$##"
+            "img": "imgs/servicios/cortes/hairstyles/mens_hairstyles.jpg",
+            "name": "Corte texturizado",
+            "description": "Este corte de cabello se caracteriza por tener capas texturizadas que agregan movimiento y definición al cabello.",
+            "price": "$100"
         },
         {
             "category": "mens",
-            "img": "img/hairstyles/mens_hairstyles.jpg",
-            "name": "Corte ###",
-            "price": "$##"
+            "img": "imgs/servicios/cortes/hairstyles/mens_hairstyles.jpg",
+            "name": "Corte largo y suelto",
+            "description": "Este es un estilo para los hombres que prefieren el cabello más largo. Se caracteriza por tener el cabello largo y suelto con capas que agregan movimiento y textura.",
+            "price": "$100"
         },
         {
             "category": "mens",
-            "img": "img/hairstyles/mens_hairstyles.jpg",
-            "name": "Corte ###",
-            "price": "$##"
+            "img": "imgs/servicios/cortes/hairstyles/mens_hairstyles.jpg",
+            "name": "Corte cónico",
+            "description": "Este corte de cabello se caracteriza por tener los lados y la parte posterior cortados más cortos y graduados hacia la parte superior.",
+            "price": "$100"
         },
         {
             "category": "mens",
-            "img": "img/hairstyles/mens_hairstyles.jpg",
-            "name": "Corte ###",
-            "price": "$##"
+            "img": "imgs/servicios/cortes/hairstyles/mens_hairstyles.jpg",
+            "name": "Corte militar",
+            "description": "Este corte de cabello se caracteriza por tener los lados y la parte posterior recortados muy cortos con una longitud uniforme y el cabello ligeramente más largo en la parte superior.",
+            "price": "$100"
+        },
+        {
+            "category": "mens",
+            "img": "imgs/servicios/cortes/hairstyles/mens_hairstyles.jpg",
+            "name": "Corte de punta",
+            "description": "Este corte de cabello se caracteriza por tener el cabello más largo en la parte superior y peinado hacia arriba en puntas con productos para peinar.",
+            "price": "$100"
         },
         {
             "category": "beards",
-            "img": "img/hairstyles/beard_1.jpg",
-            "name": "Barba ###",
-            "price": "$##"
+            "img": "imgs/servicios/cortes/hairstyles/beard_1.jpg",
+            "name": "Barba completa",
+            "description": "Esta es una barba larga y densa que cubre toda la cara. Es un estilo clásico y masculino.",
+            "price": "$100"
         },
         {
             "category": "beards",
-            "img": "img/hairstyles/beard_1.jpg",
-            "name": "Barba ###",
-            "price": "$##"
+            "img": "imgs/servicios/cortes/hairstyles/beard_1.jpg",
+            "name": "Barba de candado",
+            "description": "Esta barba tiene una forma de U invertida y se extiende desde las patillas hasta la barbilla, se puede usar con o sin bigote.",
+            "price": "$100"
         },
         {
             "category": "beards",
-            "img": "img/hairstyles/beard_1.jpg",
-            "name": "Barba ###",
-            "price": "$##"
+            "img": "imgs/servicios/cortes/hairstyles/beard_1.jpg",
+            "name": "Barba de chivo",
+            "description": "Esta es una barba corta que se concentra en la barbilla y el labio superior.",
+            "price": "$100"
+        },
+        {
+            "category": "beards",
+            "img": "imgs/servicios/cortes/hairstyles/beard_1.jpg",
+            "name": "Barba de 3 días",
+            "description": "Este estilo es una barba corta y desaliñada que se ve como si se hubiera dejado crecer durante unos 3 días.",
+            "price": "$100"
+        },
+        {
+            "category": "beards",
+            "img": "imgs/servicios/cortes/hairstyles/beard_1.jpg",
+            "name": "Barba corta",
+            "description": "Este estilo de barba es similar a la barba de 3 días, pero es un poco más larga y densa.",
+            "price": "$100"
+        },
+        {
+            "category": "beards",
+            "img": "imgs/servicios/cortes/hairstyles/beard_1.jpg",
+            "name": "Barba desconectada",
+            "description": "Esta barba se enfoca en una sección específica de la cara, como la barbilla o el bigote, y se mantiene más corta en otras áreas.",
+            "price": "$100"
+        },
+        {
+            "category": "beards",
+            "img": "imgs/servicios/cortes/hairstyles/beard_1.jpg",
+            "name": "Barba estilo vikingo",
+            "description": "Este estilo es una barba larga y gruesa que se asemeja a la barba de un guerrero vikingo.",
+            "price": "$100"
         },
         {
             "category": "womens",
-            "img": "img/hairstyles/womens_hairstyles.jpg",
-            "name": "Corte ###",
-            "price": "$##"
+            "img": "imgs/servicios/cortes/hairstyles/womens_hairstyles.jpg",
+            "name": "Corte bob",
+            "description": "Corte recto en la mandíbula con flequillo recto o lateral.",
+            "price": "$100"
         },
         {
             "category": "womens",
-            "img": "img/hairstyles/womens_hairstyles.jpg",
-            "name": "Corte ###",
-            "price": "$##"
+            "img": "imgs/servicios/cortes/hairstyles/womens_hairstyles.jpg",
+            "name": "Corte pixie",
+            "description": "Corte corto y con textura, que a menudo incluye capas y flequillo.",
+            "price": "$100"
         },
         {
             "category": "womens",
-            "img": "img/hairstyles/womens_hairstyles.jpg",
-            "name": "Corte ###",
-            "price": "$##"
+            "img": "imgs/servicios/cortes/hairstyles/womens_hairstyles.jpg",
+            "name": "Corte degradado",
+            "description": "Corte que comienza más corto en la nuca y se va alargando hacia la parte superior de la cabeza.",
+            "price": "$100"
         },
         {
             "category": "womens",
-            "img": "img/hairstyles/womens_hairstyles.jpg",
-            "name": "Corte ###",
-            "price": "$##"
+            "img": "imgs/servicios/cortes/hairstyles/womens_hairstyles.jpg",
+            "name": "Corte shag",
+            "description": "Corte con capas desordenadas y textura que a menudo se complementa con flequillo largo y despeinado.",
+            "price": "$100"
         },
         {
             "category": "womens",
-            "img": "img/hairstyles/womens_hairstyles.jpg",
+            "img": "imgs/servicios/cortes/hairstyles/womens_hairstyles.jpg",
+            "name": "Corte recto",
+            "description": "Corte recto que no tiene capas y generalmente llega hasta los hombros.",
+            "price": "$100"
+        },
+        {
+            "category": "womens",
+            "img": "imgs/servicios/cortes/hairstyles/womens_hairstyles.jpg",
             "name": "Corte ###",
-            "price": "$##"
+            "price": "$100"
+        },
+        {
+            "category": "womens",
+            "img": "imgs/servicios/cortes/hairstyles/womens_hairstyles.jpg",
+            "name": "Corte ###",
+            "price": "$100"
+        },
+        {
+            "category": "womens",
+            "img": "imgs/servicios/cortes/hairstyles/womens_hairstyles.jpg",
+            "name": "Corte ###",
+            "price": "$100"
+        },
+        {
+            "category": "womens",
+            "img": "imgs/servicios/cortes/hairstyles/womens_hairstyles.jpg",
+            "name": "Corte ###",
+            "price": "$100"
+        },
+        {
+            "category": "womens",
+            "img": "imgs/servicios/cortes/hairstyles/womens_hairstyles.jpg",
+            "name": "Corte ###",
+            "price": "$100"
         },
         {
             "category": "boys",
-            "img": "img/hairstyles/boys_hairstyles.jpg",
+            "img": "imgs/servicios/cortes/hairstyles/boys_hairstyles.jpg",
             "name": "Corte ###",
-            "price": "$##"
+            "price": "$100"
         },
         {
             "category": "boys",
-            "img": "img/hairstyles/boys_hairstyles.jpg",
+            "img": "imgs/servicios/cortes/hairstyles/boys_hairstyles.jpg",
             "name": "Corte ###",
-            "price": "$##"
+            "price": "$100"
         },
         {
             "category": "boys",
-            "img": "img/hairstyles/boys_hairstyles.jpg",
+            "img": "imgs/servicios/cortes/hairstyles/boys_hairstyles.jpg",
             "name": "Corte ###",
-            "price": "$##"
+            "price": "$100"
         },
         {
             "category": "girls",
-            "img": "img/hairstyles/girls_hairstyles.jpg",
+            "img": "imgs/servicios/cortes/hairstyles/girls_hairstyles.jpg",
             "name": "Corte ###",
-            "price": "$##"
+            "price": "$100"
         },
         {
             "category": "girls",
-            "img": "img/hairstyles/girls_hairstyles.jpg",
+            "img": "imgs/servicios/cortes/hairstyles/girls_hairstyles.jpg",
             "name": "Corte ###",
-            "price": "$##"
+            "price": "$100"
         }
     ]
 }
