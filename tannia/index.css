@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Chewy&family=Dosis:wght@200&family=Nunito:wght@300&family=Russo+One&family=Shadows+Into+Light&family=Varela+Round&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: Nunito, sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  align-items: center;
+  padding: 0 100px;
+  justify-content: space-between;
+}
+
+.logo {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.logo_2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+.nav-bar ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-bar ul a {
+  display: block;
+  font-weight: bold;
+  color: black;
+  padding: 10px 50px;
+  border-radius: 50px;
+  transition: 0.2s;
+  margin: 0 5px;
+}
+
+/* Seccion 1 */
+
+.section_home {
+  display: flex;
+  /* margin: 20px 0 0 0; */
+  height: 100vh;
+  /* overflow: hidden; */
+  border: 1px solid black;
+}
+
+.container-texts {
+  display: flex;
+  /* padding: 0 10px; */
+}
+
+.wrapper_frases {
+  /* margin: 0 0 0 40px; */
+  /* width: 50%; */
+  text-align: center;
+  border: 1px solid black;
+}
+
+.frases h2 {
+  /* margin: 70px 0 40px 0; */
+  color: #eec170;
+  letter-spacing: 3px;
+  line-height: 2em;
+  border: 1px solid black;
+}
+
+.frases p {
+  /* margin: 50px 0 30px 0; */
+  color: #000000;
+  line-height: 2em;
+  border: 1px solid black;
+}
+
+.wrapper_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 50%;
+  display: flex;
+  align-items: right; */
+  /* justify-content: right; */
+  /* margin: 0 40px 0 0; */
+  /* width: 200px; */
+  /* object-fit: contain; */
+}
+
+.wrapper_image img {
+  border: 20px;
+  width: 400px;
+  height: 95vh;
+  /* object-fit: contain; */
+  border-radius: 20px;
+}
+
+.btn_home {
+  /* margin: 50px 0 80px 0; */
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #eec170;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.iServicios {
+  height: 155px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 100px;
+}
+
+.instrumentos {
+  width: 200px;
+  height: 100%;
+}
+
+.instrumentos p {
+  margin: 20px 0 40px 0;
+  line-height: 2em;
+}
+
+.circle {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 50%;
+}
+
+.circle img {
+  width: 80%;
+}
+
+/* Section 2 */
+/* Titulo */
+
+.section_servicios {
+  margin: 40px 0 0 0;
+}
+
+.title_one {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.line {
+  width: 35vw;
+  height: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.title {
+  text-align: center;
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 20px 80px 20px 60px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.title h3 {
+  line-height: 2em;
+  color: #eec170;
+}
+
+/* Servicios */
+
+.servicios {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0 0 0;
+  overflow: hidden;
+}
+
+.wrapper_detalles {
+  height: 200px;
+  height: 100%;
+}
