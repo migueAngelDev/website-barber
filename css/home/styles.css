@@ -70,7 +70,7 @@ header {
   margin: 0 5px;
 }
 
-/* Seccion 1 */
+/* Seccion 1 home */
 
 .section_home {
   display: flex;
@@ -213,7 +213,30 @@ header {
   height: 100%;
 }
 
-/* Seccion de estilos y tendencias  */
+/* Seccion 2 de Servicios  */
+.section-services {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--main-secondary-bg);
+}
+
+.container-services {
+  border: 1px solid cadetblue;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.content-services {
+  border: 1px solid cadetblue;
+  background-color: #eec170;
+  height: 50%;
+}
+
+/* Seccion 4 de estilos y tendencias  */
 
 .estilos_y_tendencias {
   height: 100vh;
@@ -358,6 +381,7 @@ header {
   padding: 30px;
   text-align: center;
   box-shadow: var(--box-shadow);
+  overflow-wrap: anywhere;
   border-radius: var(--border-radius-5);
 }
 
@@ -373,4 +397,104 @@ header {
   object-fit: cover;
   border-radius: var(--border-radius-5);
   box-shadow: var(--box-shadow);
+}
+
+/* Seccion 7, Ubicación */
+.section-location {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.container-location {
+  height: 100vh;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: var(--font-weight-bold);
+}
+
+.location-map iframe {
+  border-radius: var(--border-radius-5);
+  box-shadow: var(--box-shadow);
+}
+
+.address {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-radius-5);
+  box-shadow: var(--box-shadow);
+  padding: 30px;
+}
+
+.address a:nth-child(odd) {
+  color: var(--textos-destacados);
+}
+.address a:nth-child(even) {
+  color: var(--textos);
+}
+
+/* Seccion 8, Reservaciones */
+
+.section-reservaciones {
+  height: 100vh;
+  background-color: var(--main-secondary-bg);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.container-padding-10 {
+  padding: 0 10px 10px;
+}
+.container-reservaciones {
+  display: flex;
+  font-weight: var(--font-weight-bold);
+
+  border-radius: var(--border-radius-5);
+  box-shadow: var(--box-shadow);
+  height: 80vh;
+  background-color: var(--main-principal-bg);
+}
+
+.content-frases-one {
+  width: 40%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.content-frases-two {
+  width: 60%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.wrapper-frase {
+  padding: 25px;
+  text-align: center;
+  border-radius: var(--border-radius-5);
+  background-color: var(--main-principal-bg);
+  box-shadow: var(--box-shadow);
+}
+
+.wrapper-frase-btn {
+  padding: 30px;
+  text-align: center;
+}
+
+.wrapper-frase-btn button {
+  padding: 10px 40px 10px;
+  background-color: var(--color-btn);
+  border-radius: var(--border-radius-5);
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
 }
