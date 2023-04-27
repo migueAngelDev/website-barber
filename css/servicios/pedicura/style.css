@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #ececec;
+    font-family: 'Nunito', sans-serif;
+}
+
+header{
+    display: flex;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    width:100%;
+    background-color: #ffffff4d;
+    align-items: center;
+    z-index: 1;
+    height: 90px;
+    backdrop-filter: blur(10px);
+}
+
+header section img{
+    width:60px;
+    border-radius: 50%;
+    margin-right: 2em;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.nav-bar button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.ul-a{
+    display: flex;
+    font-size: 1em;
+    align-items: center;
+    border-radius: 3px;
+    color: #000000;
+    padding: 0 10px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.sub-groups{
+    display: flex;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: scroll;
+}
+
+.category-item {
+    background-color: #000;
+    color: #fff;
+    width: 90%;
+    padding: 13px;
+    border-radius: 2px;
+}
+
+.sub-groups li{
+    border-radius: 5px;
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    background-color: #ffffffed;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.sub-groups li span{
+    border: 1px solid #000000;
+    border-radius: 100%;
+    padding: 0 10px;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.sub-groups li:hover{
+    box-shadow: 2px 3px 5px #8b8b8b;
+
+}
+
+.sub-groups li a{
+    width: 100%;
+    display: flex;flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.nav-bar li:focus-within > .sub-groups{
+    visibility: visible;
+    opacity: 1;
+    transition-duration: .9s;
+}
+
+
+
+/* ****************** Main - Cards ******************** */
+
+main{
+    margin: 150px 0;
+}
+
+#wrapperCards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    width: 90%;
+    backdrop-filter: blur(10px);
+    margin: 0 auto;
+}
+
+
+.card{
+    background-color: #ffffff4a;
+    width:340px;
+    height: 500px;
+    /* border: 1px solid #000; */
+    border-radius: 10px;
+}
+
+
+/* line color */
+.line-color{
+    width:100%;
+    background-color: #f3eadc;
+    height: 2px;
+    top: 8px;
+}
+/* *** */
+
+.card-img{
+    width:100%;
+    height: 30%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.section-padding{
+    width:90%;
+    margin: 0 auto;
+    height:40%;
+    font-size: .9em;
+}
+
+.content-title, .contentPriceCard{
+    margin: 20px 0;
+    text-align: center;
+    padding: 10px;
+    background-color: #f3eadc;
+}
+
+.contentDescriptionCard{
+    line-height: 30px;
+    text-align: justify;
+}
