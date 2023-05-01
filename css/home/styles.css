@@ -70,14 +70,7 @@ header {
   margin: 0 5px;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* Seccion 1 home */
-=======
-=======
->>>>>>> 9ec166320cd706f356aa736d79126bc2479cbbdd
-
-.category{
+.category {
   display: block;
   visibility: hidden;
   opacity: 0;
@@ -85,25 +78,24 @@ header {
   top: 75px;
 }
 
-.category li{
+.category li {
   list-style: none;
   margin: 10px 0;
 }
 
-.category li a{
+.category li a {
   background-color: var(--main-principal-bg);
   box-shadow: var(--box-shadow);
   padding: 15px 30px;
   border-radius: var(--border-radius-5);
 }
 
-
-.groups:focus-within > .category{
+.groups:focus-within > .category {
   visibility: visible;
   opacity: 1;
 }
 
-.groups a{
+.groups a {
   display: flex;
   align-items: stretch;
 }
@@ -112,11 +104,10 @@ header {
   margin-left: 5px;
 }
 
-.groups span img{
+.groups span img {
   width: 20px;
 }
 /* Seccion 1 */
->>>>>>> 9ec166320cd706f356aa736d79126bc2479cbbdd
 
 .section_home {
   display: flex;
@@ -131,6 +122,10 @@ header {
   text-align: center;
   justify-content: space-between;
   width: 65%;
+}
+
+.avanced-carrusel {
+  display: flex;
 }
 
 .prhase-llamativa {
@@ -259,7 +254,7 @@ header {
   height: 100%;
 }
 
-/* Seccion 2 de Servicios  */
+/* SECCIÓN 2 NUESTROS SERVICIOS */
 .section-services {
   display: flex;
   justify-content: space-between;
@@ -269,17 +264,118 @@ header {
 }
 
 .container-services {
-  border: 1px solid cadetblue;
   height: 80vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .content-services {
-  border: 1px solid cadetblue;
-  background-color: #eec170;
+  height: 45%;
+  display: flex;
+  padding: 20px;
+}
+
+.container-img-one {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  justify-content: start;
+  align-items: center;
+}
+
+.container-img-two {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  justify-content: end;
+  align-items: center;
+}
+
+.container-img-one img,
+.container-img-two img {
+  width: 220px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--border-radius-5);
+  box-shadow: var(--box-shadow);
+}
+
+.container-servicio {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-text {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text-service {
   height: 50%;
+}
+
+.text-service ul {
+  line-height: 2;
+  list-style: none;
+  color: var(--textos-destacados);
+}
+
+.text-service p {
+  color: var(--textos);
+}
+
+/* SECCIÓN 3 PRODUCTOS */
+.section-products {
+  height: 100vh;
+  text-align: center;
+}
+
+.products {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.container-products-title {
+  width: 33.33%;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Cambiar lo que es las tres columnas verticales por columnas horizontales */
+.container-products {
+  width: 33.33%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content-product {
+  height: 45%;
+  width: 100%;
+}
+
+.title-product {
+  height: 30%;
+  line-height: 2.5;
+}
+
+.image-product {
+  height: 70%;
+}
+
+.image-product img {
+  height: 100%;
 }
 
 /* Seccion 4 de estilos y tendencias  */
@@ -300,6 +396,8 @@ header {
 }
 
 .title-section {
+  width: 320px;
+  text-align: center;
   padding: 25px 80px;
   border-radius: var(--border-radius-5);
   background-color: var(--main-principal-bg);
