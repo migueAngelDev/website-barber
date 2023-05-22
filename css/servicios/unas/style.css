@@ -30,16 +30,18 @@ h2{
    font-weight: var(--font-weight-300);
 }
 
-header{
+
+header {
+  margin-bottom: 20px;
   width: 100%;
   height: 80px;
   box-shadow: var(--box-shadow);
-  border-radius: var(--border-radius-5);
   display: flex;
   align-items: center;
   padding: 0 100px;
   justify-content: space-between;
 }
+
 
 .logo {
   border-radius: 50%;
@@ -116,7 +118,7 @@ header{
 
 /*   */
 
-.section-uñas {
+.section-unas {
     background-color: var(--main-principal-bg);
     height: 100vh;
     display: flex;
@@ -124,7 +126,7 @@ header{
     justify-content: space-between;
   }
   
-  .container-uñas {
+  .container-unas {
     display: flex;
     padding: 80px 10px 40px;
     font-weight: var(--font-weight-bold);
@@ -163,7 +165,7 @@ header{
     background: var(--color-btn-hover);
   }
   
-  .content-uñas-img {
+  .content-unas-img {
     width: 50%;
     height: 550px;
     padding: 20px;
@@ -177,7 +179,7 @@ header{
   
   
 
-  .content-uñas-img img{
+  .content-unas-img img{
     width: 350px;
     height: 350px;
     display: block;
