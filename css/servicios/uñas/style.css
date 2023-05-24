@@ -116,7 +116,7 @@ header{
 
 /*   */
 
-.section-uñas {
+.section-unas {
     background-color: var(--main-principal-bg);
     height: 100vh;
     display: flex;
@@ -124,7 +124,7 @@ header{
     justify-content: space-between;
   }
   
-  .container-uñas {
+  .container-unas {
     display: flex;
     padding: 80px 10px 40px;
     font-weight: var(--font-weight-bold);
@@ -163,7 +163,7 @@ header{
     background: var(--color-btn-hover);
   }
   
-  .content-uñas-img {
+  .content-unas-img {
     width: 50%;
     height: 550px;
     padding: 20px;
@@ -177,7 +177,7 @@ header{
   
   
 
-  .content-uñas-img img{
+  .content-unas-img img{
     width: 350px;
     height: 350px;
     display: block;
