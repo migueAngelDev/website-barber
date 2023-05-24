@@ -121,6 +121,7 @@ header {
 .section-unas {
     background-color: var(--main-principal-bg);
     height: 100vh;
+    min-height: 750px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
