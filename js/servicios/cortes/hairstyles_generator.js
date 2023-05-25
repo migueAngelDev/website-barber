@@ -15,10 +15,26 @@ fetch("js/servicios/cortes/data.json")
             hairstyleDiv.setAttribute("category", hairstyle.category);
 
             //SE CREA LA CONSTANTE QUE CONTENDRÁ LA IMAGEN DEL CORTE, COMO ELEMENTO SE REQUIERE CREAR UN "img"
+            const hairstyleImgContainer = document.createElement("div");
+            hairstyleImgContainer.classList.add("hairstyle-image");
             const hairstyleImg = document.createElement("img");
+            hairstyleImg.classList.add("hairstyle-img");
             //A LA CONSTANTE DE IMAGEN SE LE AGREGA COMO VALOR DEL ATRIBUTO src LOS DATOS COLOCADOS EN "img" DEL .json (COLOCAR AHÍ EL URL DE LA IMAGEN) Y PARA EL ATRIBUTO alt DE LA IMAGEN SE OCUPA EL DATO INGRESADO EN "name" DEL .json
             hairstyleImg.src = hairstyle.img;
             hairstyleImg.alt = hairstyle.name;
+
+            //FLECHAS PARA SLIDE
+            const slideLeftArrow = document.createElement("img");
+            slideLeftArrow.classList.add("left-arrow");
+            slideLeftArrow.src = "svg/servicios/cortes/left_arrow.svg";
+
+            const slideRightArrow = document.createElement("img");
+            slideRightArrow.classList.add("right-arrow");
+            slideRightArrow.src = "svg/servicios/cortes/right_arrow.svg";
+
+            hairstyleImgContainer.appendChild(hairstyleImg);
+            hairstyleImgContainer.appendChild(slideLeftArrow);
+            hairstyleImgContainer.appendChild(slideRightArrow);
 
             //SE AGREGA LA CONSTANTE QUE CONTENDRÁ EL NOMBRE DEL CORTE, UTILIZO UN h2 PARA ELLO
             const hairstyleName = document.createElement("h2");
@@ -34,7 +50,7 @@ fetch("js/servicios/cortes/data.json")
             hairstylePrice.innerHTML = hairstyle.price;
 
             //SE ESPECIFICA QUE LA IMAGEN, EL NOMBRE Y EL PRECIO SON HIJOS DEL DIV DE LA CARTA
-            hairstyleDiv.appendChild(hairstyleImg);
+            hairstyleDiv.appendChild(hairstyleImgContainer);
             hairstyleDiv.appendChild(hairstyleName);
             hairstyleDiv.appendChild(hairstyleDescription);
             hairstyleDiv.appendChild(hairstylePrice);

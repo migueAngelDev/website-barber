@@ -6,37 +6,36 @@
     text-decoration: none;
 }
 
-body{
-    background-color: #F2EADC;
-}
+
+:root {
+    --main-principal-bg: #ffffff;
+    --main-secondary-bg: #f2f2f2;
+    --textos-destacados: #000000;
+    --textos: #576490;
+    --textos-titulos-llamativos: #eec170;
+    --font-weight-bold: bold;
+    --font-weight-100: 100;
+    --font-weight-200: 200;
+    --font-weight-300: 300;
+    --color-btn: #eec170;
+    --color-btn-hover: #f1b955;
+    --iconos: #2c2a2a;
+    --box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    --border-radius-5: 5px;
+  }
 
 /*CONTENEDOR PRINCIPAL*/
 
-.main-container{
-    max-width: 1100px;
+.main-hairstyles{
     width: 100%;
     margin: auto;
-}
-
-.main-container > h1{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 20px;
-    color: #5B3924;
-}
-
-.main-container > h1:after{
-    content: '';
-    width: 100%;
-    height: 2px;
-    background-color: #5B3924;
-    margin: 20px 0px;
 }
 
 .category-container{
     display: flex;
     flex-direction: column;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 2.5rem;
 }
 
 /*LISTA DE GÉNEROS*/
@@ -44,40 +43,33 @@ body{
 .category-list{
     width: 100%;
     display: flex;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    background-color: #5B3924;
+    justify-content: space-between;
+    padding: 0rem 3.125rem;
 }
 
 .category-list .category-gender{
-    width: 20%;
-    height: 70%;
-    margin: 5%;
+    width: 15%;
+    margin: 0rem 0rem 1.125rem 0rem;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    /*background-image: linear-gradient(to bottom, #603512, #754517, #89561c, #9d6820, #b07b24, #bc8b2d, #c89c37, #d4ad42, #ddbe55, #e7cf68, #f0e17c, #faf290, #faf290, #f0e17c, #e7cf68, #ddbe55, #d4ad42, #c89c37, #bc8b2d, #b07b24, #9d6820, #89561c, #754517, #603512);*/
-    /*background-image: linear-gradient(to bottom, #ba7802, #c5881e, #d09931, #dba944, #e6ba56, #e6ba56, #e6ba56, #e6ba56, #dba944, #d09931, #c5881e, #ba7802);*/
     background-color: #fff;
-    color: #5B3924;
-    border-radius: 20px;
-    padding: 10px;
-    font-size: 18px;
-}
-
-.category-list .category-gender-shadow:hover{
-    box-shadow: 0px 0px 20px 0px rgb(255, 255, 255);
+    color: var(--textos-destacados);
+    border-radius: 10px;
+    padding: .625rem;
+    font-size: 1.125rem;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 .category-list .category-gender img{
-    width: 35px;
-    height: 50px;
-    margin-right: 15px;
+    width: 1.5625rem;
+    margin-right: .9375rem;
 }
 
 .category-list .category-gender-active{
-    box-shadow: 0px 0px 10px 8px #CDA434;
+    box-shadow: none;
+    outline: 2px solid #000000;
 }
 
 /*LISTA DE SUBGÉNEROS (CABELLO-BARBA)*/
@@ -86,7 +78,7 @@ body{
     width: 100%;
     display: flex;
     border-radius: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
     background-color: #5B3924;
     display: flex;
     flex-direction: column;
@@ -126,55 +118,127 @@ body{
     box-shadow: 0px 0px 10px 8px #CDA434;
 }
 
+/*TITULO*/
+.main-hairstyles h1{
+    font-size: 1.375rem;
+    color: var(--textos-titulos-llamativos);
+    text-align: center;
+    margin-bottom: 6.25rem;
+}
+
+.options-filter{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-bottom: 3.125rem;
+}
+
+.ages-filter{
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translate(0%, -50%);
+    font-size: 1.125rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.hairstyle-options{
+    font-size: 1.375rem;
+    color: var(--textos-titulos-llamativos);
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+}
+
+/*SWIPER*/
+
+.age-category{
+    overflow-x: hidden;
+    box-shadow: var(--box-shadow);
+    padding: 1.25rem 0px;
+    margin-bottom: 3.125rem;
+}
+
+.age{
+    margin-left: 30px;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.swiper-wrapper .swiper-slide{
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-hairstyles{
+    position: relative;
+    padding: 3.125rem 0px 4.375rem 0px;
+}
+
+.swiper-hairstyles .swiper-button-prev, .swiper-hairstyles .swiper-button-next{
+    --swiper-navigation-size: 1.25rem;
+    color: var(--main-principal-bg);
+    background-color: #000000;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    margin-top: -1.25rem;
+    position: absolute;
+}
+
+.swiper-hairstyles .swiper-pagination{
+    --swiper-pagination-color: var(--color-btn);
+    position: absolute;
+}
+
 /*LISTA DE CORTES*/
 
 .hairstyles-container{
     width: 100%;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     background-color: transparent;
     border-radius: 20px;
-    margin-bottom: 50px;
-    gap: 30px;
+    margin-bottom: 3.125rem;
+    gap: 1.875rem;
 }
 
 .hairstyle-file{
-    width: 30%;
+    width: 50%;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     text-align: center;
-    border-radius: 20px;
-    padding: 30px 30px 100px 30px;
+    border-radius: 10px;
+    padding: 2.5rem 1.875rem;
     position: relative;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
-.hairstyle-file img{
+.hairstyle-image{
+    width: 100%;;
+    position: relative;
+    overflow: hidden;
+}
+
+.hairstyle-img{
     width: 100%;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.22);
+    border-radius: 5px;
 }
 
-.hairstyle-file h2{
+.hairstyle-file h4{
     color: #000000;
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-bold);
+    text-align: center;
 }
 
 .hairstyle-file p{
-    text-align: justify;
-    padding: 0px 10px;
-}
-
-.hairstyle-file h3{
-    width: fit-content;
-    color: #fff;
-    font-size: 18px;
-    background-color: #5B3924;
-    padding: 5px 20px;
-    border-radius: 20px;
-    margin: 0 auto;
-    position: absolute;
-    bottom: 25px;
-    left: 50%;
-    transform: translate(-50%, 0%);
+    color: var(--textos);
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-bold);
+    text-align: center;
 }
