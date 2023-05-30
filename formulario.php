@@ -42,7 +42,7 @@
         </ul>
       </nav>
     </header>
-    <section class="section-unas">
+    <section class="section-form">
       <div class="header-section">
         <span class="line"></span>
         <div class="title-section">
@@ -64,7 +64,7 @@
         </div>
         <div class="content-info">
           <div class="form">
-            <form method="POST" action="insertar.php">
+            <form method="POST" action="PHP/formulario/insertar.php">
               <p>Ingresa tu nombre(s)</p>
               <input type="text" id="nombre" name="nombre">
               
@@ -72,19 +72,21 @@
               <input type="text" id="apellidos" name="apellidos">
               
               <p>Ingresa tu correo electronico</p>
-              <input type="email" id="correo" name="correo">
+              <input type="email" id="email" name="email">
 
               <p>Sube una foto para agregar a tu foto de perfil.</p>
-              <div class="imagen">
-                <input type="file" id="imagen" name="image"/>
-              </div>  
+              <input type="file" id="imagen" name="imagen"/>
 
               <p>Compartenos tu opinión</p>
-              <input type="text" id="comentario" name="comentario">
+              <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+             <!-- <input type="text" id="comentario" name="comentario"> -->
                   
               <input type="submit" value="Insertar" id="insertar">  
             </form>
           </div>
+          <?php if(isset($_GET['register'])) { ?>
+          <p>Comentarios enviados</p>
+          <?php } ?>
         </div>
       </div>
     </section>
