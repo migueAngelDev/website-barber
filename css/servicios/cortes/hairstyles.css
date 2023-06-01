@@ -40,16 +40,20 @@
 
 /*LISTA DE GÉNEROS*/
 
+.hidden{
+    display: none;
+}
+
 .category-list{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 0rem 3.125rem;
+    align-items: center;
+    padding: 1.25rem 3.125rem;
 }
 
 .category-list .category-gender{
     width: 15%;
-    margin: 0rem 0rem 1.125rem 0rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,6 +74,11 @@
 .category-list .category-gender-active{
     box-shadow: none;
     outline: 2px solid #000000;
+}
+
+.select-gender{
+    font-weight: var(--font-weight-bold);
+    font-size: 1.5rem;
 }
 
 /*LISTA DE SUBGÉNEROS (CABELLO-BARBA)*/

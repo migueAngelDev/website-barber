@@ -69,6 +69,7 @@
             <div class="category-list">
                 <a href="#" class="category-gender category-gender-shadow" category="mens"><img
                         src="svg/servicios/cortes/man.svg" alt="Hombres">Hombres</a>
+                <p class="select-gender">Seleccione un género</p>
                 <a href="#" class="category-gender category-gender-shadow" category="womens"><img
                         src="svg/servicios/cortes/woman.svg" alt="Mujeres">Mujeres</a>
                 <!--<a href="#" class="category-gender category-gender-shadow" category="boys"><img
@@ -76,15 +77,6 @@
                 <a href="#" class="category-gender category-gender-shadow" category="girls"><img
                         src="svg/servicios/cortes/girl.svg" alt="Niñas">Niñas</a> -->
             </div>
-            <!--LISTA DE SUBCATEGORÍAS (SE ACTIVAN SOLAMENTE AL PULSAR LA SECCIÓN "HOMBRES", POR DEFECTO SE SELECCIONA "CABELLO")-->
-            <!--<div class="subcategory-list">
-                <div class="subcategory-list-group">
-                    <a href="#" class="subcategory-gender subcategory-gender-shadow" category="mens"><img
-                            src="imgs/servicios/cortes/subgenders/vector_men_hair.png" alt="Cabello">Cabello</a>
-                    <a href="#" class="subcategory-gender subcategory-gender-shadow" category="beards"><img
-                            src="imgs/servicios/cortes/subgenders/vector_men_beard.png" alt="Barba">Barba</a>
-                </div>
-            </div>-->
         </div>
         <h1>Descubre nuestros estilos más populares en la sección de cortes de vista rápida</h1>
 
@@ -98,7 +90,7 @@
             </select>
         </div>
 
-        <section class="age-category">
+        <section class="age-category" id="age-kids">
             <h3 class="age">Para los niños...</h3>
             <div class="swiper-hairstyles">
                 <!-- Additional required wrapper -->
@@ -159,7 +151,7 @@
               </div>
         </section>
 
-        <section class="age-category">
+        <section class="age-category" id="age-teenagers">
             <h3 class="age">Para los jóvenes...</h3>
             <div class="swiper-hairstyles">
                 <!-- Additional required wrapper -->
@@ -220,7 +212,7 @@
               </div>
         </section>
 
-        <section class="age-category">
+        <section class="age-category" id="age-adults">
             <h3 class="age">Para los adultos...</h3>
             <div class="swiper-hairstyles">
                 <!-- Additional required wrapper -->
@@ -281,14 +273,14 @@
               </div>
         </section>
         <!--LISTADO DE CORTES CON IMAGEN, NOMBRE Y PRECIO (SE GENERAN PONIENDO LOS DATOS EN js/servicios/cortes/data.json)-->
-        <section class="hairstyles-container" id="hairstyles-container">
-        </section>
+        
     </main>
 
     <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
     <script src="js/servicios/cortes/preloader.js"></script>
     <!--<script src="js/servicios/cortes/hairstyles.js"></script>
     <script src="js/servicios/cortes/hairstyles_generator.js"></script>-->
+    <script src="./js/servicios/cortes/age-filter.js"></script>
     <script src="js/servicios/cortes/swiper.js"></script>
 </body>
 
