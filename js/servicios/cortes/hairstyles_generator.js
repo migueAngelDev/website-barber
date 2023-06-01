@@ -13,6 +13,7 @@ fetch("js/servicios/cortes/data.json")
             hairstyleDiv.classList.add("hairstyle-file");
             //SE LE COLOCA AL DIV UN ATRIBUTO LLAMADO "category", ESTE CONTENDRÁ COMO VALOR EL COLOCADO EN "category" DEL .json, QUE A SU VEZ DEBE COINCIDIR CON EL VALOR PUESTO EN LOS ELEMENTOS DEL DIV CON CLASE "category-list" (REVISAR HTML) PARA QUE SE MUESTRE LA TARJETA AL SELECCIONAR DETERMINADO GÉNERO
             hairstyleDiv.setAttribute("category", hairstyle.category);
+            hairstyleDiv.setAttribute("hair-type", hairstyle.type);
 
             //SE CREA LA CONSTANTE QUE CONTENDRÁ LA IMAGEN DEL CORTE, COMO ELEMENTO SE REQUIERE CREAR UN "img"
             const hairstyleImgContainer = document.createElement("div");
