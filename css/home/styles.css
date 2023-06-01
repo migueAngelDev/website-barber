@@ -261,124 +261,79 @@ header {
   flex-direction: column;
   height: 100vh;
   background-color: var(--main-secondary-bg);
+  text-align: center;
 }
 
 .container-services {
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  padding: 30px;
 }
 
-.content-services {
-  height: 45%;
+.wrapper-service {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   padding: 20px;
-}
-
-.container-img-one {
-  width: 20%;
-  display: flex;
-  justify-content: center;
-  justify-content: start;
-  align-items: center;
-}
-
-.container-img-two {
-  width: 20%;
-  display: flex;
-  justify-content: center;
-  justify-content: end;
-  align-items: center;
-}
-
-.container-img-one img,
-.container-img-two img {
-  width: 220px;
-  height: 100%;
-  object-fit: cover;
-  border-radius: var(--border-radius-5);
+  background-color: var(--main-principal-bg);
   box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius-5);
 }
 
-.container-servicio {
-  width: 80%;
+.img-service {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: var(--box-shadow);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
-.container-text {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.title-service {
+  font-weight: var(--font-weight-bold);
 }
 
 .text-service {
-  height: 50%;
-}
-
-.text-service ul {
-  line-height: 2;
-  list-style: none;
-  color: var(--textos-destacados);
-}
-
-.text-service p {
   color: var(--textos);
+  font-weight: var(--font-weight-300);
 }
 
 /* SECCIÓN 3 PRODUCTOS */
 .section-products {
   height: 100vh;
   text-align: center;
+  box-shadow: var(--box-shadow);
 }
 
-.products {
-  display: flex;
-  width: 100%;
+.contedor-padding-30px {
+  padding: 30px;
   height: 100%;
 }
 
-.container-products-title {
-  width: 33.33%;
-  padding: 20px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-/* Cambiar lo que es las tres columnas verticales por columnas horizontales */
 .container-products {
-  width: 33.33%;
-  padding: 20px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+}
+
+.content-product img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.productus-title,
+.contenedor-product-btn {
+  display: flex;
   align-items: center;
-  flex-direction: column;
+  justify-content: center;
 }
 
-.content-product {
-  height: 45%;
-  width: 100%;
-}
-
-.title-product {
-  height: 30%;
-  line-height: 2.5;
-}
-
-.image-product {
-  height: 70%;
-}
-
-.image-product img {
-  height: 100%;
-}
-
-/* Seccion 4 de estilos y tendencias  */
+/* section 4 */
 
 .estilos_y_tendencias {
   height: 100vh;
@@ -407,7 +362,7 @@ header {
 .title-section h3 {
   font-size: 1.1em;
   color: var(--textos-titulos-llamativos);
-  font-weight: var(--font-weight-300);
+  font-weight: var(--font-weight-bold);
 }
 
 .line {
@@ -482,6 +437,11 @@ header {
   box-shadow: var(--box-shadow);
 }
 
+/* SECCION 5 TESTIMONIOS */
+.testimonios {
+  height: 100vh;
+}
+
 /* Sección 6 de Horarios de atención */
 
 .section-horarios {
@@ -494,7 +454,7 @@ header {
 
 .container-horarios {
   display: flex;
-  padding: 0 10px 10px;
+  padding: 10px;
   font-weight: var(--font-weight-bold);
 }
 
@@ -545,7 +505,7 @@ header {
 
 /* Seccion 7, Ubicación */
 .section-location {
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -590,55 +550,60 @@ header {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  text-align: center;
 }
 
-.container-padding-10 {
-  padding: 0 10px 10px;
-}
-.container-reservaciones {
-  display: flex;
-  font-weight: var(--font-weight-bold);
-
-  border-radius: var(--border-radius-5);
-  box-shadow: var(--box-shadow);
+.container-reservacione-frases {
   height: 80vh;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-gap: 80px;
+  padding: 50px 30px;
   background-color: var(--main-principal-bg);
-}
-
-.content-frases-one {
-  width: 40%;
-  padding: 20px;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-}
-
-.content-frases-two {
-  width: 60%;
-  padding: 20px;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
+  border-radius: var(--border-radius-5);
 }
 
 .wrapper-frase {
   padding: 25px;
-  text-align: center;
   border-radius: var(--border-radius-5);
   background-color: var(--main-principal-bg);
   box-shadow: var(--box-shadow);
+  display: grid;
+  place-items: center;
+  color: var(--textos);
+  font-weight: var(--font-weight-bold);
 }
 
 .wrapper-frase-btn {
-  padding: 30px;
-  text-align: center;
+  display: grid;
+  place-items: center;
 }
 
 .wrapper-frase-btn button {
-  padding: 10px 40px 10px;
+  padding: 10px 40px;
   background-color: var(--color-btn);
   border-radius: var(--border-radius-5);
   cursor: pointer;
   border: none;
-  font-weight: bold;
+  font-size: 1em;
+}
+/* footer */
+
+.footerbarber {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.twoColums {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.footer-colum {
+  border: 1px solid white;
+}
+
+.footer-about img {
+  width: 100px;
+  height: 100px;
 }
