@@ -1,5 +1,5 @@
 const wrapperCards = document.getElementById("wrapperCards");
-const filterPrice = document.getElementById("filter-price");
+const btnGetPrice = document.getElementById("filter-price");
 const filterPriceInicial = document.getElementById("priceInicial");
 const filterPriceFinal = document.getElementById("priceFinal");
 const PRODUCTS = [
@@ -110,6 +110,17 @@ const PRODUCTS = [
 	},
 ];
 
+const rangePrice = (priceMin, priceMax, precio, preview) => {
+	if (precio >= priceMin && priceMax === "") {
+		console.log(preview);
+		wrapperCards.innerHTML += preview;
+	} else if (precio >= priceMin && precio <= priceMax) {
+		console.log(preview);
+		wrapperCards.innerHTML += preview;
+	}
+	return wrapperCards;
+};
+
 PRODUCTS.forEach((producto, index) => {
 	const RENDERING = `
 	<li class="card">
@@ -147,6 +158,12 @@ PRODUCTS.forEach((producto, index) => {
 	</li>
 	`;
 	wrapperCards.innerHTML += RENDERING;
+
+	btnGetPrice.addEventListener("click", () => {
+		let priceInicial = filterPriceInicial.value;
+		let priceFinal = filterPriceFinal.value;
+		rangePrice(priceInicial, priceFinal, producto.precio, RENDERING);
+	});
 });
 
 const removeProduct = document.querySelectorAll(".remove-product");
