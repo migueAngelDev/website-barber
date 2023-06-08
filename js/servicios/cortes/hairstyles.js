@@ -1,14 +1,20 @@
-$(document).ready(function(){
-    
-    //ESCONDIENDO SUBCATEGORÍA DE HOMBRES Y LISTA DE CORTES
-    $('.subcategory-list').hide();
-    $('.hairstyles-container').hide();
+$(document).ready(function () {
 
-    //ACTIVACIÓN DE GÉNERO ELEGIDO (SOMBRA DORADA)
-    $('.category-gender').click(function(){
-        let categoryHairstyle = $(this).attr('category');
+    //ESCONDIENDO SUBCATEGORÍA DE HOMBRES Y LISTA DE CORTES
+    let band = 0;
+    let categoryHairstyle;
+    let selectorValue;
+    if (band === 0) {
+        $('.hairstyle-container-slider').hide();
+        $('.hairstyle-container-slider[category="mens"]').show();
+        $('.hairstyle-container').hide();
+        $('.hairstyle-container[category="mens"]').show();
+    }
+
+    $('.category-gender').click(function () {
+        categoryHairstyle = $(this).attr('category');
+        band++;
         //SE ACTIVA LA SECCIÓN QUE CONTIENE EL LISTADO DE CORTES
-        $('.hairstyles-container').show();
         //SE LE REMUEVE LA CLASE ACTIVE (SOMBRA DORADA) AL ANTERIOR SELECCIONADO PARA COLOCÁRSELA SOLO AL ACTUAL
         //TAMBIÉN SE LE AGREGA LA CLASE DE EFECTO HOVER (SOMBRA BLANCA) A TODOS LOS DEMÁS GÉNEROS NO SELECCIONADAS Y ESTA MISMA SE LE ELIMINA AL SELECCIONADO PARA QUE NO ESTORBE
         $('.category-gender').addClass('category-gender-shadow');
@@ -17,39 +23,26 @@ $(document).ready(function(){
         $(this).removeClass('category-gender-shadow');
 
         //OCULTANDO CORTES QUE NO SON DEL GÉNERO SELECCIONADO
-        $('.hairstyle-file').hide();
+        $('.hairstyle-container').hide();
         //MOSTRANDO CORTES DEL GÉNERO SELECCIONADO
-        $('.hairstyle-file[category="'+categoryHairstyle+'"]').fadeIn(1000);
+        $('.hairstyle-container[age="' + selectorValue + '"][category="' + categoryHairstyle + '"]').show();
+
+        $('.hairstyle-container-slider').hide();
+        //MOSTRANDO CORTES DEL GÉNERO SELECCIONADO
+        $('.hairstyle-container-slider[category="' + categoryHairstyle + '"]').show();
     });
 
-    //SE MUESTRA LA SUBCATEGORÍA DE CABELLO Y BARBA AL PULSAR EL GÉNERO "HOMBRES"
-    $('.category-gender[category="mens"]').click(function(){
-        $('.subcategory-list').fadeIn(1000);
-        $('.subcategory-list .subcategory-gender[category="mens"]').addClass('subcategory-gender-active');
-        $('.subcategory-list .subcategory-gender[category="mens"]').removeClass('subcategory-gender-shadow');
-        //SE LE ELIMINA LA CLASE ACTIVE AL SUBGÉNERO BARBA (POR SI SE VISITA DESPUÉS DE HABERLA VISITADO PREVIAMENTE NO SE QUEDE MARCADA, PROVOCANDO DOBLE MARCA DORADA EN LA SUBCATEGORÍA)
-        $('.subcategory-list .subcategory-gender[category="beards"]').removeClass('subcategory-gender-active');
-    });
+    $('#hairstyles-ages').change(function () {
+        selectorValue = $('#hairstyles-ages').val();
 
-    //SI NO ESTÁ ACTIVA LA CATEGORÍA HOMBRES, SE ESCONDE EL SUBMENÚ
-    $('.category-gender[category!="mens"]').click(function(){
-        $('.subcategory-list').hide();
-    });
-
-    //ACTIVACIÓN DE SUBGÉNERO ELEGIDO
-    $('.subcategory-gender').click(function(){
-        let categoryHairstyle = $(this).attr('category');
-
-        //SE LE REMUEVE LA CLASE ACTIVE (SOMBRA DORADA) AL ANTERIOR SELECCIONADO PARA COLOCÁRSELA SOLO AL ACTUAL
-        //TAMBIÉN SE LE AGREGA LA CLASE DE EFECTO HOVER (SOMBRA BLANCA) A EL GÉNERO NO SELECCIONADO Y ESTA MISMA SE LE ELIMINA AL SELECCIONADO PARA QUE NO ESTORBE
-        $('.subcategory-gender').addClass('subcategory-gender-shadow');
-        $('.subcategory-gender').removeClass('subcategory-gender-active');
-        $(this).addClass('subcategory-gender-active');
-        $(this).removeClass('subcategory-gender-shadow');
-
-        //OCULTANDO CORTES QUE NO SON DEL SUBGÉNERO SELECCIONADO
-        $('.hairstyle-file').hide();
-        //MOSTRANDO CORTES DEL SUBGÉNERO SELECCIONADO
-        $('.hairstyle-file[category="'+categoryHairstyle+'"]').fadeIn(1000);
+        if (band === 0) {
+            $('.hairstyle-container').hide();
+            //MOSTRANDO CORTES DEL GÉNERO SELECCIONADO
+            $('.hairstyle-container[age="' + selectorValue + '"][category="mens"]').show();
+        } else {
+            $('.hairstyle-container').hide();
+            //MOSTRANDO CORTES DEL GÉNERO SELECCIONADO
+            $('.hairstyle-container[age="' + selectorValue + '"][category="' + categoryHairstyle + '"]').show();
+        }
     });
 });

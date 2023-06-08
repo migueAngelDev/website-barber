@@ -2,139 +2,134 @@
     "hairstyles": [
         {
             "category": "mens",
+            "age": "adulto",
+            "type": "lacio",
             "img": "imgs/servicios/cortes/hombre/clasico.jpg",
-            "name": "Corte clásico",
+            "name": "Clásico",
             "description": "Corte de cabello corto y limpio que se caracteriza por tener los lados y la parte posterior recortados con una longitud uniforme y el cabello más largo en la parte superior.",
             "price": "$100"
         },
         {
             "category": "mens",
+            "age": "joven",
+            "type": "lacio",
             "img": "imgs/servicios/cortes/hombre/desvanecido.jpg",
-            "name": "Corte desvanecido",
+            "name": "Desvanecido",
             "description": "Corte en el que el cabello se corta gradualmente más corto en los lados, mientras que el cabello en la parte superior se deja más largo.",
             "price": "$100"
         },
         {
             "category": "mens",
+            "age": "joven",
+            "type": "lacio",
+            "img": "imgs/servicios/cortes/hombre/desvanecido.jpg",
+            "name": "Desvanecido",
+            "description": "Corte en el que el cabello se corta gradualmente más corto en los lados, mientras que el cabello en la parte superior se deja más largo.",
+            "price": "$100"
+        },
+        {
+            "category": "mens",
+            "age": "joven",
+            "type": "lacio",
+            "img": "imgs/servicios/cortes/hombre/desvanecido.jpg",
+            "name": "Desvanecido",
+            "description": "Corte en el que el cabello se corta gradualmente más corto en los lados, mientras que el cabello en la parte superior se deja más largo.",
+            "price": "$100"
+        },
+        {
+            "category": "mens",
+            "age": "adulto",
+            "type": "ondulado",
             "img": "imgs/servicios/cortes/hombre/texturizado.jpg",
-            "name": "Corte texturizado",
+            "name": "Texturizado",
             "description": "Este corte de cabello se caracteriza por tener capas texturizadas que agregan movimiento y definición al cabello.",
             "price": "$100"
         },
         {
             "category": "mens",
+            "age": "adulto",
+            "type": "lacio",
             "img": "imgs/servicios/cortes/hombre/largo_y_suelto.jpg",
-            "name": "Corte largo y suelto",
+            "name": "Largo y suelto",
             "description": "Este es un estilo para los hombres que prefieren el cabello más largo. Se caracteriza por tener el cabello largo y suelto con capas que agregan movimiento y textura.",
             "price": "$100"
         },
         {
             "category": "mens",
+            "age": "adulto",
+            "type": "lacio",
             "img": "imgs/servicios/cortes/hombre/conico.jpg",
-            "name": "Corte cónico",
+            "name": "Cónico",
             "description": "Este corte de cabello se caracteriza por tener los lados y la parte posterior cortados más cortos y graduados hacia la parte superior.",
             "price": "$100"
         },
         {
             "category": "mens",
+            "age": "adulto",
+            "type": "lacio",
             "img": "imgs/servicios/cortes/hombre/militar.jpg",
-            "name": "Corte militar",
+            "name": "Militar",
             "description": "Este corte de cabello se caracteriza por tener los lados y la parte posterior recortados muy cortos con una longitud uniforme y el cabello ligeramente más largo en la parte superior.",
             "price": "$100"
         },
         {
             "category": "mens",
+            "age": "adulto",
+            "type": "lacio",
             "img": "imgs/servicios/cortes/hombre/punta.jpg",
-            "name": "Corte de punta",
+            "name": "De punta",
             "description": "Este corte de cabello se caracteriza por tener el cabello más largo en la parte superior y peinado hacia arriba en puntas con productos para peinar.",
             "price": "$100"
         },
         {
             "category": "mens",
+            "age": "adulto",
+            "type": "lacio",
             "img": "imgs/servicios/cortes/hombre/buzz.jpg",
-            "name": "Corte buzz",
+            "name": "Buzz",
             "description": "Corte muy corto que se logra con una maquinilla de afeitar, generalmente en la misma longitud en todas partes.",
             "price": "$100"
         },
         {
             "category": "mens",
             "img": "imgs/servicios/cortes/hombre/mohicano.jpg",
-            "name": "Corte mohicano",
+            "age": "adulto",
+            "type": "ondulado",
+            "name": "Mohicano",
             "description": "Corte de cabello que presenta una cresta de cabello en la parte superior de la cabeza, con los lados cortados muy cortos.",
             "price": "$100"
         },
         {
             "category": "mens",
+            "age": "adulto",
+            "type": "lacio",
             "img": "imgs/servicios/cortes/hombre/pompadour.png",
-            "name": "Corte pompadour",
+            "name": "Pompadour",
             "description": "Corte de cabello que presenta una sección de cabello largo en la parte superior de la cabeza que se peina hacia atrás, con los lados cortados más cortos.",
             "price": "$100"
         },
         {
             "category": "mens",
+            "age": "adulto",
+            "type": "lacio",
             "img": "imgs/servicios/cortes/hombre/undercut.jpg",
-            "name": "Corte undercut",
+            "name": "Undercut",
             "description": "Corte de cabello con una sección de cabello más larga en la parte superior de la cabeza que contrasta con los lados y la parte trasera cortados más cortos.",
             "price": "$100"
         },
         {
             "category": "mens",
+            "age": "adulto",
+            "type": "ondulado",
             "img": "imgs/servicios/cortes/hombre/caesar.jpg",
-            "name": "Corte caesar",
+            "name": "Caesar",
             "description": "Corte de cabello corto con flequillo hacia adelante que se asemeja a un corte de pelo antiguo utilizado por los emperadores romanos.",
             "price": "$100"
         },
         {
-            "category": "beards",
-            "img": "imgs/servicios/cortes/hairstyles/beard_1.jpg",
-            "name": "Barba completa",
-            "description": "Esta es una barba larga y densa que cubre toda la cara. Es un estilo clásico y masculino.",
-            "price": "$100"
-        },
-        {
-            "category": "beards",
-            "img": "imgs/servicios/cortes/hairstyles/beard_1.jpg",
-            "name": "Barba de candado",
-            "description": "Esta barba tiene una forma de U invertida y se extiende desde las patillas hasta la barbilla, se puede usar con o sin bigote.",
-            "price": "$100"
-        },
-        {
-            "category": "beards",
-            "img": "imgs/servicios/cortes/hairstyles/beard_1.jpg",
-            "name": "Barba de chivo",
-            "description": "Esta es una barba corta que se concentra en la barbilla y el labio superior.",
-            "price": "$100"
-        },
-        {
-            "category": "beards",
-            "img": "imgs/servicios/cortes/hairstyles/beard_1.jpg",
-            "name": "Barba de 3 días",
-            "description": "Este estilo es una barba corta y desaliñada que se ve como si se hubiera dejado crecer durante unos 3 días.",
-            "price": "$100"
-        },
-        {
-            "category": "beards",
-            "img": "imgs/servicios/cortes/hairstyles/beard_1.jpg",
-            "name": "Barba corta",
-            "description": "Este estilo de barba es similar a la barba de 3 días, pero es un poco más larga y densa.",
-            "price": "$100"
-        },
-        {
-            "category": "beards",
-            "img": "imgs/servicios/cortes/hairstyles/beard_1.jpg",
-            "name": "Barba desconectada",
-            "description": "Esta barba se enfoca en una sección específica de la cara, como la barbilla o el bigote, y se mantiene más corta en otras áreas.",
-            "price": "$100"
-        },
-        {
-            "category": "beards",
-            "img": "imgs/servicios/cortes/hairstyles/beard_1.jpg",
-            "name": "Barba estilo vikingo",
-            "description": "Este estilo es una barba larga y gruesa que se asemeja a la barba de un guerrero vikingo.",
-            "price": "$100"
-        },
-        {
             "category": "womens",
+            "age": "adulto",
+            "type": "lacio",
             "img": "imgs/servicios/cortes/hairstyles/womens_hairstyles.jpg",
             "name": "Corte bob",
             "description": "Corte recto en la mandíbula con flequillo recto o lateral.",
@@ -142,6 +137,8 @@
         },
         {
             "category": "womens",
+            "age": "adulto",
+            "type": "lacio",
             "img": "imgs/servicios/cortes/hairstyles/womens_hairstyles.jpg",
             "name": "Corte pixie",
             "description": "Corte corto y con textura, que a menudo incluye capas y flequillo.",
@@ -149,6 +146,8 @@
         },
         {
             "category": "womens",
+            "age": "adulto",
+            "type": "lacio",
             "img": "imgs/servicios/cortes/hairstyles/womens_hairstyles.jpg",
             "name": "Corte degradado",
             "description": "Corte que comienza más corto en la nuca y se va alargando hacia la parte superior de la cabeza.",
@@ -156,6 +155,8 @@
         },
         {
             "category": "womens",
+            "age": "adulto",
+            "type": "ondulado",
             "img": "imgs/servicios/cortes/hairstyles/womens_hairstyles.jpg",
             "name": "Corte shag",
             "description": "Corte con capas desordenadas y textura que a menudo se complementa con flequillo largo y despeinado.",
@@ -163,6 +164,8 @@
         },
         {
             "category": "womens",
+            "age": "adulto",
+            "type": "ondulado",
             "img": "imgs/servicios/cortes/hairstyles/womens_hairstyles.jpg",
             "name": "Corte recto",
             "description": "Corte recto que no tiene capas y generalmente llega hasta los hombros.",
@@ -170,60 +173,80 @@
         },
         {
             "category": "womens",
+            "age": "adulto",
+            "type": "ondulado",
             "img": "imgs/servicios/cortes/hairstyles/womens_hairstyles.jpg",
             "name": "Corte ###",
             "price": "$100"
         },
         {
             "category": "womens",
+            "age": "adulto",
+            "type": "rizado",
             "img": "imgs/servicios/cortes/hairstyles/womens_hairstyles.jpg",
             "name": "Corte ###",
             "price": "$100"
         },
         {
             "category": "womens",
+            "age": "adulto",
+            "type": "rizado",
             "img": "imgs/servicios/cortes/hairstyles/womens_hairstyles.jpg",
             "name": "Corte ###",
             "price": "$100"
         },
         {
             "category": "womens",
+            "age": "adulto",
+            "type": "lacio",
             "img": "imgs/servicios/cortes/hairstyles/womens_hairstyles.jpg",
             "name": "Corte ###",
             "price": "$100"
         },
         {
             "category": "womens",
+            "age": "adulto",
+            "type": "lacio",
             "img": "imgs/servicios/cortes/hairstyles/womens_hairstyles.jpg",
             "name": "Corte ###",
             "price": "$100"
         },
         {
-            "category": "boys",
+            "category": "mens",
+            "age": "nino",
+            "type": "lacio",
             "img": "imgs/servicios/cortes/hairstyles/boys_hairstyles.jpg",
             "name": "Corte ###",
             "price": "$100"
         },
         {
-            "category": "boys",
+            "category": "mens",
+            "age": "nino",
+            "type": "lacio",
             "img": "imgs/servicios/cortes/hairstyles/boys_hairstyles.jpg",
             "name": "Corte ###",
             "price": "$100"
         },
         {
-            "category": "boys",
+            "category": "mens",
+            "age": "nino",
+            "type": "lacio",
             "img": "imgs/servicios/cortes/hairstyles/boys_hairstyles.jpg",
             "name": "Corte ###",
             "price": "$100"
         },
         {
-            "category": "girls",
+            "category": "womens",
+            "age": "nino",
+            "type": "lacio",
             "img": "imgs/servicios/cortes/hairstyles/girls_hairstyles.jpg",
             "name": "Corte ###",
             "price": "$100"
         },
         {
-            "category": "girls",
+            "category": "womens",
+            "age": "nino",
+            "type": "lacio",
             "img": "imgs/servicios/cortes/hairstyles/girls_hairstyles.jpg",
             "name": "Corte ###",
             "price": "$100"

@@ -129,7 +129,7 @@
 
 /*TITULO*/
 .main-hairstyles h1{
-    font-size: 1.375rem;
+    font-size: 28px;
     color: var(--textos-titulos-llamativos);
     text-align: center;
     margin-bottom: 6.25rem;
@@ -250,4 +250,114 @@
     font-size: 1.125rem;
     font-weight: var(--font-weight-bold);
     text-align: center;
+}
+
+
+.gallery-type:has(:checked){
+    --rows: 1fr;
+    --opacity-gallery: 1;
+    --rotate-icon: rotate(0deg);
+}
+
+
+.gallery-hairstyles{
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-hairstyles > p{
+    font-size: 1.375rem;
+    font-weight: bold;
+    color: var(--textos-titulos-llamativos);
+    text-align: center;
+    margin-bottom: 3.125rem;
+}
+
+.hairstyle-type{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .3125rem;
+    margin: 0 auto;
+    cursor: pointer;
+    padding: 15px 0px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    transition: all 300ms ease;
+    position: relative;
+}
+
+.hairstyle-type:hover{
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.hairstyle-type img{
+    width: 28px;
+    transform: var(--rotate-icon, rotate(-90deg));
+    transition: 300ms transform ease;
+}
+
+.gallery-container{
+    display: grid;
+    grid-template-rows: var(--rows, 0fr);
+    /*display: flex;
+    flex-flow: row wrap;*/
+    gap: 3.125rem;
+    padding: 1.25rem;
+    justify-content: center;
+    transition: 0.5s grid-template-rows;
+}
+
+.hairstyle-card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    padding: 2.5rem 1.875rem;
+}
+
+.hairstyle-card-img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.hairstyle-card-text{
+    color: var(--textos);
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+}
+
+.hairstyle-card-name{
+    font-size: 1.125rem;
+}
+
+
+.checkbox-gallery{
+    display: block;
+    position: absolute;
+    inset: 0 0 0 0;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.gallery-list{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 3.125rem;
+    padding: 1.25rem;
+    justify-content: center;
+    overflow: hidden;
+    opacity: var(--opacity-gallery, 0);
+    transition: 300ms opacity ease;
+}
+
+.gallery-list li{
+    display: block;
+    width: 20%;
 }

@@ -18,7 +18,7 @@
     <script src="https://kit.fontawesome.com/336c091e50.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="static">
+<body>
 
     <header>
         <div class="logo">
@@ -32,7 +32,7 @@
                 </li>
                 <li class="groups">
                     <a href="#">Servicios
-                        <span><img src="./imgs/home/icons/dropdown.svg" /></span>
+                        <span><img src="./svg/dropdown.svg" /></span>
                     </a>
                     <ul class="category">
                         <li><a href="hairstyles.html">Cortes de cabello y barba</a></li>
@@ -50,18 +50,6 @@
             </ul>
         </nav>
     </header>
-
-    <!-- <div class="container-preloader" id="preloader">
-        <div class="container">
-            <div class="pole">
-                <div class="top"></div>
-                <div class="cilinder"></div>
-                <div class="bottom"></div>
-            </div>
-        </div>
-        <span class="loader">
-        </span>
-    </div> -->
 
     <main class="main-hairstyles">
         <div class="category-container">
@@ -84,9 +72,9 @@
             <p class="hairstyle-options">Siempre hay más opciones</p>
             <select name="hairstyles-ages" id="hairstyles-ages" class="ages-filter">
                 <option value="">Todas las edades</option>
-                <option value="ninos">Niños</option>
-                <option value="jovenes">Jóvenes</option>
-                <option value="adultos">Adultos</option>
+                <option value="nino">Niños</option>
+                <option value="joven">Jóvenes</option>
+                <option value="adulto">Adultos</option>
             </select>
         </div>
 
@@ -94,53 +82,8 @@
             <h3 class="age">Para los niños...</h3>
             <div class="swiper-hairstyles">
                 <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper" id="slider-ninos">
                   <!-- Slides -->
-                  <div class="swiper-slide">
-                    <div class="hairstyle-file">
-                        <div class="hairstyle-image">
-                            <img class="hairstyle-img" src="imgs/servicios/cortes/hombre/texturizado.jpg" alt="">
-                        </div>
-                        <p>Corte de cabello estilo</p>
-                        <h4>"Texturizado"</h4>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="hairstyle-file">
-                        <div class="hairstyle-image">
-                            <img class="hairstyle-img" src="imgs/servicios/cortes/hombre/texturizado.jpg" alt="">
-                        </div>
-                        <p>Corte de cabello estilo</p>
-                        <h4>"Texturizado"</h4>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="hairstyle-file">
-                        <div class="hairstyle-image">
-                            <img class="hairstyle-img" src="imgs/servicios/cortes/hombre/texturizado.jpg" alt="">
-                        </div>
-                        <p>Corte de cabello estilo</p>
-                        <h4>"Texturizado"</h4>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="hairstyle-file">
-                        <div class="hairstyle-image">
-                            <img class="hairstyle-img" src="imgs/servicios/cortes/hombre/texturizado.jpg" alt="">
-                        </div>
-                        <p>Corte de cabello estilo</p>
-                        <h4>"Texturizado"</h4>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="hairstyle-file">
-                        <div class="hairstyle-image">
-                            <img class="hairstyle-img" src="imgs/servicios/cortes/hombre/texturizado.jpg" alt="">
-                        </div>
-                        <p>Corte de cabello estilo</p>
-                        <h4>"Texturizado"</h4>
-                    </div>
-                  </div>
                 </div>
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
@@ -155,53 +98,9 @@
             <h3 class="age">Para los jóvenes...</h3>
             <div class="swiper-hairstyles">
                 <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper" id="slider-jovenes">
                   <!-- Slides -->
-                  <div class="swiper-slide">
-                    <div class="hairstyle-file">
-                        <div class="hairstyle-image">
-                            <img class="hairstyle-img" src="imgs/servicios/cortes/hombre/texturizado.jpg" alt="">
-                        </div>
-                        <p>Corte de cabello estilo</p>
-                        <h4>"Texturizado"</h4>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="hairstyle-file">
-                        <div class="hairstyle-image">
-                            <img class="hairstyle-img" src="imgs/servicios/cortes/hombre/texturizado.jpg" alt="">
-                        </div>
-                        <p>Corte de cabello estilo</p>
-                        <h4>"Texturizado"</h4>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="hairstyle-file">
-                        <div class="hairstyle-image">
-                            <img class="hairstyle-img" src="imgs/servicios/cortes/hombre/texturizado.jpg" alt="">
-                        </div>
-                        <p>Corte de cabello estilo</p>
-                        <h4>"Texturizado"</h4>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="hairstyle-file">
-                        <div class="hairstyle-image">
-                            <img class="hairstyle-img" src="imgs/servicios/cortes/hombre/texturizado.jpg" alt="">
-                        </div>
-                        <p>Corte de cabello estilo</p>
-                        <h4>"Texturizado"</h4>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="hairstyle-file">
-                        <div class="hairstyle-image">
-                            <img class="hairstyle-img" src="imgs/servicios/cortes/hombre/texturizado.jpg" alt="">
-                        </div>
-                        <p>Corte de cabello estilo</p>
-                        <h4>"Texturizado"</h4>
-                    </div>
-                  </div>
+                  
                 </div>
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
@@ -216,53 +115,8 @@
             <h3 class="age">Para los adultos...</h3>
             <div class="swiper-hairstyles">
                 <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper" id="slider-adultos">
                   <!-- Slides -->
-                  <div class="swiper-slide">
-                    <div class="hairstyle-file">
-                        <div class="hairstyle-image">
-                            <img class="hairstyle-img" src="imgs/servicios/cortes/hombre/texturizado.jpg" alt="">
-                        </div>
-                        <p>Corte de cabello estilo</p>
-                        <h4>"Texturizado"</h4>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="hairstyle-file">
-                        <div class="hairstyle-image">
-                            <img class="hairstyle-img" src="imgs/servicios/cortes/hombre/texturizado.jpg" alt="">
-                        </div>
-                        <p>Corte de cabello estilo</p>
-                        <h4>"Texturizado"</h4>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="hairstyle-file">
-                        <div class="hairstyle-image">
-                            <img class="hairstyle-img" src="imgs/servicios/cortes/hombre/texturizado.jpg" alt="">
-                        </div>
-                        <p>Corte de cabello estilo</p>
-                        <h4>"Texturizado"</h4>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="hairstyle-file">
-                        <div class="hairstyle-image">
-                            <img class="hairstyle-img" src="imgs/servicios/cortes/hombre/texturizado.jpg" alt="">
-                        </div>
-                        <p>Corte de cabello estilo</p>
-                        <h4>"Texturizado"</h4>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="hairstyle-file">
-                        <div class="hairstyle-image">
-                            <img class="hairstyle-img" src="imgs/servicios/cortes/hombre/texturizado.jpg" alt="">
-                        </div>
-                        <p>Corte de cabello estilo</p>
-                        <h4>"Texturizado"</h4>
-                    </div>
-                  </div>
                 </div>
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
@@ -274,14 +128,52 @@
         </section>
         <!--LISTADO DE CORTES CON IMAGEN, NOMBRE Y PRECIO (SE GENERAN PONIENDO LOS DATOS EN js/servicios/cortes/data.json)-->
         
+        <section class="gallery-hairstyles">
+            <p>Seleccione el estilo de cabello de su preferencia</p>
+            <div class="gallery-type">
+                <div class="hairstyle-type">
+                    <h3>Cortes de cabello lacio</h3>
+                    <img src="./svg/servicios/cortes/down_arrow.svg" alt="Desplegar">
+                    <input type="checkbox" name="open-gallery" id="open-gallery" class="checkbox-gallery">
+                </div>
+                <div class="gallery-container">
+                    <ul class="gallery-list" id="galeria-lacio">
+                    </ul>
+                </div>
+            </div>
+
+            <div class="gallery-type">
+                <div class="hairstyle-type">
+                    <h3>Cortes de cabello ondulado</h3>
+                    <img src="./svg/servicios/cortes/down_arrow.svg" alt="Desplegar">
+                    <input type="checkbox" name="open-gallery" id="open-gallery" class="checkbox-gallery">
+                </div>
+                <div class="gallery-container">
+                    <ul class="gallery-list" id="galeria-ondulado">
+                    </ul>
+                </div>
+            </div>
+
+            <div class="gallery-type">
+                <div class="hairstyle-type">
+                    <h3>Cortes de cabello rizado</h3>
+                    <img src="./svg/servicios/cortes/down_arrow.svg" alt="Desplegar">
+                    <input type="checkbox" name="open-gallery" id="open-gallery" class="checkbox-gallery">
+                </div>
+                <div class="gallery-container">
+                    <ul class="gallery-list" id="galeria-rizado">
+                    </ul>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
-    <script src="js/servicios/cortes/preloader.js"></script>
-    <!--<script src="js/servicios/cortes/hairstyles.js"></script>
-    <script src="js/servicios/cortes/hairstyles_generator.js"></script>-->
-    <script src="./js/servicios/cortes/age-filter.js"></script>
-    <script src="js/servicios/cortes/swiper.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="js/servicios/cortes/hairstyles_generator.js"></script>
+    <script src="./js/servicios/cortes/filters.js"></script>
+    <script src="./js/servicios/cortes/swiper.js"></script>
+    <script src="js/servicios/cortes/hairstyles.js"></script>
 </body>
 
 </html>
