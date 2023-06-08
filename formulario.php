@@ -8,40 +8,6 @@
     <link rel="stylesheet" href="css/formulario/style.css" />
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <img
-          src="imgs/home/section-one/logo_Barbería.png"
-          alt="logo de la barberia"
-        />
-      </div>
-      <div class="logo_2">Barber Shop: Los Ángeles</div>
-      <nav class="nav-bar">
-        <ul class="nav-bar-ul">
-          <li>
-            <a href="index.html">Inicio</a>
-          </li>
-          <li class="groups">
-            <a href="#"
-              >Servicios
-              <span><img src="./imgs/home/icons/dropdown.svg" /></span>
-            </a>
-            <ul class="category">
-              <li><a href="hairstyles.html">Cortes de cabello y barba</a></li>
-              <li><a href="unas.html">Manicure</a></li>
-              <li><a href="unas.html">Pedicure</a></li>
-              <li><a href="#">Tintes y permanentes</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="products.html">Productos</a>
-          </li>
-          <li>
-            <a href="#">Formulario</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
     <section class="section-form">
       <div class="header-section">
         <span class="line"></span>
@@ -65,28 +31,25 @@
         <div class="content-info">
           <div class="form">
             <form method="POST" action="PHP/formulario/insertar.php">
-              <p>Ingresa tu nombre(s)</p>
-              <input type="text" id="nombre" name="nombre">
+              <label for="nombre">Ingresa tu nombre(s)</label>
+              <input type="text" id="nombre" name="nombre" required>
               
-              <p>Ingresa tus apellidos</p>
-              <input type="text" id="apellidos" name="apellidos">
+              <label for="apellidos">Ingresa tus apellidos</label>
+              <input type="text" id="apellidos" name="apellidos" required>
               
-              <p>Ingresa tu correo electronico</p>
-              <input type="email" id="email" name="email">
+              <label for="email">Ingresa tu correo electronico</label>
+              <input type="email" id="email" name="email" required>
 
-              <p>Sube una foto para agregar a tu foto de perfil.</p>
-              <input type="file" id="imagen" name="imagen"/>
+              <label for="imagen">Sube una foto para agregar a tu foto de perfil.</label>
+              <input type="file" id="imagen" name="imagen" required>
 
-              <p>Compartenos tu opinión</p>
-              <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+              <label for="comentario">Compartenos tu opinión</label>
+              <textarea name="comentario" id="comentario" cols="30" rows="10" required></textarea>
              <!-- <input type="text" id="comentario" name="comentario"> -->
                   
               <input type="submit" value="Insertar" id="insertar">  
             </form>
           </div>
-          <?php if(isset($_GET['register'])) { ?>
-          <p>Comentarios enviados</p>
-          <?php } ?>
         </div>
       </div>
     </section>
