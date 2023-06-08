@@ -143,11 +143,12 @@ header {
 	margin: 0 10px 0 15px;
 }
 
-.filter-price input[type="number"]{
+.filter-price input[type="tel"]{
 	width: 75px;
 	height:30px;
 	text-align: center;
 	border: none;
+	outline: none;
 	background-color: var(--main-secondary-bg);
 	border-radius: var(--border-radius-5);
 }

@@ -7,324 +7,220 @@ const PRODUCTS = [
 		nombre: "Aceite para barba",
 		imagen: "./imgs/productos/aceite-barba.jpeg",
 		precio: 300,
+		contador: 0,
 		estado: "activo",
 	},
 	{
 		nombre: "Cera para bigote",
 		imagen: "./imgs/productos/gel-barba.jpeg",
 		precio: 200,
+		contador: 0,
 		estado: "",
 	},
 	{
 		nombre: "Navaja para afeitar",
 		imagen: "./imgs/productos/navaja-afeitar.jpg",
 		precio: 500,
+		contador: 0,
 		estado: "activo",
 	},
 	{
 		nombre: "Tijeras de peluquería",
 		imagen: "./imgs/productos/tijeras-peluqueria.jpg",
 		precio: 600,
+		contador: 0,
 		estado: "",
 	},
 	{
 		nombre: "Peine para barba",
 		imagen: "./imgs/productos/peine-barba.jpg",
 		precio: 80,
+		contador: 0,
 		estado: "activo",
 	},
 	{
 		nombre: "Champú para barba",
 		imagen: "./imgs/productos/champu-barba.jpg",
 		precio: 340,
+		contador: 0,
 		estado: "activo",
 	},
 	{
 		nombre: "Loción después del afeitado",
 		imagen: "./imgs/productos/locion-barba.jpg",
 		precio: 400,
+		contador: 0,
 		estado: "activo",
 	},
 	{
 		nombre: "Gel para peinar",
 		imagen: "./imgs/productos/gel.jpeg",
 		precio: 200,
+		contador: 0,
 		estado: "",
 	},
 	{
 		nombre: "Afeitadora eléctrica",
 		imagen: "./imgs/productos/afeitadora-corte.jpg",
 		precio: 1800,
+		contador: 0,
 		estado: "activo",
 	},
 	{
 		nombre: "Crema para afeitar",
 		imagen: "./imgs/productos/crema-afeitar.jpg",
 		precio: 300,
+		contador: 0,
 		estado: "activo",
 	},
 	{
 		nombre: "Toallas calientes",
 		imagen: "./imgs/productos/toallas-calientes.jpg",
 		precio: 500,
+		contador: 0,
 		estado: "activo",
 	},
 	{
 		nombre: "Gel para barba",
 		imagen: "./imgs/productos/gel-barba.jpeg",
 		precio: 300,
+		contador: 0,
 		estado: "activo",
 	},
 	{
 		nombre: "Maquinilla para afeitar",
 		imagen: "./imgs/productos/maquinilla-afeitar.jpeg",
 		precio: 500,
+		contador: 0,
 		estado: "activo",
 	},
 	{
 		nombre: "Spray de peinado",
 		imagen: "./imgs/productos/spray.jpeg",
 		precio: 240,
+		contador: 0,
 		estado: "activo",
 	},
 	{
 		nombre: "kit de cuidado para la barba",
 		imagen: "./imgs/productos/kit-barba.jpeg",
 		precio: 1000,
+		contador: 0,
 		estado: "activo",
 	},
 ];
 
-function mostrarCards() {
-	for (let i = 0; i < PRODUCTS.length; i++) {
-		const li = document.createElement("li");
-		li.classList.add("card");
-		wrapperCards.appendChild(li);
-		const imgStatus = document.createElement("section");
-		imgStatus.classList.add("sectionImg");
-		li.appendChild(imgStatus);
-		const portada = document.createElement("img");
-		portada.classList.add("card-img");
-		portada.src = PRODUCTS[i].imagen;
-		imgStatus.appendChild(portada);
-		const sectionPadding = document.createElement("section");
-		sectionPadding.classList.add("section-padding");
-		li.appendChild(sectionPadding);
-		const contentTitle = document.createElement("div");
-		contentTitle.classList.add("content-title");
-		sectionPadding.appendChild(contentTitle);
-		const title = document.createElement("p");
-		title.classList.add("titleCard");
-		title.textContent = PRODUCTS[i].nombre;
-		contentTitle.appendChild(title);
-		const contentPrice = document.createElement("div");
-		contentPrice.classList.add("contentPriceCard");
-		sectionPadding.appendChild(contentPrice);
-		const price = document.createElement("p");
-		price.classList.add("priceCard");
-		price.textContent = `$${PRODUCTS[i].precio.toFixed(2)}`;
-		contentPrice.appendChild(price);
-		const sectionCounter = document.createElement("section");
-		const addItemProduct = document.createElement("button");
-		let counterItem = document.createElement("p");
-		const removeItemProduct = document.createElement("button");
-		sectionPadding.appendChild(sectionCounter);
-		addItemProduct.textContent = "+";
-		counterItem.textContent = 0;
-		removeItemProduct.textContent = "-";
-		sectionCounter.classList.add("section-counter");
-		sectionCounter.appendChild(removeItemProduct);
-		sectionCounter.appendChild(counterItem);
-		sectionCounter.appendChild(addItemProduct);
-		/* function of carrito de compras */
-		addItemProduct.addEventListener("click", () => {
-			counterItem.textContent++;
-		});
-		removeItemProduct.addEventListener("click", () => {
-			if (counterItem.textContent > 0) counterItem.textContent--;
-		});
-		/* ****** */
-		const btnAddToShoppingCart = document.createElement("button");
-		btnAddToShoppingCart.textContent = "Agregar";
-		btnAddToShoppingCart.classList.add("btn-add-to-shopping-cart");
-		const sectionAddItemCart = document.createElement("section");
-		sectionPadding.appendChild(sectionAddItemCart);
-		sectionAddItemCart.classList.add("section-add-item-cart");
-		sectionAddItemCart.appendChild(btnAddToShoppingCart);
-		const msgSuccessAddItem = document.createElement("p");
-		msgSuccessAddItem.textContent =
-			"Se ha agregado el producto al carrito de compras";
-		const msgErrorAddItem = document.createElement("p");
-		msgErrorAddItem.textContent =
-			"Por favor, agregue un producto para añadirlo al carrito.";
-		btnAddToShoppingCart.addEventListener("click", () => {
-			if (counterItem.textContent > 0) {
-				btnAddToShoppingCart.style.display = "none";
-				if (msgSuccessAddItem.style.display === "none") {
-					msgSuccessAddItem.style.display = "block";
-				} else {
-					sectionAddItemCart.appendChild(msgSuccessAddItem);
-				}
+PRODUCTS.forEach((producto, index) => {
+	const RENDERING = `
+	<li class="card">
+		<section class="sectionImg">
+			<img src="${producto.imagen}" alt="${producto.nombre}" class="card-img" >
+		</section>
+		<section class="section-padding">
+			<div class="content-title">
+				<p class="title-card">
+					${producto.nombre}
+				</p>
+			</div>
+			<div class="contentPriceCard">
+				<p class="priceCard">
+					$${producto.precio.toFixed(2)}
+				</p>
+			</div>
+			<div class="section-counter">
+				<button class="remove-product" data-index="${index}">
+					-
+				</button>
+				<p class="counter-product" data-index="${index}">
+					${producto.contador}
+				</p>
+				<button class="add-product" data-index="${index}">
+					+
+				</button>
+			</div>
+			<section class="section-add-item-cart" data-index="${index}">
+				<button class="btn-add-to-shopping-cart" data-index="${index}">
+					Agregar
+				</button>
+			</section>
+		</section>
+	</li>
+	`;
+	wrapperCards.innerHTML += RENDERING;
+});
+
+const removeProduct = document.querySelectorAll(".remove-product");
+const addProduct = document.querySelectorAll(".add-product");
+const addProductCart = document.querySelectorAll(".btn-add-to-shopping-cart");
+
+removeProduct.forEach((btnRemove) => {
+	btnRemove.addEventListener(
+		"click",
+		({
+			target: {
+				dataset: { index },
+			},
+		}) => {
+			const counterElement = document.querySelector(
+				`.counter-product[data-index="${index}"]`
+			);
+			const product = PRODUCTS[index];
+			if (product.contador > 0) {
+				product.contador--;
+			}
+			counterElement.textContent = product.contador;
+		}
+	);
+});
+
+addProduct.forEach((btnAdd) => {
+	btnAdd.addEventListener(
+		"click",
+		({
+			target: {
+				dataset: { index },
+			},
+		}) => {
+			const counterElement = document.querySelector(
+				`.counter-product[data-index="${index}"]`
+			);
+			const product = PRODUCTS[index];
+			product.contador++;
+			counterElement.textContent = product.contador;
+		}
+	);
+});
+
+addProductCart.forEach((addCart) => {
+	addCart.addEventListener(
+		"click",
+		({
+			target: {
+				dataset: { index },
+			},
+		}) => {
+			const counterItem = PRODUCTS[index].contador;
+			if (counterItem > 0) {
+				const msg = document.querySelector(
+					`.section-add-item-cart[data-index="${index}"]`
+				);
+				msg.innerHTML = "";
+				msg.innerHTML += `
+				<p class="msg-success" data-index="${index}">Se ha agregado el producto correctamente</p>
+				`;
+				const msgSuccess = document.querySelector(
+					`.msg-success[data-index="${index}"]`
+				);
 				setTimeout(() => {
-					msgSuccessAddItem.style.display = "none";
-					counterItem.textContent = 0;
-					btnAddToShoppingCart.style.display = "block";
-				}, 2200);
-			} else {
-				btnAddToShoppingCart.style.display = "none";
-				if (msgErrorAddItem.style.display === "none") {
-					msgErrorAddItem.style.display = "block";
-				} else {
-					sectionAddItemCart.appendChild(msgErrorAddItem);
-				}
-				sectionAddItemCart.appendChild(msgErrorAddItem);
-				setTimeout(() => {
-					msgErrorAddItem.style.display = "none";
-					btnAddToShoppingCart.style.display = "block";
+					msg.innerHTML = "";
+					msg.appendChild(addCart);
+					PRODUCTS[index].contador = 0;
+					const counterElement = document.querySelector(
+						`.counter-product[data-index="${index}"]`
+					);
+					counterElement.textContent = 0;
 				}, 2500);
 			}
-		});
-	}
-}
-
-mostrarCards();
-
-filterPrice.addEventListener("click", (e) => {
-	e.preventDefault();
-
-	PRODUCTS.forEach((elem) => {
-		if (
-			elem.precio >= priceInicial.value &&
-			elem.precio <= priceFinal.value
-		) {
-			// li.textContent = "";
-			const li = document.createElement("li");
-			li.classList.add("card");
-			wrapperCards.appendChild(li);
-
-			const imgStatus = document.createElement("section");
-			imgStatus.classList.add("sectionImg");
-			li.appendChild(imgStatus);
-
-			const portada = document.createElement("img");
-			portada.classList.add("card-img");
-			portada.src = elem.imagen;
-			imgStatus.appendChild(portada);
-
-			const sectionPadding = document.createElement("section");
-			sectionPadding.classList.add("section-padding");
-			li.appendChild(sectionPadding);
-
-			const contentTitle = document.createElement("div");
-			contentTitle.classList.add("content-title");
-			sectionPadding.appendChild(contentTitle);
-
-			const title = document.createElement("p");
-			title.classList.add("titleCard");
-			title.textContent = elem.nombre;
-			contentTitle.appendChild(title);
-
-			const contentPrice = document.createElement("div");
-			contentPrice.classList.add("contentPriceCard");
-			sectionPadding.appendChild(contentPrice);
-
-			const price = document.createElement("p");
-			price.classList.add("priceCard");
-			price.textContent = `$${elem.precio.toFixed(2)}`;
-			contentPrice.appendChild(price);
-
-			const sectionCounter = document.createElement("section");
-
-			const addItemProduct = document.createElement("button");
-
-			let counterItem = document.createElement("p");
-
-			const removeItemProduct = document.createElement("button");
-
-			sectionPadding.appendChild(sectionCounter);
-
-			addItemProduct.textContent = "+";
-
-			counterItem.textContent = 0;
-
-			removeItemProduct.textContent = "-";
-
-			sectionCounter.classList.add("section-counter");
-
-			sectionCounter.appendChild(removeItemProduct);
-
-			sectionCounter.appendChild(counterItem);
-
-			sectionCounter.appendChild(addItemProduct);
-
-			/* function of carrito de compras */
-
-			addItemProduct.addEventListener("click", () => {
-				counterItem.textContent++;
-			});
-
-			removeItemProduct.addEventListener("click", () => {
-				if (counterItem.textContent > 0) counterItem.textContent--;
-			});
-
-			/* ****** */
-
-			const btnAddToShoppingCart = document.createElement("button");
-
-			btnAddToShoppingCart.textContent = "Agregar";
-
-			btnAddToShoppingCart.classList.add("btn-add-to-shopping-cart");
-
-			const sectionAddItemCart = document.createElement("section");
-			sectionPadding.appendChild(sectionAddItemCart);
-
-			sectionAddItemCart.classList.add("section-add-item-cart");
-
-			sectionAddItemCart.appendChild(btnAddToShoppingCart);
-
-			const msgSuccessAddItem = document.createElement("p");
-			msgSuccessAddItem.textContent =
-				"Se ha agregado el producto al carrito de compras";
-
-			const msgErrorAddItem = document.createElement("p");
-			msgErrorAddItem.textContent =
-				"Por favor, agregue un producto para añadirlo al carrito.";
-
-			btnAddToShoppingCart.addEventListener("click", () => {
-				if (counterItem.textContent > 0) {
-					btnAddToShoppingCart.style.display = "none";
-
-					if (msgSuccessAddItem.style.display === "none") {
-						msgSuccessAddItem.style.display = "block";
-					} else {
-						sectionAddItemCart.appendChild(msgSuccessAddItem);
-					}
-
-					setTimeout(() => {
-						msgSuccessAddItem.style.display = "none";
-
-						counterItem.textContent = 0;
-
-						btnAddToShoppingCart.style.display = "block";
-					}, 2200);
-				} else {
-					btnAddToShoppingCart.style.display = "none";
-
-					if (msgErrorAddItem.style.display === "none") {
-						msgErrorAddItem.style.display = "block";
-					} else {
-						sectionAddItemCart.appendChild(msgErrorAddItem);
-					}
-
-					sectionAddItemCart.appendChild(msgErrorAddItem);
-
-					setTimeout(() => {
-						msgErrorAddItem.style.display = "none";
-
-						btnAddToShoppingCart.style.display = "block";
-					}, 2500);
-				}
-			});
 		}
-	});
+	);
 });
