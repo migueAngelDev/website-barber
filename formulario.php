@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/formulario/style.css" />
+    <script src="https://kit.fontawesome.com/336c091e50.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <section class="section-form">
@@ -42,6 +43,23 @@
 
               <label for="imagen">Sube una foto para agregar a tu foto de perfil.</label>
               <input type="file" id="imagen" name="imagen" required>
+
+              <label for="valoration__output">Califíca tu experiencia</label>
+              <div class="container">
+                <div class="valoration">
+                    <div class="stars__container">
+                        <i class="fa-solid fa-star valoration__star" id="star__1"></i>
+                        <i class="fa-solid fa-star valoration__star" id="star__2"></i>
+                        <i class="fa-solid fa-star valoration__star" id="star__3"></i>
+                        <i class="fa-solid fa-star valoration__star" id="star__4"></i>
+                        <i class="fa-solid fa-star valoration__star" id="star__5"></i>
+                    </div>
+                    <div class="valoration__output">
+                        <input type="number" name="valoration__output" id="valoration__output" value="" autocomplete="off" readonly>
+                    </div>
+                </div>
+            </div>
+            <script src="js/formulario/main.js"></script>
 
               <label for="comentario">Compartenos tu opinión</label>
               <textarea name="comentario" id="comentario" cols="30" rows="10" required></textarea>

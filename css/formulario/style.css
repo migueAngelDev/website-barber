@@ -216,7 +216,7 @@ header {
 
 .form input{
   width: 100%;
-  height: 32px;
+  height: 28px;
   padding: 3px 10px;
   border: 1px solid #f6f6f6;
   border-radius: 8px;
@@ -233,7 +233,7 @@ header {
     
 input[type="file"]#imagen {
   width: 100%;
-  height: 33px;
+  height: 28px;
   opacity: 1S;
   background-color: var(--main-principal-bg);
   }
@@ -251,7 +251,7 @@ input[type="file"]#imagen {
 
 #comentario{
   width: 100%;
-  height: 200px;
+  height: 150px;
   border: 1px solid #f6f6f6;
   border-radius: 8px;
   box-shadow: var(--box-shadow);
@@ -276,6 +276,49 @@ label{
   background-color: var(--color-btn-hover);
   border: var(--color-btn-hover);
 }
+
+/* Estilizado de  */
+
+.container{
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.valoration{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background-color: var(--main-principal-bg);
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  margin-bottom: 30px;
+  justify-content: center;
+    align-items: center;
+}
+
+.valoration__star{
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-text-stroke: 1.5px #000000;
+  -webkit-text-fill-color: transparent;
+  margin-right: 20px;
+}
+
+.valoration__star--active{
+  -webkit-text-fill-color: var(--color-btn-hover);
+
+}
+
+.valoration__output input{
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  opacity: 0;
+}
+
+/*    */
 
 @media screen and (min-width: 841px) and (max-width:920px){
 
