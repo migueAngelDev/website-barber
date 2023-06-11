@@ -1,0 +1,250 @@
+/* @media (max-width: 1200px) {
+  header {
+    padding: auto;
+  }
+
+  .logo_2 {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: auto;
+  }
+
+  .logo_2 {
+    display: inline;
+  }
+
+  .nav-bar {
+    display: none;
+  }
+} */
+
+/* SECCION 1 */
+/* Estilos para dispositivos móviles */
+@media (max-width: 1280px) {
+  .section_home {
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(238, 193, 112, 0.1);
+    padding: 50px 10px;
+  }
+
+  .container-texts {
+    height: auto;
+    width: 90%;
+    gap: 50px;
+  }
+
+  .container-img-home {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .herramienta {
+    display: grid;
+  }
+
+  .herramienta p {
+    display: none;
+  }
+
+  .circle {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* SECCION 2 */
+
+@media (min-width: 720px) {
+  .container-services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .container-services {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1440px) {
+  .container-services {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* SECCION 3 */
+
+@media (max-width: 1280px) {
+  .section-products {
+    height: 80vh;
+  }
+
+  .product-center {
+    margin: 0 auto;
+  }
+
+  .display-none {
+    display: none;
+  }
+
+  .content-product img {
+    height: auto;
+    width: 200px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 450px) {
+  .container-products {
+    flex-flow: column;
+  }
+}
+
+/* SECCION 6 */
+
+@media screen and (max-width: 768px) {
+  .container-horarios {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .content-horarios-img img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+  }
+
+  .horario {
+    margin-bottom: 10px;
+  }
+}
+
+/* SECCION 7*/
+@media (max-width: 1440px) {
+  .container-location {
+    height: auto;
+    padding: 20px;
+  }
+
+  .address {
+    width: 70%;
+    margin-top: 10px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .location-map {
+    width: 70%;
+  }
+
+  .location-map iframe {
+    width: 100%;
+    border-radius: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .address {
+    width: 100%;
+  }
+  .location-map {
+    width: 100%;
+  }
+}
+
+/* SECCION 8 */
+
+@media (max-width: 720px) {
+  .container-reservacione-frases {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* FOOTER */
+
+@media only screen and (max-width: 767px) {
+  .section-products {
+    width: 100%;
+  }
+  .twoColums {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-colum {
+    padding: 10px;
+  }
+
+  .footer-about {
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .footer-about-redes {
+    margin-top: 20px;
+  }
+
+  .container-redes-socials {
+    width: 150px;
+  }
+
+  .item-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .footer-service {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+
+  .footer-service p {
+    margin-top: 10px;
+  }
+
+  .footer-service p:nth-child(n + 5) {
+    grid-column: auto;
+    grid-row: auto;
+    text-align: left;
+  }
+
+  .footer-service p:nth-child(n + 6) {
+    grid-column: auto;
+    grid-row: auto;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .twoColums {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-colum {
+    padding: 15px;
+  }
+
+  .footer-about {
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .footer-about-redes {
+    margin-top: 20px;
+  }
+
+  .container-redes-socials {
+    width: 180px;
+  }
+
+  .item-img {
+    width: 100px;
+    height: 100px;
+  }
+}

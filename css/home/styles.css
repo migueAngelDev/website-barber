@@ -15,6 +15,8 @@
   --iconos: #2c2a2a;
   --box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   --border-radius-5: 5px;
+  --border-radius-10: 10px;
+  --border-radius-100: 100%;
 }
 
 * {
@@ -25,18 +27,24 @@
   font-family: Nunito, sans-serif;
 }
 
+/* Empieza el diseño del menú */
+
 header {
   width: 100%;
   height: 80px;
+  background-color: var(--main-principal-bg);
   box-shadow: var(--box-shadow);
   display: flex;
   align-items: center;
   padding: 0 100px;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .logo {
-  border-radius: 50%;
+  border-radius: var(--border-radius-100);
   width: 70px;
   height: 70px;
   display: flex;
@@ -47,7 +55,7 @@ header {
 .logo img {
   width: 50px;
   height: 50px;
-  border-radius: 50%;
+  border-radius: var(--border-radius-100);
 }
 
 .logo_2 {
@@ -55,6 +63,7 @@ header {
   font-weight: bold;
   color: var(--textos-destacados);
 }
+
 .nav-bar-ul {
   display: flex;
   list-style: none;
@@ -65,7 +74,7 @@ header {
   font-weight: bold;
   color: var(--textos-destacados);
   padding: 10px 50px;
-  border-radius: 50px;
+  border-radius: var(--border-radius-100);
   transition: 0.2s;
   margin: 0 5px;
 }
@@ -107,247 +116,48 @@ header {
 .groups span img {
   width: 20px;
 }
-/* Seccion 1 */
 
-.section_home {
+/* ********************************************* */
+
+/* El botón que se usara para redirige a otras secciones */
+
+/* EL contendor del borton */
+.btn-redirec-center {
   display: flex;
-  height: 100vh;
-  justify-content: space-around;
-  padding: 20px 0;
-}
-
-.container-texts {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: space-between;
-  width: 65%;
-}
-
-.avanced-carrusel {
-  display: flex;
-}
-
-.prhase-llamativa {
-  text-align: center;
-}
-
-.prhase-llamativa h2 {
-  color: var(--textos-titulos-llamativos);
-  letter-spacing: 3px;
-  line-height: 2em;
-}
-
-.texto {
+  justify-content: center;
   align-items: center;
 }
-.texto p {
-  color: var(--textos);
-  line-height: 2em;
-}
 
-.btn-redirec-center {
+.btn-redirec {
   text-align: center;
-}
-
-.btn_home {
-  padding: 8px 15px;
+  padding: 10px 15px;
   border-radius: var(--border-radius-5);
-  border: none;
-  font-size: 0.8em;
+  font-size: 1em;
   background: var(--color-btn);
   box-shadow: var(--box-shadow);
-}
-
-.container-img-home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 25%;
-}
-.container-img-home img {
-  width: 100%;
-  height: 95vh;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.container-herramientas {
-  height: 155px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 100px;
-}
-
-.herramienta {
-  width: 200px;
-  height: 100%;
-}
-
-.herramienta p {
-  margin: 20px 0 40px 0;
-  line-height: 2em;
-}
-
-.circle {
-  width: 80px;
-  height: 80px;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--main-principal-bg);
-  box-shadow: var(--box-shadow);
-  border-radius: 50%;
-}
-
-.circle img {
-  width: 80%;
-}
-
-/* Section 2 */
-/* Titulo */
-
-.section_servicios {
-  margin: 40px 0 0 0;
-}
-
-.title_one {
-  height: 90px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.line {
-  width: 35vw;
-  height: 20px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-
-.title {
-  text-align: center;
-  border-radius: 10px;
-  background: #ffffff;
-  padding: 20px 80px 20px 60px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-
-.title h3 {
-  line-height: 2em;
-  color: #eec170;
-}
-
-/* Servicios */
-
-.servicios {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 40px 0 0 0;
-  overflow: hidden;
-}
-
-.wrapper_detalles {
-  height: 200px;
-  height: 100%;
-}
-
-/* SECCIÓN 2 NUESTROS SERVICIOS */
-.section-services {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  height: 100vh;
-  background-color: var(--main-secondary-bg);
-  text-align: center;
-}
-
-.container-services {
-  height: 90vh;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
-  padding: 30px;
-}
-
-.wrapper-service {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: var(--main-principal-bg);
-  box-shadow: var(--box-shadow);
-  border-radius: var(--border-radius-5);
-}
-
-.img-service {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  box-shadow: var(--box-shadow);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.title-service {
+  color: var(--textos);
   font-weight: var(--font-weight-bold);
 }
 
-.text-service {
-  color: var(--textos);
-  font-weight: var(--font-weight-300);
+/* Tamaño de Ancho para el botón de compartir testimonios */
+
+.redirec-ver-mas {
+  width: 120px;
 }
 
-/* SECCIÓN 3 PRODUCTOS */
-.section-products {
-  height: 100vh;
-  text-align: center;
-  box-shadow: var(--box-shadow);
+.btn-redirec:hover {
+  background: var(--color-btn-hover);
+  color: var(--textos-destacados);
 }
 
-.contedor-padding-30px {
-  padding: 30px;
-  height: 100%;
-}
+/* Aquí termmina el diseño del botón */
 
-.container-products {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.content-product img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-}
-
-.productus-title,
-.contenedor-product-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* section 4 */
-
-.estilos_y_tendencias {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: var(--main-secondary-bg);
-}
+/* Diseño para los titulos de cada sección*/
 
 .header-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
 }
 
 .title-section {
@@ -371,90 +181,389 @@ header {
   background-color: var(--main-principal-bg);
 }
 
-.container-cortes {
+/* Termina el diseño */
+
+/* SECCIÓN 1, PERTENECE AL HOME */
+
+.section_home {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  box-shadow: var(--box-shadow);
+}
+
+.container-texts {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  height: 80vh;
+  text-align: center;
+  justify-content: space-between;
+  width: 65%;
 }
 
-.content-cortes {
-  display: flex;
+.prhase-llamativa {
+  text-align: center;
+}
+
+.prhase-llamativa h2 {
+  color: var(--textos-titulos-llamativos);
+  letter-spacing: 3px;
+  line-height: 2em;
+}
+
+.texto {
   align-items: center;
-  justify-content: space-evenly;
+  font-weight: var(--font-weight-300);
 }
 
-.row {
+.texto p {
+  color: var(--textos);
+  line-height: 2em;
+}
+
+.container-herramientas {
+  height: 155px;
   display: flex;
-  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.herramienta {
+  width: 200px;
+  height: 155px;
+}
+
+.herramienta p {
+  margin-top: 20px;
+  line-height: 2em;
+}
+
+.container-img-home {
+  display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8px 20px;
-  background-color: var(--main-principal-bg);
-  border: none;
-  border-radius: var(--border-radius-5);
+  width: 25%;
 }
-
-.carrusel-cortes {
-  height: 250px;
-  width: 60%;
-  background-color: var(--main-principal-bg);
-  border-radius: var(--border-radius-5);
-  box-shadow: var(--box-shadow);
-}
-
-.container-avanced {
+.container-img-home img {
   width: 100%;
-  margin: 0 auto;
+  height: 95vh;
+  object-fit: cover;
+  border-radius: var(--border-radius-10);
 }
 
-.progress-carrusel {
+.circle {
+  width: 80px;
+  height: 80px;
+  margin: auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  background: var(--main-principal-bg);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius-100);
 }
 
-.avanced-carrusel {
-  height: 10px;
-  width: 50px;
+.circle img {
+  width: 70%;
+  object-fit: cover;
+}
+
+/* SECCIÓN 2, PERTENECE A LOS SERVICIOS DE LA BARBERÍA */
+
+.section-services {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: var(--main-secondary-bg);
+}
+
+.container-services {
+  display: grid;
+  grid-gap: 50px;
+  padding: 30px 35px 0 35px;
+}
+
+.wrapper-service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 280px;
+  padding: 20px;
+  text-align: center;
   background-color: var(--main-principal-bg);
-  border-radius: var(--border-radius-5);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius-10);
+}
+
+.img-service {
+  width: 100px;
+  height: 100px;
+  border-radius: var(--border-radius-100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-shadow: var(--box-shadow);
 }
 
-.btn-container {
+.img-service img {
+  object-fit: cover;
+  width: 90%;
+  height: 90%;
+  border-radius: var(--border-radius-100);
+}
+
+.title-service {
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.29);
+  border-top: 1px dashed rgba(0, 0, 0, 0.29);
+}
+
+.text-service {
+  color: var(--textos);
+  font-weight: var(--font-weight-300);
+  width: 100%;
+  height: 60px;
+}
+
+/* SECCIÓN 3 PRODUCTOS */
+
+.section-products {
+  height: 100vh;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+}
+
+.contedor-padding-30px {
+  flex-direction: column;
+  display: flex;
+  padding: 30px;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.container-products {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-product img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.productus-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* SECCIÓN 4 QUE PERTENECE A LOS ESTILOS Y TENDENCIAS*/
+
+.estilos_y_tendencias {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--main-secondary-bg);
+}
+
+/*SWIPER*/
+
+.age-category {
+  overflow-x: hidden;
+  padding: 30px;
+}
+
+.swiper-wrapper .swiper-slide {
   display: flex;
   justify-content: center;
 }
 
-.btn-redirec {
-  border: none;
+.swiper-hairstyles {
   border-radius: var(--border-radius-5);
-  cursor: pointer;
-  padding: 5px 25px;
-  font-size: 1em;
-  background-color: var(--color-btn);
+  overflow: hidden;
+  position: relative;
+  padding: 3.125rem 0px 3.125rem 0px;
+  background-color: var(--main-principal-bg);
+  box-shadow: var(--box-shadow);
+}
+
+.swiper-hairstyles .swiper-button-prev,
+.swiper-hairstyles .swiper-button-next {
+  --swiper-navigation-size: 1.25rem;
+  color: var(--main-principal-bg);
+  background-color: #000000;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: var(--border-radius-5);
+  margin-top: -1.25rem;
+  position: absolute;
+}
+
+.swiper-hairstyles .swiper-pagination {
+  --swiper-pagination-color: var(--color-btn);
+  position: absolute;
+}
+
+/* LA TARJETA QUE CONTIENE LAS IMAGNES */
+
+.hairstyles-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: transparent;
+  border-radius: 20px;
+  margin-bottom: 3.125rem;
+  gap: 1.875rem;
+}
+
+.hairstyle-file {
+  width: 50%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 2.5rem 1.875rem;
+  position: relative;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.hairstyle-image {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.hairstyle-img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.hairstyle-file p {
+  color: #000000;
+  font-size: 1.125rem;
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+}
+
+/* SECCION 5 QUE PERTENECE A LOS TESTIMONIOS */
+.testimonios {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: var(--main-principal-bg);
+  text-align: justify;
+  padding: 30px 0;
+}
+
+.container-testimonios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 50px 100px;
+  grid-gap: 80px;
+}
+
+.wrapper-testimonios {
+  height: 270px;
+  padding: 20px 20px 40px 20px;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius-5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.wrapper-testimonios-credenciales {
+  box-shadow: var(--box-shadow);
+  padding: 10px;
+  border-radius: var(--border-radius-5);
+}
+
+.wrapper-testimonios-credenciales,
+.credenciales,
+.valoracion-testimonios,
+.img-testimonios {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.credenciales {
+  width: 150px;
+}
+
+.names-testimonios {
+  font-weight: var(--font-weight-bold);
+  width: 90px;
+}
+
+.testimonio-comentario {
+  line-height: 25px;
+  height: auto;
   color: var(--textos);
   box-shadow: var(--box-shadow);
+  padding: 10px;
+  border-radius: var(--border-radius-5);
 }
 
-/* SECCION 5 TESTIMONIOS */
-.testimonios {
-  height: 100vh;
+.img-testimonios img {
+  width: 50px;
+  height: 50px;
+  border-radius: var(--border-radius-100);
+}
+
+/* Estilos responsivos */
+
+@media (max-width: 1024px) {
+  .container-testimonios {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px;
+    grid-gap: 40px;
+  }
+
+  .wrapper-testimonios {
+    height: auto;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-testimonios {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    grid-gap: 20px;
+  }
 }
 
 /* Sección 6 de Horarios de atención */
 
 .section-horarios {
   background-color: var(--main-secondary-bg);
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 30px 0;
 }
 
 .container-horarios {
-  display: flex;
-  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 30px 30px 0;
   font-weight: var(--font-weight-bold);
 }
 
@@ -471,7 +580,6 @@ header {
 }
 
 .content-horarios {
-  width: 50%;
   padding: 20px;
   background-color: var(--main-principal-bg);
   border-radius: var(--border-radius-5);
@@ -490,7 +598,6 @@ header {
 }
 
 .content-horarios-img {
-  width: 50%;
   display: flex;
   justify-content: end;
 }
@@ -503,26 +610,34 @@ header {
   box-shadow: var(--box-shadow);
 }
 
-/* Seccion 7, Ubicación */
+/* SECCIÓN 7 UBICACIONES */
 .section-location {
-  /* height: 100vh; */
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  padding: 30px 0 0;
+}
+
+.container-location-30px {
+  padding: 30px;
 }
 
 .container-location {
-  height: 100vh;
+  height: 80vh;
   flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   font-weight: var(--font-weight-bold);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius-10);
 }
 
 .location-map iframe {
   border-radius: var(--border-radius-5);
   box-shadow: var(--box-shadow);
+  width: 700px;
+  height: 300px;
 }
 
 .address {
@@ -542,25 +657,24 @@ header {
   color: var(--textos);
 }
 
-/* Seccion 8, Reservaciones */
+/* SECCION 8 RESERVACIONES*/
 
 .section-reservaciones {
-  height: 100vh;
   background-color: var(--main-secondary-bg);
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   text-align: center;
+  padding: 30px 0;
 }
 
 .container-reservacione-frases {
-  height: 80vh;
+  margin-top: 30px;
   display: grid;
   grid-template-columns: 2fr 3fr;
   grid-gap: 80px;
   padding: 50px 30px;
   background-color: var(--main-principal-bg);
-  border-radius: var(--border-radius-5);
 }
 
 .wrapper-frase {
@@ -575,8 +689,8 @@ header {
 }
 
 .wrapper-frase-btn {
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .wrapper-frase-btn button {
@@ -590,20 +704,119 @@ header {
 /* footer */
 
 .footerbarber {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #000;
+  color: #f2f2f2;
 }
 
 .twoColums {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 0.45fr 0.55fr;
+  grid-gap: 50px;
 }
 
 .footer-colum {
-  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
 }
 
-.footer-about img {
-  width: 100px;
-  height: 100px;
+.one-colum {
+  text-align: center;
+}
+
+.footer-about-title {
+  font-weight: var(--font-weight-bold);
+}
+
+.footer-about {
+  height: 360px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-about-redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-redes-socials {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.item-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: var(--box-shadow);
+}
+
+.two-colum {
+  text-align: justify;
+}
+
+.footer-testimonios-valoracion {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.footer-testimonios-valoracion a {
+  margin-left: 20px;
+}
+
+.star-link i {
+  color: #000000;
+  transition: color 0.3s;
+  font-size: 20px;
+  text-shadow: 0 0 3px gold;
+}
+
+.star-link:hover i {
+  color: var(--color-btn-hover);
+  text-shadow: none;
+}
+
+.footer-testimonios-text p {
+  margin-bottom: 20px;
+}
+
+.section-copyright {
+  padding: 20px;
+  display: grid;
+  place-items: center;
+}
+
+.footer-service {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.titleservice {
+  margin-top: 30px;
+}
+
+.footer-service p {
+  margin-top: 30px;
+  grid-column: 1;
+}
+
+.footer-service p:nth-child(n + 5) {
+  grid-column: 2;
+  grid-row: 1;
+  text-align: end;
+}
+
+.footer-service p:nth-child(n + 6) {
+  grid-column: 2;
+  grid-row: 2;
+  text-align: end;
 }
