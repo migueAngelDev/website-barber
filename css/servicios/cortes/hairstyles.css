@@ -53,7 +53,7 @@
 }
 
 .category-list .category-gender{
-    width: 15%;
+    width: 12.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,6 +74,12 @@
 .category-list .category-gender-active{
     box-shadow: none;
     outline: 2px solid #000000;
+    background-color: #000000;
+    color: #fff;
+}
+
+.category-list .category-gender-active img{
+    filter: invert(1);
 }
 
 .select-gender{
@@ -81,55 +87,10 @@
     font-size: 1.5rem;
 }
 
-/*LISTA DE SUBGÉNEROS (CABELLO-BARBA)*/
-
-.subcategory-list{
-    width: 100%;
-    display: flex;
-    border-radius: 20px;
-    margin-bottom: 3.125rem;
-    background-color: #5B3924;
-    display: flex;
-    flex-direction: column;
-}
-
-.subcategory-list-group{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.subcategory-list .subcategory-gender{
-    width: 20%;
-    height: 40%;
-    margin: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    background-color: #fff;
-    color: #5B3924;
-    border-radius: 20px;
-    padding: 10px;
-}
-
-.subcategory-list .subcategory-gender-shadow:hover{
-    box-shadow: 0px 0px 20px 0px rgb(255, 255, 255);
-}
-
-.subcategory-list .subcategory-gender img{
-    width: 35px;
-    height: 50px;
-    margin-right: 15px;
-}
-
-.subcategory-list .subcategory-gender-active{
-    box-shadow: 0px 0px 10px 8px #CDA434;
-}
 
 /*TITULO*/
 .main-hairstyles h1{
-    font-size: 28px;
+    font-size: 1.75rem;
     color: var(--textos-titulos-llamativos);
     text-align: center;
     margin-bottom: 6.25rem;
@@ -149,6 +110,7 @@
     transform: translate(0%, -50%);
     font-size: 1.125rem;
     font-weight: 500;
+    text-align: center;
     border: none;
     cursor: pointer;
 }
@@ -201,6 +163,14 @@
     position: absolute;
 }
 
+.swiper-scrollbar{
+    display: none;
+}
+
+.swiper-scrollbar-drag{
+    background: var(--color-btn) !important;
+}
+
 /*LISTA DE CORTES*/
 
 .hairstyles-container{
@@ -215,7 +185,7 @@
 }
 
 .hairstyle-file{
-    width: 50%;
+    width: 60%;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -243,6 +213,7 @@
     font-size: 1.125rem;
     font-weight: var(--font-weight-bold);
     text-align: center;
+    white-space: nowrap;
 }
 
 .hairstyle-file p{
@@ -293,6 +264,10 @@
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
 }
 
+.hairstyle-type h3{
+    text-align: center;
+}
+
 .hairstyle-type img{
     width: 28px;
     transform: var(--rotate-icon, rotate(-90deg));
@@ -335,6 +310,8 @@
 
 .hairstyle-card-name{
     font-size: 1.125rem;
+    text-align: center;
+    white-space: nowrap;
 }
 
 
@@ -360,4 +337,136 @@
 .gallery-list li{
     display: block;
     width: 20%;
+}
+
+
+@media screen and (max-width: 1080px) {
+
+    *{
+        font-size: 15px;
+    }
+
+    .category-list .category-gender{
+        font-size: 1rem;
+    }
+
+    .main-info{
+        padding: 0px 20px;
+    }
+
+    .hairstyle-file{
+        width: 65%;
+        padding: 1.875rem 1.25rem;
+    }
+
+    .gallery-list{
+        gap: 2rem;
+    }
+
+    .gallery-list li{
+        width: 30%;
+    }
+}
+
+
+@media screen and (max-width: 868px){
+    .category-list .category-gender{
+        width: 10rem;
+    }
+
+    .hairstyle-file{
+        width: 90%;
+    }
+
+    .swiper-hairstyles .swiper-button-prev, .swiper-hairstyles .swiper-button-next, .swiper-hairstyles .swiper-pagination{
+        display: none;
+    }
+
+    .swiper-scrollbar{
+        display: block;
+    }
+
+    .main-hairstyles h1{
+        margin-bottom: 3.125rem;
+    }
+
+    .gallery-hairstyles{
+        box-shadow: none;
+    }
+
+    .options-filter{
+        flex-wrap: wrap;
+        gap: 1.25rem;
+    }
+
+    .ages-filter{
+        position: relative;
+        inset: 0 0 0 0;
+        transform: none;
+        height: fit-content;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .hairstyle-options{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 675px){
+    .gallery-list li{
+        width: 40%;
+    }
+
+    .category-list{
+        flex-wrap: wrap;
+    }
+
+    .select-gender{
+        order: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1.25rem;
+    }
+
+    .category-gender:nth-of-type(1){
+        order: 1;
+    }
+
+    .category-gender:nth-of-type(2){
+        order: 2;
+    }
+
+    .gallery-container{
+        padding: 1.25rem 0rem;
+    }
+
+}
+
+@media screen and (max-width: 576px){
+
+    .gallery-list{
+        padding: 1.25rem .125rem;
+        gap: .675rem;
+    }
+
+    .gallery-list li{
+        width: 45%;
+    }
+
+    .hairstyle-card{
+        padding: 1.875rem 1.25rem;
+    }
+
+}
+
+@media screen and (max-width: 420px){
+    .category-list{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .select-gender{
+        margin-bottom: 0rem;
+    }
 }

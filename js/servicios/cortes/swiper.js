@@ -4,7 +4,13 @@ const swiper_hairstyles = new Swiper('.swiper-hairstyles', {
     loop: false,
     //uniqueNavElements: true,
     effect: 'slide',
-    slidesPerView: 3,
+    slidesPerView: 2,
+
+    breakpoints: {
+      576: {
+        slidesPerView: 3,
+      },
+    },
 
     pagination: {
         el: '.swiper-pagination',
@@ -14,5 +20,9 @@ const swiper_hairstyles = new Swiper('.swiper-hairstyles', {
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+    },
+
+    scrollbar: {
+      el: '.swiper-scrollbar',
     },
   });

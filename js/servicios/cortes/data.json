@@ -131,7 +131,7 @@
             "age": "adulto",
             "type": "lacio",
             "img": "imgs/servicios/cortes/hairstyles/womens_hairstyles.jpg",
-            "name": "Corte bob",
+            "name": "Bob",
             "description": "Corte recto en la mandíbula con flequillo recto o lateral.",
             "price": "$100"
         },
@@ -140,7 +140,7 @@
             "age": "adulto",
             "type": "lacio",
             "img": "imgs/servicios/cortes/hairstyles/womens_hairstyles.jpg",
-            "name": "Corte pixie",
+            "name": "Pixie",
             "description": "Corte corto y con textura, que a menudo incluye capas y flequillo.",
             "price": "$100"
         },
@@ -149,7 +149,7 @@
             "age": "adulto",
             "type": "lacio",
             "img": "imgs/servicios/cortes/hairstyles/womens_hairstyles.jpg",
-            "name": "Corte degradado",
+            "name": "Degradado",
             "description": "Corte que comienza más corto en la nuca y se va alargando hacia la parte superior de la cabeza.",
             "price": "$100"
         },
@@ -158,7 +158,7 @@
             "age": "adulto",
             "type": "ondulado",
             "img": "imgs/servicios/cortes/hairstyles/womens_hairstyles.jpg",
-            "name": "Corte shag",
+            "name": "Shag",
             "description": "Corte con capas desordenadas y textura que a menudo se complementa con flequillo largo y despeinado.",
             "price": "$100"
         },
@@ -167,7 +167,7 @@
             "age": "adulto",
             "type": "ondulado",
             "img": "imgs/servicios/cortes/hairstyles/womens_hairstyles.jpg",
-            "name": "Corte recto",
+            "name": "Recto",
             "description": "Corte recto que no tiene capas y generalmente llega hasta los hombros.",
             "price": "$100"
         },
