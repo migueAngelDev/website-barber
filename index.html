@@ -7,6 +7,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="./css/home/styles.css" />
     <link rel="stylesheet" href="./css/home/stylesResponsive.css" />
+    <link rel="stylesheet" href="./css/servicios/cortes/hairstyles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -69,7 +70,11 @@
           </p>
         </div>
         <div class="btn-redirec-center">
-          <a class="btn-redirec" href="#">Agendar una cita</a>
+          <a
+            class="btn-redirec"
+            href="https://api.whatsapp.com/send?phone=9212333178&text=Me gustaría solicitar una cita, por favor. Agradezco su atención."
+            >Agendar una cita</a
+          >
         </div>
         <div class="container-herramientas">
           <div class="herramienta">
@@ -108,7 +113,6 @@
         />
       </div>
     </section>
-
     <!-- SECCIÓN 2 NUESTROS SERVICIOS -->
     <section class="section-services">
       <div class="header-section">
@@ -118,144 +122,7 @@
         </div>
         <span class="line"></span>
       </div>
-      <div class="container-services">
-        <div class="wrapper-service">
-          <div class="img-service">
-            <img
-              src="./imgs/home/section-servicios/vista-primer-plano.jpg"
-              alt=""
-            />
-          </div>
-          <div class="title-service">
-            <p>Cortes de cabello</p>
-          </div>
-          <div class="text-service">
-            <p>
-              Ofrecemos cortes de cabello personalizados, tomando en cuenta sus
-              necesidades y preferencias.
-            </p>
-          </div>
-        </div>
-        <div class="wrapper-service">
-          <div class="img-service">
-            <img
-              src="./imgs/home/section-servicios/vista-posterior.jpg"
-              alt=""
-            />
-          </div>
-          <div class="title-service">
-            <p>Permanentes</p>
-          </div>
-          <div class="text-service">
-            <p>
-              Ofrecemos servicios de permanentes para rizar el cabello de forma
-              duradera y natural.
-            </p>
-          </div>
-        </div>
-        <div class="wrapper-service">
-          <div class="img-service">
-            <img
-              src="./imgs/home/section-servicios/vista-primer-plano.jpg"
-              alt=""
-            />
-          </div>
-          <div class="title-service">
-            <p>Líneas</p>
-          </div>
-          <div class="text-service">
-            <p>
-              Ofrecemos servicios de arreglo de líneas de barba, patillas y nuca
-              para hombres.
-            </p>
-          </div>
-        </div>
-        <div class="wrapper-service">
-          <div class="img-service">
-            <img
-              src="./imgs/home/section-servicios/vista-posterior.jpg"
-              alt=""
-            />
-          </div>
-          <div class="title-service">
-            <p>Limpieza de cejas</p>
-          </div>
-          <div class="text-service">
-            <p>
-              Ofrecemos servicios de diseño y arreglo de cejas para lucir unas
-              cejas perfectas y definidas.
-            </p>
-          </div>
-        </div>
-        <div class="wrapper-service">
-          <div class="img-service">
-            <img
-              src="./imgs/home/section-servicios/vista-primer-plano.jpg"
-              alt=""
-            />
-          </div>
-          <div class="title-service">
-            <p>pestañas</p>
-          </div>
-          <div class="text-service">
-            <p>
-              Si deseas lucir pestañas más largas, espesas y definidas,
-              ofrecemos servicios de extenciones de pestañas.
-            </p>
-          </div>
-        </div>
-        <div class="wrapper-service">
-          <div class="img-service">
-            <img
-              src="./imgs/home/section-servicios/vista-posterior.jpg"
-              alt=""
-            />
-          </div>
-          <div class="title-service">
-            <p>Manicure</p>
-          </div>
-          <div class="text-service">
-            <p>
-              Ofrecemos servicios de manicure que incluyen limido, limpieza,
-              tratamiento e hidratación.
-            </p>
-          </div>
-        </div>
-        <div class="wrapper-service">
-          <div class="img-service">
-            <img
-              src="./imgs/home/section-servicios/vista-primer-plano.jpg"
-              alt=""
-            />
-          </div>
-          <div class="title-service">
-            <p>Barba</p>
-          </div>
-          <div class="text-service">
-            <p>
-              Para los amantes de la barba, ofrecemos servicios de corte,
-              afeitado, diseño de barba y bigote.
-            </p>
-          </div>
-        </div>
-        <div class="wrapper-service">
-          <div class="img-service">
-            <img
-              src="./imgs/home/section-servicios/vista-posterior.jpg"
-              alt=""
-            />
-          </div>
-          <div class="title-service">
-            <p>Tintes</p>
-          </div>
-          <div class="text-service">
-            <p>
-              Si buscas un cambio de imagen, te ofrecemos servicios de tintes de
-              cabello para darle un nuevo estilo.
-            </p>
-          </div>
-        </div>
-      </div>
+      <div class="container-services" id="container-services"></div>
     </section>
     <!-- SECCIÓN 3 PRODUCTOS -->
     <section class="section-products">
@@ -293,7 +160,9 @@
             />
           </div>
           <div class="btn-redirec-center product-center">
-            <a class="btn-redirec redirec-ver-mas" href="#">Ver más</a>
+            <a class="btn-redirec redirec-ver-mas" href="products.html"
+              >Ver más</a
+            >
           </div>
           <div class="content-product display-none">
             <p>Fijador En Gel Para Cabello</p>
@@ -306,7 +175,6 @@
         </div>
       </div>
     </section>
-
     <!-- SECCIÓN 4 ESTILOS Y TENDENCIAS-->
     <section class="estilos_y_tendencias">
       <div class="header-section">
@@ -319,96 +187,24 @@
 
       <section class="age-category">
         <div class="swiper-hairstyles">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="hairstyle-file">
-                <div class="hairstyle-image">
-                  <img
-                    class="hairstyle-img"
-                    src="imgs/home/section-servicios/vista-posterior.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="swiper-slide-title">
-                  <p>Corte de cabello</p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="hairstyle-file">
-                <div class="hairstyle-image">
-                  <img
-                    class="hairstyle-img"
-                    src="imgs/home/section-servicios/vista-primer-plano.jpg"
-                    alt=""
-                  />
-                </div>
-                <p>Corte de cabello</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="hairstyle-file">
-                <div class="hairstyle-image">
-                  <img
-                    class="hairstyle-img"
-                    src="imgs/servicios/cortes/hombre/texturizado.jpg"
-                    alt=""
-                  />
-                </div>
-                <p>Corte de cabello</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="hairstyle-file">
-                <div class="hairstyle-image">
-                  <img
-                    class="hairstyle-img"
-                    src="imgS/home/section-servicios/vista-posterior.jpg"
-                    alt=""
-                  />
-                </div>
-                <p>Corte de cabello</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="hairstyle-file">
-                <div class="hairstyle-image">
-                  <img
-                    class="hairstyle-img"
-                    src="imgs/home/section-servicioS/vista-primer-plano.jpg"
-                    alt=""
-                  />
-                </div>
-                <p>Corte de cabello</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="hairstyle-file">
-                <div class="hairstyle-image">
-                  <img
-                    class="hairstyle-img"
-                    src="imgs/servicios/cortes/hombre/texturizado.jpg"
-                    alt=""
-                  />
-                </div>
-                <p>Corte de cabello</p>
-              </div>
-            </div>
-          </div>
+          <div class="swiper-wrapper" id="swiper-wrapper"></div>
 
           <div class="swiper-pagination"></div>
 
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
+          <div class="swiper-scrollbar"></div>
         </div>
       </section>
 
       <div class="btn-redirec-center">
-        <a class="btn-redirec redirec-ver-mas" href="#">Ver más</a>
+        <a class="btn-redirec redirec-ver-mas" href="hairstyles.html"
+          >Ver más</a
+        >
       </div>
     </section>
     <!-- SECCIÓN 5 TESTIMONIOS -->
-    <!--  <section class="testimonios">
+    <section class="testimonios">
       <div class="header-section">
         <span class="line"></span>
         <div class="title-section">
@@ -416,192 +212,11 @@
         </div>
         <span class="line"></span>
       </div>
-      <div class="container-testimonios">
-        <div class="wrapper-testimonios">
-          <div class="wrapper-testimonios-credenciales">
-            <div class="credenciales">
-              <div class="img-testimonios">
-                <img
-                  src="./imgs/home/section-servicios/vista-posterior.jpg"
-                  alt=""
-                  srcset=""
-                />
-              </div>
-              <div class="names-testimonios">
-                <p>Alexandra</p>
-              </div>
-            </div>
-            <div class="valoracion-testimonios">
-              <img src="/svg/star.svg" alt="Puntaje 1" />
-              <img src="/svg/star.svg" alt="Puntaje 2" />
-              <img src="/svg/star.svg" alt="Puntaje 3" />
-              <img src="/svg/star.svg" alt="Puntaje 4" />
-              <img src="/svg/star.svg" alt="Puntaje 5 " />
-            </div>
-          </div>
-          <div class="testimonio-comentario">
-            <p>
-              La mejor experiencia en una barbería que he tenido. El personal es
-              amable y experto en su trabajo. Me encantó mi corte de pelo,
-              definitivamente regresaré.
-            </p>
-          </div>
-        </div>
-        <div class="wrapper-testimonios">
-          <div class="wrapper-testimonios-credenciales">
-            <div class="credenciales">
-              <div class="img-testimonios">
-                <img
-                  src="./imgs/home/section-servicios/vista-posterior.jpg"
-                  alt=""
-                  srcset=""
-                />
-              </div>
-              <div class="names-testimonios">
-                <p>Elizabeth</p>
-              </div>
-            </div>
-            <div class="valoracion-testimonios">
-              <img src="/svg/star.svg" alt="Puntaje 1" />
-              <img src="/svg/star.svg" alt="Puntaje 2" />
-              <img src="/svg/star.svg" alt="Puntaje 3" />
-              <img src="/svg/star.svg" alt="Puntaje 4" />
-              <img src="/svg/star.svg" alt="Puntaje " />
-            </div>
-          </div>
-          <div class="testimonio-comentario">
-            <p>
-              Me encanta la atención personalizada que recibo en esta barbería.
-              Siempre se toman el tiempo para entender exactamente lo que quiero
-              y me aseguran de que salga feliz.
-            </p>
-          </div>
-        </div>
-        <div class="wrapper-testimonios">
-          <div class="wrapper-testimonios-credenciales">
-            <div class="credenciales">
-              <div class="img-testimonios">
-                <img
-                  src="./imgs/home/section-servicios/vista-posterior.jpg"
-                  alt=""
-                  srcset=""
-                />
-              </div>
-              <div class="names-testimonios">
-                <p>Rex</p>
-              </div>
-            </div>
-            <div class="valoracion-testimonios">
-              <img src="/svg/star.svg" alt="Puntaje 1" />
-              <img src="/svg/star.svg" alt="Puntaje 2" />
-              <img src="/svg/star.svg" alt="Puntaje 3" />
-              <img src="/svg/star.svg" alt="Puntaje 4" />
-              <img src="/svg/star.svg" alt="Puntaje " />
-            </div>
-          </div>
-          <div class="testimonio-comentario">
-            <p>
-              No puedo decir suficientes cosas buenas sobre esta barbería.
-              Siempre me tratan bien y me hacen sentir como en casa. Además, mi
-              corte de pelo siempre es perfecto.
-            </p>
-          </div>
-        </div>
-        <div class="wrapper-testimonios">
-          <div class="wrapper-testimonios-credenciales">
-            <div class="credenciales">
-              <div class="img-testimonios">
-                <img
-                  src="./imgs/home/section-servicios/vista-posterior.jpg"
-                  alt=""
-                  srcset=""
-                />
-              </div>
-              <div class="names-testimonios">
-                <p>Alexandra</p>
-              </div>
-            </div>
-            <div class="valoracion-testimonios">
-              <img src="/svg/star.svg" alt="Puntaje 1" />
-              <img src="/svg/star.svg" alt="Puntaje 2" />
-              <img src="/svg/star.svg" alt="Puntaje 3" />
-              <img src="/svg/star.svg" alt="Puntaje 4" />
-              <img src="/svg/star.svg" alt="Puntaje 5 " />
-            </div>
-          </div>
-          <div class="testimonio-comentario">
-            <p>
-              La mejor experiencia en una barbería que he tenido. El personal es
-              amable y experto en su trabajo. Me encantó mi corte de pelo,
-              definitivamente regresaré.
-            </p>
-          </div>
-        </div>
-        <div class="wrapper-testimonios">
-          <div class="wrapper-testimonios-credenciales">
-            <div class="credenciales">
-              <div class="img-testimonios">
-                <img
-                  src="./imgs/home/section-servicios/vista-posterior.jpg"
-                  alt=""
-                  srcset=""
-                />
-              </div>
-              <div class="names-testimonios">
-                <p>Alexandra</p>
-              </div>
-            </div>
-            <div class="valoracion-testimonios">
-              <img src="/svg/star.svg" alt="Puntaje 1" />
-              <img src="/svg/star.svg" alt="Puntaje 2" />
-              <img src="/svg/star.svg" alt="Puntaje 3" />
-              <img src="/svg/star.svg" alt="Puntaje 4" />
-              <img src="/svg/star.svg" alt="Puntaje 5 " />
-            </div>
-          </div>
-          <div class="testimonio-comentario">
-            <p>
-              La mejor experiencia en una barbería que he tenido. El personal es
-              amable y experto en su trabajo. Me encantó mi corte de pelo,
-              definitivamente regresaré.
-            </p>
-          </div>
-        </div>
-        <div class="wrapper-testimonios">
-          <div class="wrapper-testimonios-credenciales">
-            <div class="credenciales">
-              <div class="img-testimonios">
-                <img
-                  src="./imgs/home/section-servicios/vista-posterior.jpg"
-                  alt=""
-                  srcset=""
-                />
-              </div>
-              <div class="names-testimonios">
-                <p>Alexandra</p>
-              </div>
-            </div>
-            <div class="valoracion-testimonios">
-              <img src="/svg/star.svg" alt="Puntaje 1" />
-              <img src="/svg/star.svg" alt="Puntaje 2" />
-              <img src="/svg/star.svg" alt="Puntaje 3" />
-              <img src="/svg/star.svg" alt="Puntaje 4" />
-              <img src="/svg/star.svg" alt="Puntaje 5 " />
-            </div>
-          </div>
-          <div class="testimonio-comentario">
-            <p>
-              La mejor experiencia en una barbería que he tenido. El personal es
-              amable y experto en su trabajo. Me encantó mi corte de pelo,
-              definitivamente regresaré.
-            </p>
-          </div>
-        </div>
-      </div>
+      <div class="container-testimonios" id="container-testimonios"></div>
       <div class="btn-redirec-center">
-        <a class="btn-redirec" href="#">Compartenos tu opinión</a>
+        <a class="btn-redirec" href="formulario.php">Compartenos tu opinión</a>
       </div>
-    </section> -->
+    </section>
     <!-- SECCION 6 HORARIOS DE ATENCIÓN -->
     <section class="section-horarios">
       <div class="header-section">
@@ -663,7 +278,11 @@
           </div>
           <div class="address">
             <img src="./svg/location.svg" alt="" />
-            <a href="">General Anaya #634, Rancho Alegre II</a>
+            <a
+              href="https://www.google.com/maps?ll=18.130333,-94.472325&z=16&t=m&hl=es&gl=MX&mapclient=embed&q=Calle+Gral+Anaya+634+km+8+96538+Coatzacoalcos,+Ver."
+              target="_blank"
+              >General Anaya #634, Rancho Alegre II</a
+            >
           </div>
         </div>
       </div>
@@ -703,7 +322,11 @@
           </p>
         </div>
         <div class="btn-redirec-center">
-          <a class="btn-redirec" href="#">Agendar una cita</a>
+          <a
+            class="btn-redirec"
+            href="https://api.whatsapp.com/send?phone=9212333178&text=Me gustaría solicitar una cita, por favor. Agradezco su atención."
+            >Agendar una cita</a
+          >
         </div>
       </div>
     </section>
@@ -753,22 +376,23 @@
         <div class="footer-colum two-colum">
           <div class="footer-testimonios-valoracion">
             <p class="footer-about-title">Compártenos tu valoración</p>
-            <a href="#" class="star-link">
-              <i class="fas fa-star fa-3x fa-spin"></i>
+            <a href="" class="star-link">
+              <i class="fas fa-star fa-3x"></i>
             </a>
             <a href="#" class="star-link">
               <i class="fas fa-star fa-3x"></i>
             </a>
             <a href="#" class="star-link">
-              <i class="fas fa-star fa-3x fa-spin"></i>
+              <i class="fas fa-star fa-3x"></i>
             </a>
             <a href="#" class="star-link">
               <i class="fas fa-star fa-3x"></i>
             </a>
             <a href="#" class="star-link">
-              <i class="fas fa-star fa-3x fa-spin"></i>
+              <i class="fas fa-star fa-3x"></i>
             </a>
           </div>
+
           <div class="footer-testimonios-text">
             <p>
               Es importante para nosotros recibir las opiniones y calificaciones
@@ -809,5 +433,7 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
     <script src="js/servicios/cortes/swiper.js"></script>
+
+    <script src="js/home/home.js"></script>
   </body>
 </html>

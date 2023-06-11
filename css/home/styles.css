@@ -25,6 +25,7 @@
   text-decoration: none;
   box-sizing: border-box;
   font-family: Nunito, sans-serif;
+  object-fit: cover;
 }
 
 /* Empieza el diseño del menú */
@@ -264,7 +265,6 @@ header {
 
 .circle img {
   width: 70%;
-  object-fit: cover;
 }
 
 /* SECCIÓN 2, PERTENECE A LOS SERVICIOS DE LA BARBERÍA */
@@ -307,7 +307,6 @@ header {
 }
 
 .img-service img {
-  object-fit: cover;
   width: 90%;
   height: 90%;
   border-radius: var(--border-radius-100);
@@ -358,7 +357,6 @@ header {
 .content-product img {
   width: 200px;
   height: 200px;
-  object-fit: cover;
 }
 
 .productus-title {
@@ -375,88 +373,6 @@ header {
   flex-direction: column;
   justify-content: space-between;
   background: var(--main-secondary-bg);
-}
-
-/*SWIPER*/
-
-.age-category {
-  overflow-x: hidden;
-  padding: 30px;
-}
-
-.swiper-wrapper .swiper-slide {
-  display: flex;
-  justify-content: center;
-}
-
-.swiper-hairstyles {
-  border-radius: var(--border-radius-5);
-  overflow: hidden;
-  position: relative;
-  padding: 3.125rem 0px 3.125rem 0px;
-  background-color: var(--main-principal-bg);
-  box-shadow: var(--box-shadow);
-}
-
-.swiper-hairstyles .swiper-button-prev,
-.swiper-hairstyles .swiper-button-next {
-  --swiper-navigation-size: 1.25rem;
-  color: var(--main-principal-bg);
-  background-color: #000000;
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: var(--border-radius-5);
-  margin-top: -1.25rem;
-  position: absolute;
-}
-
-.swiper-hairstyles .swiper-pagination {
-  --swiper-pagination-color: var(--color-btn);
-  position: absolute;
-}
-
-/* LA TARJETA QUE CONTIENE LAS IMAGNES */
-
-.hairstyles-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  background-color: transparent;
-  border-radius: 20px;
-  margin-bottom: 3.125rem;
-  gap: 1.875rem;
-}
-
-.hairstyle-file {
-  width: 50%;
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  text-align: center;
-  border-radius: 10px;
-  padding: 2.5rem 1.875rem;
-  position: relative;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-}
-
-.hairstyle-image {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
-.hairstyle-img {
-  width: 100%;
-  border-radius: 5px;
-}
-
-.hairstyle-file p {
-  color: #000000;
-  font-size: 1.125rem;
-  font-weight: var(--font-weight-bold);
-  text-align: center;
 }
 
 /* SECCION 5 QUE PERTENECE A LOS TESTIMONIOS */
@@ -518,6 +434,7 @@ header {
   box-shadow: var(--box-shadow);
   padding: 10px;
   border-radius: var(--border-radius-5);
+  font-weight: var(--font-weight-bold);
 }
 
 .img-testimonios img {
@@ -605,7 +522,6 @@ header {
 .content-horarios-img img {
   width: 350px;
   height: 80vh;
-  object-fit: cover;
   border-radius: var(--border-radius-5);
   box-shadow: var(--box-shadow);
 }
