@@ -303,3 +303,32 @@ main {
     align-items: center;
     margin-top: 20px;
 }
+
+
+.not-found-item {
+	display: flex;
+	align-items: center;
+	background-color: #fff;
+}
+
+.not-found-item p{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--textos);
+    font-weight: bold;
+    box-shadow: var(--box-shadow);
+	padding: 20px;
+	border-radius:var(--border-radius-5)
+}
+
+
+.list-items-products{
+	background-color: #fff;
+	border: 1px solid #000;
+	height: 100px;
+    width: 220px;
+    position: absolute;
+    top: 330px;
+    right: 15px;
+
+}
