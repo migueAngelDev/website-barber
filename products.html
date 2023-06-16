@@ -50,66 +50,76 @@
 		</header>
 		<main>
 			<section class="section-filters">
-				<div class="filter-prices">
-					<h4>Escoge tu rango de precio</h4>
-					<div class="filter-price">
-						<p>$</p>
-						<input
-							type="tel"
-							id="priceMin"
-                            placeholder="Mínimo"
-							min="0"
-							step="50"
-						/>
-						<h5>-</h5>
-						<p>$</p>
-						<input
-							type="tel"
-							id="priceMax"
-                            placeholder="Máximo"
-							min="0"
-							step="50"
-						/>
-					</div>
-					<button id="filter-price">Buscar</button>
-					<button id="filter-reset">resetear</button>
-
-				</div>
-				<div class="filter-search">
-					<input
-						type="search"
-						id="search-item"
-						placeholder="Buscar productos..."
-						autocomplete="off"
-					/>
-					<div class="icon" id="icon-search">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							height="34"
-							viewBox="0 -960 960 960"
-							width="34"
-							fill="#576490"
-						>
-							<path
-								d="m793.5-125.5-260.979-261Q503-360 463.041-346t-83.883 14q-106.761 0-180.709-73.977-73.949-73.977-73.949-178.5T198.204-763q73.704-74 179-74T556-762.993q73.5 74.006 73.5 178.722 0 42.271-14 82.021T574-427.734L836-168l-42.5 42.5ZM378-389.5q80.75 0 137.375-57.059t56.625-138q0-80.941-56.625-137.941t-137.625-57q-81.833 0-138.792 57.059Q182-665.382 182-584.441T239-446.5q57 57 139 57Z"
+				<div class="container-filters">
+					<div class="filter-prices">
+						<!-- <h4>Busca por un rango de precio</h4> -->
+						<div class="filter-price">
+							<p>$</p>
+							<input
+								type="tel"
+								id="priceMin"
+								placeholder="Mínimo"
+								min="0"
+								step="50"
 							/>
-						</svg>
-					</div>
-				</div>
-				<div class="shopping-cart">
-					<span class="counter-items-cart">0</span>
-					<div class="shopping-cart-item">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							height="30"
-							viewBox="0 -960 960 960"
-							width="30"
-						>
-							<path
-								d="M277.752-71q-32.277 0-55.014-22.985Q200-116.971 200-149.248t22.985-55.014Q245.971-227 278.248-227t55.015 22.985Q356-181.029 356-148.752t-22.985 55.015Q310.029-71 277.752-71Zm412 0q-32.277 0-55.015-22.985Q612-116.971 612-149.248t22.985-55.014Q657.971-227 690.248-227t55.015 22.985Q768-181.029 768-148.752t-22.985 55.015Q722.029-71 689.752-71ZM197-815h616.074q22.474 0 34.2 21Q859-773 847-752L702-492q-11.057 20.095-30.48 33.048Q652.097-446 629-446H320l-50 92h499v73H268q-46 0-65.5-31.5t.5-69.5l62-116-152-323H32v-73h128l37 79Z"
+							<h5>-</h5>
+							<p>$</p>
+							<input
+								type="tel"
+								id="priceMax"
+								placeholder="Máximo"
+								min="0"
+								step="50"
 							/>
-						</svg>
-						<div class="list-items-products"></div>
+						</div>
+						<div class="btns-filter-price">
+							<button id="filter-reset">Limpiar</button>
+							<button id="filter-price">Buscar</button>
+						</div>
+					</div>
+					<div class="filter-search">
+						<input
+							type="search"
+							id="search-item"
+							placeholder="Buscar productos..."
+							autocomplete="off"
+						/>
+						<div class="icon" id="icon-search">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								height="34"
+								viewBox="0 -960 960 960"
+								width="34"
+								fill="#576490"
+							>
+								<path
+									d="m793.5-125.5-260.979-261Q503-360 463.041-346t-83.883 14q-106.761 0-180.709-73.977-73.949-73.977-73.949-178.5T198.204-763q73.704-74 179-74T556-762.993q73.5 74.006 73.5 178.722 0 42.271-14 82.021T574-427.734L836-168l-42.5 42.5ZM378-389.5q80.75 0 137.375-57.059t56.625-138q0-80.941-56.625-137.941t-137.625-57q-81.833 0-138.792 57.059Q182-665.382 182-584.441T239-446.5q57 57 139 57Z"
+								/>
+							</svg>
+						</div>
+					</div>
+					<div class="shopping-cart">
+						<span class="counter-items-cart">0</span>
+						<div class="shopping-cart-item">
+							<svg 
+								id="pointSvg"
+								xmlns="http://www.w3.org/2000/svg"
+								height="30"
+								viewBox="0 -960 960 960"
+								width="30"
+							>
+								<path
+									d="M277.752-71q-32.277 0-55.014-22.985Q200-116.971 200-149.248t22.985-55.014Q245.971-227 278.248-227t55.015 22.985Q356-181.029 356-148.752t-22.985 55.015Q310.029-71 277.752-71Zm412 0q-32.277 0-55.015-22.985Q612-116.971 612-149.248t22.985-55.014Q657.971-227 690.248-227t55.015 22.985Q768-181.029 768-148.752t-22.985 55.015Q722.029-71 689.752-71ZM197-815h616.074q22.474 0 34.2 21Q859-773 847-752L702-492q-11.057 20.095-30.48 33.048Q652.097-446 629-446H320l-50 92h499v73H268q-46 0-65.5-31.5t.5-69.5l62-116-152-323H32v-73h128l37 79Z"
+								/>
+							</svg>
+							<div class="container-list-items hiddenElements">
+								<div class="list-items-products"></div>
+								<div id="buyCart">
+									<div id="priceTotalCart"></div>
+									<div id="btnBuyCart"></div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>

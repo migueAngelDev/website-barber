@@ -6,6 +6,11 @@ const priceMax = document.getElementById("priceMax");
 const inputSearch = document.getElementById("search-item");
 const containerCartShopping = document.querySelector(".counter-items-cart");
 const listItemsProductsCart = document.querySelector(".list-items-products");
+const priceTotalCart = document.getElementById("priceTotalCart");
+const btnBuyCart = document.getElementById("btnBuyCart");
+const hiddenElements = document.querySelector(".container-list-items");
+const pointSvg = document.getElementById("pointSvg");
+const telefonoWhatsapp = "9212708384";
 const PRODUCTS = [
 	{
 		nombre: "Aceite para barba",
@@ -99,6 +104,26 @@ const PRODUCTS = [
 	},
 ];
 
+pointSvg.addEventListener("click", (e) => {
+	hiddenElements.classList.toggle("hiddenElements");
+});
+
+listItemsProductsCart.innerHTML = "";
+let precioTotal = 0;
+let containerProducts = [];
+let product = {};
+function productosAComprar(producto = {}) {
+	containerProducts.push(producto);
+	if (containerProducts.length > 0) {
+		containerCartShopping.textContent = "+1";
+	}
+
+	if (containerCartShopping.length <= 0) {
+		containerCartShopping.textContent = "0";
+	}
+	console.log(containerProducts);
+}
+
 function renderingProducts(array) {
 	let rendering = "";
 	array.forEach((producto, index) => {
@@ -189,25 +214,70 @@ function renderingProducts(array) {
 			}) => {
 				const idItemProduct = document.getElementById(`${index}`);
 				const titleItemProduct =
-					idItemProduct.querySelector(".title-card");
-				const priceItemProduct =
-					idItemProduct.querySelector(".priceCard");
+					idItemProduct.querySelector(".title-card").textContent;
+				const imgItemProduct =
+					idItemProduct.querySelector(".card-img").src;
+				const priceItemProduct = idItemProduct
+					.querySelector(".priceCard")
+					.textContent.slice(1);
 				let itemsProduct =
 					idItemProduct.querySelector(".counter-product");
 
 				if (itemsProduct.textContent > 0) {
-					console.log(idItemProduct);
-					console.log(titleItemProduct.textContent);
-					console.log(priceItemProduct.textContent);
-					console.log(itemsProduct.textContent);
-					itemsProduct.textContent = 0;
+					product = {
+						nombre: titleItemProduct,
+						cantidad: itemsProduct.textContent,
+						precio: priceItemProduct,
+					};
 					PRODUCTS[index].contador = 0;
-					console.log(PRODUCTS[index]);
+					precioTotal +=
+						parseInt(priceItemProduct) *
+						parseInt(itemsProduct.textContent);
+
+					listItemsProductsCart.innerHTML += `
+					<div class="content-list-items">
+					<div class="info-descrip">
+						<div><img src="${imgItemProduct}" alt="${titleItemProduct}"></div>
+						<div>${titleItemProduct}</div>
+					</div>
+						<div>Cantidad: ${itemsProduct.textContent} X $${priceItemProduct} = $${(
+						parseInt(priceItemProduct) *
+						parseInt(itemsProduct.textContent)
+					).toFixed(2)}</div>
+					</div>`;
+
+					itemsProduct.textContent = 0;
 				}
+				productosAComprar(product);
+				priceTotalCart.innerHTML = `<p>
+				Total: $${precioTotal.toFixed(2)}
+				</p>`;
 			}
 		);
 	});
 }
+
+btnBuyCart.innerHTML = `<button id="btnCart">Solicitar pedido</button>`;
+
+const btnCart = document.getElementById("btnCart");
+let precioTotalCart = 0;
+btnCart.addEventListener("click", (e) => {
+	let mensaje = "¡Hola!, Me interesa comprar los siguientes productos:%0A%0A";
+	containerProducts.forEach((product) => {
+		const subtotal = parseInt(product.precio) * parseInt(product.cantidad);
+		precioTotalCart += subtotal;
+		mensaje += `Producto: ${product.nombre}%0A`;
+		mensaje += `Cantidad: ${product.cantidad}%0A`;
+		mensaje += `Precio: $${product.precio}%0A`;
+		mensaje += `Subtotal: $${subtotal.toFixed(2)}%0A%0A`;
+	});
+	mensaje += `Total: $${precioTotalCart.toFixed(2)}%0A%0A`;
+	mensaje += "¡Gracias!";
+	window.open(
+		`https://wa.me/+521${telefonoWhatsapp}?text=${mensaje}`,
+		"_blank"
+	);
+});
 
 function notFoundItem() {
 	wrapperCards.innerHTML = "";
