@@ -1,6 +1,11 @@
 /* Este es la seccion 2 de los servicos */
 const container = document.getElementById("container-services");
 
+const motivos = {
+  nombre: "ines",
+  razon: "separacion",
+};
+
 const services = [
   {
     imagen: "./imgs/servicios/cortes/hairstyles/womens_hairstyles.jpg",
@@ -134,7 +139,7 @@ const testimonios = [
     imagen: "./imgs/home/seccionTestimonios/prueba1.webp",
     nombre: "Marisol",
     comentario:
-      "Me encanta la atención personalizada que recibo en esta barbería. Siempre se toman el tiempo para entender exactamente lo que quiero y me aseguran de que salga feliz.",
+      "La atención personalizada en esta barbería es excelente. Siempre comprenden mis necesidades y se aseguran de que esté satisfecha.",
   },
   {
     imagen: "./imgs/home/seccionTestimonios/prueba3.jpg",
@@ -172,3 +177,52 @@ testimonios.forEach((testimonio) => {
 
   contenedorTestimonios.innerHTML += valoracion;
 });
+
+/* Funcionalidad del menu */
+
+(function () {
+  const listElements = document.querySelectorAll(".menu-wrapper--show");
+  const list = document.querySelector(".menu-content");
+  const menu = document.querySelector(".menu__hamburguer");
+
+  const addClick = () => {
+    listElements.forEach((element) => {
+      element.addEventListener("click", () => {
+        let subMenu = element.children[1];
+        let height = 0;
+
+        if (subMenu.clientHeight === 0) {
+          height = subMenu.scrollHeight;
+        }
+
+        subMenu.style.height = `${height}px`;
+      });
+    });
+  };
+
+  const deleteStyleHeight = () => {
+    listElements.forEach((element) => {
+      if (element.children[1].getAttribute("style")) {
+        element.children[1].removeAttribute("style");
+      }
+    });
+  };
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 800) {
+      deleteStyleHeight();
+      if (list.classList.contains("menu-content--show"))
+        list.classList.remove("menu-content--show");
+    } else {
+      addClick();
+    }
+  });
+
+  if (window.innerWidth <= 800) {
+    addClick();
+  }
+
+  menu.addEventListener("click", () =>
+    list.classList.toggle("menu-content--show")
+  );
+})();

@@ -7,6 +7,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="./css/home/styles.css" />
     <link rel="stylesheet" href="./css/home/stylesResponsive.css" />
+    <link rel="stylesheet" href="/css/home/stylesnav.css" />
     <link rel="stylesheet" href="./css/servicios/cortes/hairstyles.css" />
     <link
       rel="stylesheet"
@@ -19,40 +20,69 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <img
-          src="imgs/home/section-one/logo_Barbería.png"
-          alt="logo de la barberial"
-        />
-      </div>
-      <div class="logo_2">Barber Shop: Los Ángeles</div>
-      <nav class="nav-bar">
-        <ul class="nav-bar-ul">
-          <li>
-            <a href="index.html">Inicio</a>
+    <header class="menu">
+      <nav class="menu-container">
+        <div class="logo">
+          <a href="index.html"><img src="./imgs/logo.png" alt="" /></a>
+        </div>
+
+        <div class="logo2">
+          <p>Barber Shop: Los Ángeles</p>
+        </div>
+
+        <ul class="menu-content">
+          <!-- Primer contenido -->
+          <li class="menu-wrapper">
+            <a href="index.html" class="menu__link">Inicio</a>
           </li>
-          <li class="groups">
-            <a href="#"
-              >Servicios<span><img src="./svg/dropdown.svg" /></span
-            ></a>
-            <ul class="category">
-              <li><a href="hairstyles.html">Cortes de cabello y barba</a></li>
-              <li><a href="unas.html">Manicure</a></li>
-              <li><a href="unas.html">Pedicure</a></li>
-              <li><a href="#">Tintes y permanentes</a></li>
+
+          <!-- Segundo Contenido -->
+          <li class="menu-wrapper menu-wrapper--show">
+            <a class="menu__link"
+              >Servicios <img src="./svg/arrow.svg" class="menu__arrow"
+            /></a>
+
+            <ul class="menu-content-group">
+              <li class="menu-wrapper-group">
+                <a href="hairstyles.html" class="menu__link menu-link--group"
+                  >Cortes de barba y cabello</a
+                >
+              </li>
+              <li class="menu__inside">
+                <a href="unas.html" class="menu__link menu-link--group"
+                  >Manicure</a
+                >
+              </li>
+              <li class="menu__inside">
+                <a href="unas.html" class="menu__link menu-link--group"
+                  >Pedicure</a
+                >
+              </li>
+              <li class="menu__inside">
+                <a href="unas.html" class="menu__link menu-link--group"
+                  >Tintes y permanentes</a
+                >
+              </li>
             </ul>
           </li>
-          <li>
-            <a href="products.html">Productos</a>
+
+          <!-- Tercer contenido -->
+          <li class="menu-wrapper">
+            <a href="products.html" class="menu__link">Productos</a>
           </li>
-          <li>
-            <a href="formulario.php">Formulario</a>
+
+          <!-- Cuarto contenido -->
+
+          <li class="menu-wrapper">
+            <a href="formulario.php" class="menu__link">Formulario</a>
           </li>
         </ul>
+
+        <div class="menu__hamburguer">
+          <img src="./svg/menu.svg" class="menu__img" />
+        </div>
       </nav>
     </header>
-
     <!-- SECCIÓN 1 HOME -->
     <section class="section_home">
       <div class="container-texts">
@@ -146,7 +176,7 @@
           </div>
         </div>
         <div class="container-products productus-title">
-          <div class="title-section">
+          <div class="title-section width">
             <h3>Nuestros productos</h3>
           </div>
         </div>
@@ -376,21 +406,23 @@
         <div class="footer-colum two-colum">
           <div class="footer-testimonios-valoracion">
             <p class="footer-about-title">Compártenos tu valoración</p>
-            <a href="" class="star-link">
-              <i class="fas fa-star fa-3x"></i>
-            </a>
-            <a href="#" class="star-link">
-              <i class="fas fa-star fa-3x"></i>
-            </a>
-            <a href="#" class="star-link">
-              <i class="fas fa-star fa-3x"></i>
-            </a>
-            <a href="#" class="star-link">
-              <i class="fas fa-star fa-3x"></i>
-            </a>
-            <a href="#" class="star-link">
-              <i class="fas fa-star fa-3x"></i>
-            </a>
+            <div class="footer-valoracion">
+              <a href="#" class="star-link">
+                <img src="svg/star.svg" alt="star1" />
+              </a>
+              <a href="#" class="star-link">
+                <img src="svg/star.svg" alt="star2" />
+              </a>
+              <a href="#" class="star-link">
+                <img src="svg/star.svg" alt="star3" />
+              </a>
+              <a href="#" class="star-link">
+                <img src="svg/star.svg" alt="star4" />
+              </a>
+              <a href="#" class="star-link">
+                <img src="svg/star.svg" alt="star5" />
+              </a>
+            </div>
           </div>
 
           <div class="footer-testimonios-text">
