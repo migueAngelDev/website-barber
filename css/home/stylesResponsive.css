@@ -181,17 +181,8 @@
     padding: 10px;
   }
 
-  .footer-about {
-    height: auto;
-    margin-bottom: 20px;
-  }
-
-  .footer-about-text {
-    padding: 10px 0;
-  }
-
   .footer-about-redes {
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   .container-redes-socials {
@@ -239,6 +230,7 @@
 @media (max-width: 520px) {
   .footer-testimonios-valoracion {
     flex-direction: column;
+    gap: 10px;
   }
 
   .footer-valoracion a {

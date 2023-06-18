@@ -1,3 +1,72 @@
+/* Funcionalidad del menu */
+
+(function () {
+  const listElements = document.querySelectorAll(".menu-wrapper--show");
+  const list = document.querySelector(".menu-content");
+  const menu = document.querySelector(".menu__hamburguer");
+
+  const addClick = () => {
+    listElements.forEach((element) => {
+      element.addEventListener("click", () => {
+        let subMenu = element.children[1];
+        let height = 0;
+
+        if (subMenu.clientHeight === 0) {
+          height = subMenu.scrollHeight;
+        }
+
+        subMenu.style.height = `${height}px`;
+      });
+    });
+  };
+
+  const deleteStyleHeight = () => {
+    listElements.forEach((element) => {
+      if (element.children[1].getAttribute("style")) {
+        element.children[1].removeAttribute("style");
+      }
+    });
+  };
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 800) {
+      deleteStyleHeight();
+      if (list.classList.contains("menu-content--show"))
+        list.classList.remove("menu-content--show");
+    } else {
+      addClick();
+    }
+  });
+
+  if (window.innerWidth <= 800) {
+    addClick();
+  }
+
+  menu.addEventListener("click", () =>
+    list.classList.toggle("menu-content--show")
+  );
+})();
+
+/* Funcionalidad de las estrellas del footer */
+
+const starLinks = document.querySelectorAll(".star-link");
+
+starLinks.forEach((link, index) => {
+  link.addEventListener("mouseover", () => {
+    for (let i = 0; i <= index; i++) {
+      const starPath = starLinks[i].querySelector(".star-path");
+      starPath.classList.add("filled");
+    }
+  });
+
+  link.addEventListener("mouseout", () => {
+    for (let i = 0; i <= index; i++) {
+      const starPath = starLinks[i].querySelector(".star-path");
+      starPath.classList.remove("filled");
+    }
+  });
+});
+
 /* Este es la seccion 2 de los servicos */
 const container = document.getElementById("container-services");
 
@@ -126,103 +195,3 @@ newService.forEach((service) => {
 
 /**************************************************/
 /* Este es la seccion 5 de los Testimonios */
-const contenedorTestimonios = document.getElementById("container-testimonios");
-
-const testimonios = [
-  {
-    imagen: "./imgs/home/seccionTestimonios/prueba2.jpg",
-    nombre: "Alexandra",
-    comentario:
-      "La mejor experiencia en una barbería que he tenido. El personal es amable y experto en su trabajo. Me encantó mi corte de pelo, definitivamente regresaré.",
-  },
-  {
-    imagen: "./imgs/home/seccionTestimonios/prueba1.webp",
-    nombre: "Marisol",
-    comentario:
-      "La atención personalizada en esta barbería es excelente. Siempre comprenden mis necesidades y se aseguran de que esté satisfecha.",
-  },
-  {
-    imagen: "./imgs/home/seccionTestimonios/prueba3.jpg",
-    nombre: "Rex",
-    comentario:
-      "No puedo decir suficientes cosas buenas sobre esta barbería. Siempre me tratan bien y me hacen sentir como en casa. Además, mi corte de pelo siempre es perfecto.",
-  },
-];
-
-testimonios.forEach((testimonio) => {
-  const valoracion = `
-    <div class="wrapper-testimonios">
-      <div class="wrapper-testimonios-credenciales">
-        <div class="credenciales">
-          <div class="img-testimonios">
-            <img src="${testimonio.imagen}" alt="" srcset="" />
-          </div>
-          <div class="names-testimonios">
-            <p>${testimonio.nombre}</p>
-          </div>
-        </div>
-        <div class="valoracion-testimonios">
-          <img src="/svg/star.svg" alt="Puntaje 1" />
-          <img src="/svg/star.svg" alt="Puntaje 2" />
-          <img src="/svg/star.svg" alt="Puntaje 3" />
-          <img src="/svg/star.svg" alt="Puntaje 4" />
-          <img src="/svg/star.svg" alt="Puntaje 5" />
-        </div>
-      </div>
-      <div class="testimonio-comentario">
-        <p>${testimonio.comentario}</p>
-      </div>
-    </div>
-  `;
-
-  contenedorTestimonios.innerHTML += valoracion;
-});
-
-/* Funcionalidad del menu */
-
-(function () {
-  const listElements = document.querySelectorAll(".menu-wrapper--show");
-  const list = document.querySelector(".menu-content");
-  const menu = document.querySelector(".menu__hamburguer");
-
-  const addClick = () => {
-    listElements.forEach((element) => {
-      element.addEventListener("click", () => {
-        let subMenu = element.children[1];
-        let height = 0;
-
-        if (subMenu.clientHeight === 0) {
-          height = subMenu.scrollHeight;
-        }
-
-        subMenu.style.height = `${height}px`;
-      });
-    });
-  };
-
-  const deleteStyleHeight = () => {
-    listElements.forEach((element) => {
-      if (element.children[1].getAttribute("style")) {
-        element.children[1].removeAttribute("style");
-      }
-    });
-  };
-
-  window.addEventListener("resize", () => {
-    if (window.innerWidth > 800) {
-      deleteStyleHeight();
-      if (list.classList.contains("menu-content--show"))
-        list.classList.remove("menu-content--show");
-    } else {
-      addClick();
-    }
-  });
-
-  if (window.innerWidth <= 800) {
-    addClick();
-  }
-
-  menu.addEventListener("click", () =>
-    list.classList.toggle("menu-content--show")
-  );
-})();

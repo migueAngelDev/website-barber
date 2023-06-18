@@ -120,8 +120,7 @@
 
 .menu__img {
   display: block;
-  width: 36px;
-  object-fit: contain;
+  width: 30px;
 }
 
 .menu__img:hover {

@@ -298,76 +298,6 @@
   background: var(--main-secondary-bg);
 }
 
-/* SECCION 5 QUE PERTENECE A LOS TESTIMONIOS */
-.testimonios {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  background-color: var(--main-principal-bg);
-  text-align: justify;
-  padding: 30px 0;
-}
-
-.container-testimonios {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  padding: 50px 20px;
-  grid-gap: 20px;
-}
-
-.wrapper-testimonios {
-  width: 100%;
-  height: auto;
-  padding: 20px;
-  box-shadow: var(--box-shadow);
-  border-radius: var(--border-radius-5);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.wrapper-testimonios-credenciales {
-  box-shadow: var(--box-shadow);
-  padding: 10px;
-  border-radius: var(--border-radius-5);
-}
-
-.wrapper-testimonios-credenciales,
-.credenciales,
-.valoracion-testimonios,
-.img-testimonios {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-between;
-}
-
-.credenciales {
-  width: 100%;
-  max-width: 250px;
-}
-
-.names-testimonios {
-  font-weight: var(--font-weight-bold);
-  width: 90px;
-}
-
-.testimonio-comentario {
-  line-height: 25px;
-  height: auto;
-  color: var(--textos);
-  box-shadow: var(--box-shadow);
-  padding: 10px;
-  border-radius: var(--border-radius-5);
-  font-weight: var(--font-weight-bold);
-}
-
-.img-testimonios img {
-  width: 50px;
-  height: 50px;
-  border-radius: var(--border-radius-100);
-}
-
 /* Sección 6 de Horarios de atención */
 
 .section-horarios {
@@ -540,27 +470,29 @@
 
 .one-colum {
   text-align: center;
+  gap: 20px;
 }
 
 .footer-about-title {
   font-weight: var(--font-weight-bold);
   display: flex;
   align-items: center;
+  padding-bottom: 10px;
 }
 
 .footer-about {
-  height: 360px;
+  height: auto;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   align-items: center;
 }
 
 .footer-about-text {
-  padding: 10px 0;
+  padding: 0.7rem 0;
 }
 
 .footer-about-redes {
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -575,6 +507,7 @@
 }
 
 .item-img {
+  margin: 10px 0;
   width: 120px;
   height: 120px;
   border-radius: 50%;
@@ -587,7 +520,6 @@
 
 .footer-testimonios-valoracion {
   display: flex;
-  margin-bottom: 30px;
 }
 
 .footer-valoracion {
@@ -598,8 +530,17 @@
   margin-left: 30px;
 }
 
+.star-path {
+  fill: transparent;
+  transition: fill 0.3s ease;
+}
+
+.star-path.filled {
+  fill: #f1b955;
+}
+
 .footer-testimonios-text p {
-  margin-bottom: 20px;
+  padding: 0.7rem 0;
 }
 
 .section-copyright {
