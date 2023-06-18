@@ -120,7 +120,8 @@
 
 .menu__img {
   display: block;
-  width: 30px;
+  width: 36px;
+  object-fit: contain;
 }
 
 .menu__img:hover {
@@ -206,7 +207,7 @@
   }
 }
 
-@media (max-width: 280px) {
+@media (max-width: 320px) {
   .logo2 {
     display: none;
   }
