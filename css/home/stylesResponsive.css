@@ -49,12 +49,10 @@
 }
 
 /* SECCION 3 */
-
-@media (max-width: 1280px) {
+@media (max-width: 700px) {
   .section-products {
     height: 80vh;
   }
-
   .product-center {
     margin: 0 auto;
   }
@@ -74,41 +72,30 @@
   .container-products {
     display: flex;
     flex-direction: column;
+    gap: 30px;
   }
 
-  .content-product {
-    flex-direction: column-reverse;
-  }
   .container-products img {
     width: 150px;
     height: 150px;
   }
-
-  /* .contedor-padding-30px {
-    flex-direction: column-reverse;
-  } */
 }
 
-@media (max-width: 280px) {
+@media (max-width: 450px) {
+  .section-products {
+    height: 80vh;
+  }
   .container-products img {
     width: 100px;
     height: 100px;
   }
-
-  .width {
-    width: auto;
-  }
 }
 
-/* seccion 5 */
-
-/* @media (min-width: 280px) {
-  .wrapper-testimonios {
-    width: auto;
-    grid-gap: 5px;
+@media (max-width: 280px) {
+  .section-products {
+    height: 90vh;
   }
 }
- */
 /* SECCION 6 */
 
 @media screen and (max-width: 768px) {
@@ -236,6 +223,12 @@
   .footer-valoracion a {
     margin: 0;
     margin-right: 30px;
+  }
+}
+
+@media (max-width: 280px) {
+  .footer-colum {
+    padding: 5px;
   }
 }
 
