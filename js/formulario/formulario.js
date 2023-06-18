@@ -66,7 +66,7 @@ star5.addEventListener("click", (e) => {
 	rankingStars = 5;
 });
 
-btnSubmit.addEventListener("click", (e) => {
+form.addEventListener("submit", (e) => {
 	e.preventDefault();
 	function resetForm() {
 		form.reset();
