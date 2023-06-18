@@ -11,6 +11,7 @@ const btnBuyCart = document.getElementById("btnBuyCart");
 const hiddenElements = document.querySelector(".container-list-items");
 const pointSvg = document.getElementById("pointSvg");
 const telefonoWhatsapp = "9212708384";
+const emptyCart = document.getElementById("emptyCart");
 const PRODUCTS = [
 	{
 		nombre: "Aceite para barba",
@@ -104,10 +105,6 @@ const PRODUCTS = [
 	},
 ];
 
-pointSvg.addEventListener("click", (e) => {
-	hiddenElements.classList.toggle("hiddenElements");
-});
-
 listItemsProductsCart.innerHTML = "";
 let precioTotal = 0;
 let containerProducts = [];
@@ -123,6 +120,16 @@ function productosAComprar(producto = {}) {
 	}
 	console.log(containerProducts);
 }
+
+pointSvg.addEventListener("click", (e) => {
+	hiddenElements.classList.toggle("hiddenElements");
+	if (containerProducts.length < 1) {
+		emptyCart.innerHTML = `<div>
+		<p>Aún no has agregado nada al carrito de compras, agrega un producto</p>
+		</div>`;
+		console.log(containerProducts);
+	}
+});
 
 function renderingProducts(array) {
 	let rendering = "";
@@ -223,7 +230,9 @@ function renderingProducts(array) {
 				let itemsProduct =
 					idItemProduct.querySelector(".counter-product");
 
-				if (itemsProduct.textContent > 0) {
+				if (parseInt(itemsProduct.textContent) > 0) {
+					emptyCart.innerHTML = "";
+
 					product = {
 						nombre: titleItemProduct,
 						cantidad: itemsProduct.textContent,
@@ -247,8 +256,9 @@ function renderingProducts(array) {
 					</div>`;
 
 					itemsProduct.textContent = 0;
+					productosAComprar(product);
 				}
-				productosAComprar(product);
+
 				priceTotalCart.innerHTML = `<p>
 				Total: $${precioTotal.toFixed(2)}
 				</p>`;
@@ -262,21 +272,25 @@ btnBuyCart.innerHTML = `<button id="btnCart">Solicitar pedido</button>`;
 const btnCart = document.getElementById("btnCart");
 let precioTotalCart = 0;
 btnCart.addEventListener("click", (e) => {
-	let mensaje = "¡Hola!, Me interesa comprar los siguientes productos:%0A%0A";
-	containerProducts.forEach((product) => {
-		const subtotal = parseInt(product.precio) * parseInt(product.cantidad);
-		precioTotalCart += subtotal;
-		mensaje += `Producto: ${product.nombre}%0A`;
-		mensaje += `Cantidad: ${product.cantidad}%0A`;
-		mensaje += `Precio: $${product.precio}%0A`;
-		mensaje += `Subtotal: $${subtotal.toFixed(2)}%0A%0A`;
-	});
-	mensaje += `Total: $${precioTotalCart.toFixed(2)}%0A%0A`;
-	mensaje += "¡Gracias!";
-	window.open(
-		`https://wa.me/+521${telefonoWhatsapp}?text=${mensaje}`,
-		"_blank"
-	);
+	if (containerProducts.length > 0) {
+		let mensaje =
+			"¡Hola!, Me interesa comprar los siguientes productos:%0A%0A";
+		containerProducts.forEach((product) => {
+			const subtotal =
+				parseInt(product.precio) * parseInt(product.cantidad);
+			precioTotalCart += subtotal;
+			mensaje += `Producto: ${product.nombre}%0A`;
+			mensaje += `Cantidad: ${product.cantidad}%0A`;
+			mensaje += `Precio: $${product.precio}%0A`;
+			mensaje += `Subtotal: $${subtotal.toFixed(2)}%0A%0A`;
+		});
+		mensaje += `Total: $${precioTotalCart.toFixed(2)}%0A%0A`;
+		mensaje += "¡Gracias!";
+		window.open(
+			`https://wa.me/+521${telefonoWhatsapp}?text=${mensaje}`,
+			"_blank"
+		);
+	}
 });
 
 function notFoundItem() {
