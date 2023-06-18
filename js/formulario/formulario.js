@@ -80,8 +80,8 @@ btnSubmit.addEventListener("click", (e) => {
 			nameUsr.value,
 			lastNameUsr.value,
 			email.value,
-			rankingStars,
 			photoUsr,
+			rankingStars,
 			opinion.value
 		);
 	}
