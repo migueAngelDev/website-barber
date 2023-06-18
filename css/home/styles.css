@@ -30,96 +30,6 @@
 
 /* Empieza el diseño del menú */
 
-header {
-  width: 100%;
-  height: 80px;
-  background-color: var(--main-principal-bg);
-  box-shadow: var(--box-shadow);
-  display: flex;
-  align-items: center;
-  padding: 0 100px;
-  justify-content: space-between;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.logo {
-  border-radius: var(--border-radius-100);
-  width: 70px;
-  height: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.logo img {
-  width: 50px;
-  height: 50px;
-  border-radius: var(--border-radius-100);
-}
-
-.logo_2 {
-  font-size: 18px;
-  font-weight: bold;
-  color: var(--textos-destacados);
-}
-
-.nav-bar-ul {
-  display: flex;
-  list-style: none;
-}
-
-.nav-bar-ul a {
-  display: block;
-  font-weight: bold;
-  color: var(--textos-destacados);
-  padding: 10px 50px;
-  border-radius: var(--border-radius-100);
-  transition: 0.2s;
-  margin: 0 5px;
-}
-
-.category {
-  display: block;
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  top: 75px;
-}
-
-.category li {
-  list-style: none;
-  margin: 10px 0;
-}
-
-.category li a {
-  background-color: var(--main-principal-bg);
-  box-shadow: var(--box-shadow);
-  padding: 15px 30px;
-  border-radius: var(--border-radius-5);
-}
-
-.groups:focus-within > .category {
-  visibility: visible;
-  opacity: 1;
-}
-
-.groups a {
-  display: flex;
-  align-items: stretch;
-}
-
-.groups span {
-  margin-left: 5px;
-}
-
-.groups span img {
-  width: 20px;
-}
-
-/* ********************************************* */
-
 /* El botón que se usara para redirige a otras secciones */
 
 /* EL contendor del borton */
@@ -156,6 +66,7 @@ header {
 /* Diseño para los titulos de cada sección*/
 
 .header-section {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -187,6 +98,7 @@ header {
 /* SECCIÓN 1, PERTENECE AL HOME */
 
 .section_home {
+  margin-top: 80px;
   display: flex;
   justify-content: space-around;
   padding: 20px 0;
@@ -281,6 +193,7 @@ header {
   display: grid;
   grid-gap: 50px;
   padding: 30px 35px 0 35px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 .wrapper-service {
@@ -332,6 +245,16 @@ header {
   height: 60px;
 }
 
+@media (max-width: 280px) {
+  .container-services {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .title-service,
+  .text-service {
+    height: auto;
+  }
+}
+
 /* SECCIÓN 3 PRODUCTOS */
 
 .section-products {
@@ -373,98 +296,6 @@ header {
   flex-direction: column;
   justify-content: space-between;
   background: var(--main-secondary-bg);
-}
-
-/* SECCION 5 QUE PERTENECE A LOS TESTIMONIOS */
-.testimonios {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  background-color: var(--main-principal-bg);
-  text-align: justify;
-  padding: 30px 0;
-}
-
-.container-testimonios {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 50px 100px;
-  grid-gap: 80px;
-}
-
-.wrapper-testimonios {
-  height: 270px;
-  padding: 20px 20px 40px 20px;
-  box-shadow: var(--box-shadow);
-  border-radius: var(--border-radius-5);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.wrapper-testimonios-credenciales {
-  box-shadow: var(--box-shadow);
-  padding: 10px;
-  border-radius: var(--border-radius-5);
-}
-
-.wrapper-testimonios-credenciales,
-.credenciales,
-.valoracion-testimonios,
-.img-testimonios {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-between;
-}
-
-.credenciales {
-  width: 150px;
-}
-
-.names-testimonios {
-  font-weight: var(--font-weight-bold);
-  width: 90px;
-}
-
-.testimonio-comentario {
-  line-height: 25px;
-  height: auto;
-  color: var(--textos);
-  box-shadow: var(--box-shadow);
-  padding: 10px;
-  border-radius: var(--border-radius-5);
-  font-weight: var(--font-weight-bold);
-}
-
-.img-testimonios img {
-  width: 50px;
-  height: 50px;
-  border-radius: var(--border-radius-100);
-}
-
-/* Estilos responsivos */
-
-@media (max-width: 1024px) {
-  .container-testimonios {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 30px;
-    grid-gap: 40px;
-  }
-
-  .wrapper-testimonios {
-    height: auto;
-    padding: 20px;
-    margin-bottom: 30px;
-  }
-}
-
-@media (max-width: 768px) {
-  .container-testimonios {
-    grid-template-columns: 1fr;
-    padding: 20px;
-    grid-gap: 20px;
-  }
 }
 
 /* Sección 6 de Horarios de atención */
@@ -626,7 +457,7 @@ header {
 
 .twoColums {
   display: grid;
-  grid-template-columns: 0.45fr 0.55fr;
+  grid-template-columns: 2fr 3fr;
   grid-gap: 50px;
 }
 
@@ -639,21 +470,29 @@ header {
 
 .one-colum {
   text-align: center;
+  gap: 20px;
 }
 
 .footer-about-title {
   font-weight: var(--font-weight-bold);
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
 }
 
 .footer-about {
-  height: 360px;
+  height: auto;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   align-items: center;
 }
 
+.footer-about-text {
+  padding: 0.7rem 0;
+}
+
 .footer-about-redes {
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -668,6 +507,7 @@ header {
 }
 
 .item-img {
+  margin: 10px 0;
   width: 120px;
   height: 120px;
   border-radius: 50%;
@@ -680,27 +520,27 @@ header {
 
 .footer-testimonios-valoracion {
   display: flex;
-  margin-bottom: 30px;
 }
 
-.footer-testimonios-valoracion a {
-  margin-left: 20px;
+.footer-valoracion {
+  display: flex;
 }
 
-.star-link i {
-  color: #000000;
-  transition: color 0.3s;
-  font-size: 20px;
-  text-shadow: 0 0 3px gold;
+.footer-valoracion a {
+  margin-left: 30px;
 }
 
-.star-link:hover i {
-  color: var(--color-btn-hover);
-  text-shadow: none;
+.star-path {
+  fill: transparent;
+  transition: fill 0.3s ease;
+}
+
+.star-path.filled {
+  fill: #f1b955;
 }
 
 .footer-testimonios-text p {
-  margin-bottom: 20px;
+  padding: 0.7rem 0;
 }
 
 .section-copyright {
@@ -728,11 +568,8 @@ header {
 .footer-service p:nth-child(n + 5) {
   grid-column: 2;
   grid-row: 1;
-  text-align: end;
 }
 
 .footer-service p:nth-child(n + 6) {
-  grid-column: 2;
   grid-row: 2;
-  text-align: end;
 }

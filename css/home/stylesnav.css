@@ -1,0 +1,213 @@
+.menu {
+  font-family: Nunito, sans-serif;
+  height: 80px;
+  font-weight: bold;
+  background-color: var(--main-principal-bg);
+  box-shadow: var(--box-shadow);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  margin-bottom: 80px;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+
+.logo img {
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logo2 {
+  font-size: 18px;
+}
+
+.menu-content {
+  /* donde se encuentran los links, inicio, etc */
+  transition: transform 0.5s;
+  display: flex;
+  gap: 20px;
+}
+
+.menu-wrapper {
+  list-style: none;
+  /* Para que aparezca */
+  position: relative;
+  /* Esto hace que se desplace solo */
+  /* Se puede quitar y hacer solo click */
+  --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+  --transform: rotate(-90deg);
+}
+
+.menu-wrapper:hover {
+  --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  /* Gira el svg */
+  --transform: rotate(0);
+}
+
+.menu__link {
+  /* los contedores de inicio, servicio */
+  color: #000000;
+  text-decoration: none;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  /* Este padding es para darle más espacio */
+  padding: 10px 50px;
+  /*   border: 1px solid red; */
+  border-radius: var(--border-radius-10);
+}
+
+.menu__link:hover {
+  box-shadow: var(--box-shadow);
+}
+
+.menu__arrow {
+  transform: var(--transform);
+  transition: transform 0.3s;
+  display: block;
+  margin-left: 3px;
+  /* Esta clase es para el svg de servicios */
+}
+
+.menu-link--group {
+  padding: 15px 30px;
+  /* Quitar este margin en el responsivos */
+  margin: 10px 0;
+  background: var(--main-principal-bg);
+  box-shadow: var(--box-shadow);
+}
+
+.menu-link--group:hover {
+  background: var(--main-secondary-bg);
+}
+
+.menu-content-group {
+  /* Donde se encuentra el menu despegable */
+  transition: clip-path 0.8s;
+  /* Para que aparezan cuando le das clic y si no lo tiene esta por defecto */
+  clip-path: var(--clip);
+  position: absolute;
+  right: 1;
+  bottom: 0;
+  width: max-content;
+  transform: translateY(104%);
+  /* background-color: #000; */
+}
+
+.menu__hamburguer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu__img {
+  display: block;
+  width: 30px;
+}
+
+.menu__img:hover {
+  /* NO está en la paleta de colores */
+  background-color: #eec27099;
+  border-radius: var(--border-radius-5);
+}
+
+/* responsive */
+@media (max-width: 1024px) {
+  .logo {
+    margin-left: 15px;
+  }
+
+  .menu-container {
+    justify-content: space-between;
+  }
+  .menu__hamburguer {
+    display: flex;
+  }
+
+  .menu-wrapper {
+    /* No se quita el contenido una vez el cursor se aleja */
+    --clip: 0;
+    overflow: hidden;
+  }
+
+  .menu-content {
+    position: fixed;
+    max-width: 400px;
+    width: 100%;
+    top: 80px;
+    bottom: 0;
+    right: 0;
+    background-color: var(--main-principal-bg);
+    overflow-y: auto;
+    display: grid;
+    grid-auto-rows: max-content;
+    transform: translateX(100%);
+    gap: 0;
+  }
+
+  .menu-content--show {
+    transform: unset;
+    width: 100%;
+  }
+
+  .menu__link {
+    padding: 25px 0;
+    padding-left: 30px;
+    height: auto;
+    border-radius: 0;
+  }
+
+  .menu__link:hover {
+    background-color: #eec27099;
+  }
+
+  .menu__arrow {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+
+  .menu-content-group {
+    display: grid;
+    position: unset;
+    width: 100%;
+    transform: translateY(0);
+    height: 0;
+    transition: height 0.6s;
+  }
+
+  .menu-link--group {
+    width: 90%;
+    margin: 0;
+    margin-left: auto;
+    box-shadow: none;
+    border-left: 3px solid #000000;
+  }
+
+  .menu-link--group:hover {
+    background-color: var(--main-secondary-bg);
+  }
+}
+
+@media (max-width: 280px) {
+  .logo2 {
+    display: none;
+  }
+}
