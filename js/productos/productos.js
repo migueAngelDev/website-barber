@@ -118,16 +118,14 @@ function productosAComprar(producto = {}) {
 	if (containerCartShopping.length <= 0) {
 		containerCartShopping.textContent = "0";
 	}
-	console.log(containerProducts);
 }
 
 pointSvg.addEventListener("click", (e) => {
 	hiddenElements.classList.toggle("hiddenElements");
 	if (containerProducts.length < 1) {
 		emptyCart.innerHTML = `<div>
-		<p>Aún no has agregado nada al carrito de compras, agrega un producto</p>
+		<p>Aún no has agregado nada al carrito de compras, agrega un producto.</p>
 		</div>`;
-		console.log(containerProducts);
 	}
 });
 
@@ -290,6 +288,9 @@ btnCart.addEventListener("click", (e) => {
 			`https://wa.me/+521${telefonoWhatsapp}?text=${mensaje}`,
 			"_blank"
 		);
+	}
+	if (containerProducts.length < 1) {
+		alert("Agrega un producto al carrito para solicitar un pedido.");
 	}
 });
 

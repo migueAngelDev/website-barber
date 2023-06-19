@@ -8,113 +8,189 @@
 	</head>
 	<body>
 		<main>
-			<div class="content1"></div>
-			<div class="content2">
-				<form id="formOpiniones">
-					<label for="nameUser">Ingresa tu nombre:</label>
-					<input type="text" id="nameUser" />
-
-					<label for="lastName">Ingresa tus apellidos:</label>
-					<input type="text" id="lastName" />
-
-					<label for="emailUser"
-						>Agrega algún correo electrónico:</label
-					>
-					<input type="email" id="emailUser" />
-
-          <div class="container-photo">
-            <label for="photo" class="input-photo">Agrega una imagen</label>
-            <input type="file" id="photo" accept="image/png, image/jpeg" />
-
-            <div id="previewPhoto"></div>
-          </div>
-          <label for="calification">Calificanos:</label>
-          <div class="stars-range">
-            <div id="star1">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 26 26"
-              >
-                <polygon
-                  points="13 0 16.3 8 25 8.2 18.7 13.7 20.2 22.5 13 17.6 5.8 22.5 7.3 13.7 1 8.2 9.7 8 13 0"
-                  fill="#fff"
-                  stroke="#000"
-                />
-              </svg>
-            </div>
-            <div id="star2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 26 26"
-              >
-                <polygon
-                  points="13 0 16.3 8 25 8.2 18.7 13.7 20.2 22.5 13 17.6 5.8 22.5 7.3 13.7 1 8.2 9.7 8 13 0"
-                  fill="#fff"
-                  stroke="#000"
-                />
-              </svg>
-            </div>
-            <div id="star3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 26 26"
-              >
-                <polygon
-                  points="13 0 16.3 8 25 8.2 18.7 13.7 20.2 22.5 13 17.6 5.8 22.5 7.3 13.7 1 8.2 9.7 8 13 0"
-                  fill="#fff"
-                  stroke="#000"
-                />
-              </svg>
-            </div>
-            <div id="star4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 26 26"
-              >
-                <polygon
-                  points="13 0 16.3 8 25 8.2 18.7 13.7 20.2 22.5 13 17.6 5.8 22.5 7.3 13.7 1 8.2 9.7 8 13 0"
-                  fill="#fff"
-                  stroke="#000"
-                />
-              </svg>
-            </div>
-            <div id="star5">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 26 26"
-              >
-                <polygon
-                  points="13 0 16.3 8 25 8.2 18.7 13.7 20.2 22.5 13 17.6 5.8 22.5 7.3 13.7 1 8.2 9.7 8 13 0"
-                  fill="#fff"
-                  stroke="#000"
-                />
-              </svg>
-            </div>
-          </div>
-
-					<label for="opinion">Compartenos tu opinión:</label>
-					<textarea id="opinion" rows="5" maxlength="100"></textarea>
-					<div class="container-maxlength">
-						<div id="maxLengthTextArea">0/150</div>
-					</div>
-          
-					<div class="content-submit">
-						<input type="submit" value="Enviar" id="btn-submit" />
-					</div>
-				</form>
+			<div class="header-section">
+				<span class="line"></span>
+				<div class="title-section">
+					<h3>Nuestros Servicios</h3>
+				</div>
+				<span class="line"></span>
 			</div>
-		</main>
+			<section class="container-box">
+				<div class="content1">
+					<div class="check-success">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							height="48"
+							viewBox="0 -960 960 960"
+							width="48"
+							fill="#ffffff"
+						>
+							<path
+								d="m346-60-76-130-151-31 17-147-96-112 96-111-17-147 151-31 76-131 134 62 134-62 77 131 150 31-17 147 96 111-96 112 17 147-150 31-77 130-134-62-134 62Zm27-79 107-45 110 45 67-100 117-30-12-119 81-92-81-94 12-119-117-28-69-100-108 45-110-45-67 100-117 28 12 119-81 94 81 92-12 121 117 28 70 100Zm107-341Zm-43 133 227-225-45-41-182 180-95-99-46 45 141 140Z"
+							/>
+						</svg>
+					</div>
+					<div class="content-text-info">
+						<p>
+							Recibir opiniones de nuestros clientes es
+							fundamental para mejorar nuestros servicios y
+							mantenernos actualizados en las tendencias y
+							necesidades del mercado. Además, nos permite conocer
+							la experiencia que han tenido en nuestro
+							establecimiento y poder corregir posibles errores o
+							aspectos a mejorar.
+						</p>
+					</div>
+					<div class="content-text-info">
+						<p>
+							Asimismo, las opiniones positivas pueden servir como
+							referencia para nuevos clientes interesados en
+							nuestros servicios. Por todo esto, valoramos y
+							agradecemos la retroalimentación de nuestros
+							clientes.
+						</p>
+					</div>
+					<div class="content-img-info">
+						<img
+							src="./imgs/formulario/valoracion.jpg"
+							alt="evaluacion"
+						/>
+					</div>
+				</div>
+				<div class="content2">
+					<form id="formOpiniones">
+						<div class="content-input">
+							<label for="nameUser"
+								>Ingresa tu(s) nombre(s):</label
+							>
+							<input type="text" id="nameUser"  required/>
+						</div>
+						<div class="content-input">
+							<label for="lastName">Ingresa tus apellidos:</label>
+							<input type="text" id="lastName" required/>
+						</div>
+						<div class="content-input">
+							<label for="emailUser"
+								>Agrega tu correo electrónico:</label
+							>
+							<input type="email" id="emailUser" required/>
+						</div>
 
-    <script src="./js/formulario/formulario.js" type="module"></script>
-  </body>
+						<div class="content-input">
+							<div class="container-photo">
+								<label for="photo" class="input-photo"
+									>Agrega una imagen</label
+								>
+								<input
+									type="file"
+									id="photo"
+									accept="image/png, image/jpeg"
+								/>
+
+								<div id="previewPhoto"></div>
+							</div>
+						</div>
+						<div class="content-input">
+							<label for="calification">Califícanos:</label>
+							<div class="stars-range">
+								<div class="stars">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="20"
+										height="20"
+										viewBox="0 0 26 26"
+									>
+										<polygon
+											points="13 0 16.3 8 25 8.2 18.7 13.7 20.2 22.5 13 17.6 5.8 22.5 7.3 13.7 1 8.2 9.7 8 13 0"
+											fill="#fff"
+											stroke="#000"
+										/>
+									</svg>
+								</div>
+								<div class="stars">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="20"
+										height="20"
+										viewBox="0 0 26 26"
+									>
+										<polygon
+											points="13 0 16.3 8 25 8.2 18.7 13.7 20.2 22.5 13 17.6 5.8 22.5 7.3 13.7 1 8.2 9.7 8 13 0"
+											fill="#fff"
+											stroke="#000"
+										/>
+									</svg>
+								</div>
+								<div class="stars">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="20"
+										height="20"
+										viewBox="0 0 26 26"
+									>
+										<polygon
+											points="13 0 16.3 8 25 8.2 18.7 13.7 20.2 22.5 13 17.6 5.8 22.5 7.3 13.7 1 8.2 9.7 8 13 0"
+											fill="#fff"
+											stroke="#000"
+										/>
+									</svg>
+								</div>
+								<div class="stars">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="20"
+										height="20"
+										viewBox="0 0 26 26"
+									>
+										<polygon
+											points="13 0 16.3 8 25 8.2 18.7 13.7 20.2 22.5 13 17.6 5.8 22.5 7.3 13.7 1 8.2 9.7 8 13 0"
+											fill="#fff"
+											stroke="#000"
+										/>
+									</svg>
+								</div>
+								<div class="stars">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="20"
+										height="20"
+										viewBox="0 0 26 26"
+									>
+										<polygon
+											points="13 0 16.3 8 25 8.2 18.7 13.7 20.2 22.5 13 17.6 5.8 22.5 7.3 13.7 1 8.2 9.7 8 13 0"
+											fill="#fff"
+											stroke="#000"
+										/>
+									</svg>
+								</div>
+							</div>
+						</div>
+
+						<div class="content-input">
+							<label for="opinion">Compartenos tu opinión:</label>
+							<textarea
+								id="opinion"
+								rows="5"
+								maxlength="175"
+								required
+							></textarea>
+							<div class="container-maxlength">
+								<div id="maxLengthTextArea">0/175</div>
+							</div>
+						</div>
+
+						<div class="content-submit">
+							<input
+								type="submit"
+								value="Enviar"
+								id="btn-submit"
+							/>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+		<script src="./js/formulario/effectStars.js"></script>
+		<script src="./js/formulario/formulario.js" type="module"></script>
+	</body>
 </html>

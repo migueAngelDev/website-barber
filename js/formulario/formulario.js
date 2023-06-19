@@ -7,24 +7,16 @@ const lastNameUsr = document.getElementById("lastName");
 const email = document.getElementById("emailUser");
 const photo = document.getElementById("photo");
 /* stars */
-const star1 = document.getElementById("star1");
-const star2 = document.getElementById("star2");
-const star3 = document.getElementById("star3");
-const star4 = document.getElementById("star4");
-const star5 = document.getElementById("star5");
+const stars = document.querySelectorAll(".stars");
 /* stars */
 const opinion = document.getElementById("opinion");
 const btnSubmit = document.getElementById("btn-submit");
 
 const imgUsrDefault = "/imgs/formulario/default-user.jpeg";
 
+const maxLength = document.getElementById("maxLengthTextArea");
+
 /* Referencias */
-
-window.addEventListener("DOMContentLoaded", async () => {
-	const querySnapshot = await getOpinones();
-
-	console.log(querySnapshot);
-});
 
 const photoDefault = document.getElementById("previewPhoto");
 
@@ -41,29 +33,18 @@ photo.addEventListener("change", ({ target: { files } }) => {
 });
 
 let rankingStars = 0;
-star1.addEventListener("click", (e) => {
-	e.preventDefault();
-	rankingStars = 1;
+
+stars.forEach((star, index) => {
+	star.addEventListener("click", (e) => {
+		e.preventDefault();
+		rankingStars = index + 1;
+	});
 });
 
-star2.addEventListener("click", (e) => {
+opinion.addEventListener("input", (e) => {
 	e.preventDefault();
-	rankingStars = 2;
-});
-
-star3.addEventListener("click", (e) => {
-	e.preventDefault();
-	rankingStars = 3;
-});
-
-star4.addEventListener("click", (e) => {
-	e.preventDefault();
-	rankingStars = 4;
-});
-
-star5.addEventListener("click", (e) => {
-	e.preventDefault();
-	rankingStars = 5;
+	let text = opinion.value;
+	maxLength.innerHTML = `${text.length}/175`;
 });
 
 form.addEventListener("submit", (e) => {
