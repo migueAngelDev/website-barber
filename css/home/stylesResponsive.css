@@ -93,6 +93,60 @@
     height: 90vh;
   }
 }
+
+/* TESTIMONIOS */
+
+@media (max-width: 1200px) {
+  .container-testimonials {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
+  .container-testimonials {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .display {
+    align-items: center;
+    justify-content: center;
+  }
+  .container-testimonials {
+    width: auto;
+    padding: 0;
+  }
+  .card-opinion {
+    height: auto;
+  }
+
+  .description-usr {
+    flex-direction: column;
+    width: auto;
+  }
+
+  .carousel-controls {
+    display: flex;
+  }
+}
+
+@media (max-width: 360px) {
+  .card-opinion {
+    width: 250px !important;
+  }
+}
+
+@media (max-width: 280px) {
+  .card-opinion {
+    width: 200px !important;
+  }
+
+  .content-comments {
+    height: 200px !important;
+  }
+}
 /* SECCION 6 */
 
 @media screen and (max-width: 768px) {
