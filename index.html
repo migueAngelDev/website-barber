@@ -1,251 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Home</title>
-		<link rel="stylesheet" href="./css/home/styles.css" />
-		<link rel="stylesheet" href="./css/home/stylesResponsive.css" />
-		<link rel="stylesheet" href="/css/home/stylesnav.css" />
-		<link rel="stylesheet" href="./css/servicios/cortes/hairstyles.css" />
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-		/>
-		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-	</head>
-	<body>
-		<header class="menu">
-			<nav class="menu-container">
-				<div class="logo">
-					<a href="index.html"
-						><img src="./imgs/logo.png" alt=""
-					/></a>
-				</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/home/styles.css" />
+    <link rel="stylesheet" href="./css/home/stylesResponsive.css" />
+    <link rel="stylesheet" href="/css/home/stylesnav.css" />
+    <link rel="stylesheet" href="./css/servicios/cortes/hairstyles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <header class="menu">
+      <nav class="menu-container">
+        <div class="logo">
+          <a href="index.html"><img src="./imgs/logo.png" alt="" /></a>
+        </div>
 
-				<div class="logo2">
-					<p>Barber Shop: Los Ángeles</p>
-				</div>
-				<ul class="menu-content">
-					<!-- Primer contenido -->
-					<li class="menu-wrapper">
-						<a href="index.html" class="menu__link">Inicio</a>
-					</li>
-					<!-- Segundo Contenido -->
-					<li class="menu-wrapper menu-wrapper--show">
-						<a class="menu__link"
-							>Servicios
-							<svg
-								class="menu__arrow"
-								xmlns="http://www.w3.org/2000/svg"
-								width="24"
-								height="24"
-								viewBox="0 0 24 24"
-								style="fill: #000000"
-							>
-								<path
-									d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"
-								></path></svg
-						></a>
+        <div class="logo2">
+          <p>Barber Shop: Los Ángeles</p>
+        </div>
+        <ul class="menu-content">
+          <!-- Primer contenido -->
+          <li class="menu-wrapper">
+            <a href="index.html" class="menu__link">Inicio</a>
+          </li>
+          <!-- Segundo Contenido -->
+          <li class="menu-wrapper menu-wrapper--show">
+            <a class="menu__link"
+              >Servicios
+              <svg
+                class="menu__arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                style="fill: #000000"
+              >
+                <path
+                  d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"
+                ></path></svg
+            ></a>
 
-						<ul class="menu-content-group">
-							<li class="menu-wrapper-group">
-								<a
-									href="hairstyles.html"
-									class="menu__link menu-link--group"
-									>Cortes de barba y cabello</a
-								>
-							</li>
-							<li class="menu__inside">
-								<a
-									href="unas.html"
-									class="menu__link menu-link--group"
-									>Manicure</a
-								>
-							</li>
-							<li class="menu__inside">
-								<a
-									href="unas.html"
-									class="menu__link menu-link--group"
-									>Pedicure</a
-								>
-							</li>
-							<li class="menu__inside">
-								<a
-									href="unas.html"
-									class="menu__link menu-link--group"
-									>Tintes y permanentes</a
-								>
-							</li>
-						</ul>
-					</li>
-					<!-- Tercer contenido -->
-					<li class="menu-wrapper">
-						<a href="products.html" class="menu__link">Productos</a>
-					</li>
-					<li>
-						<a href="formulario.php">Formulario</a>
-					</li>
-				</ul>
+            <ul class="menu-content-group">
+              <li class="menu-wrapper-group">
+                <a href="hairstyles.html" class="menu__link menu-link--group"
+                  >Cortes de barba y cabello</a
+                >
+              </li>
+              <li class="menu__inside">
+                <a href="unas.html" class="menu__link menu-link--group"
+                  >Manicure</a
+                >
+              </li>
+              <li class="menu__inside">
+                <a href="unas.html" class="menu__link menu-link--group"
+                  >Pedicure</a
+                >
+              </li>
+              <li class="menu__inside">
+                <a href="unas.html" class="menu__link menu-link--group"
+                  >Tintes y permanentes</a
+                >
+              </li>
+            </ul>
+          </li>
+          <!-- Tercer contenido -->
+          <li class="menu-wrapper">
+            <a href="products.html" class="menu__link">Productos</a>
+          </li>
+          <!-- Cuarto contenido -->
+          <li class="menu-wrapper">
+            <a href="formulario.html" class="menu__link">Formulario</a>
+          </li>
+        </ul>
 
-				<div class="menu__hamburguer">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						class="menu__img"
-						width="30"
-						height="30"
-						viewBox="0 0 24 24"
-						style="fill: rgba(0, 0, 0, 1)"
-					>
-						<path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
-					</svg>
-				</div>
-			</nav>
-		</header>
-		<!-- SECCIÓN 1 HOME -->
-		<section class="section_home">
-			<div class="container-texts">
-				<div class="prhase-llamativa">
-					<h2>
-						Consigue tu look perfecto con nuestros servicios de
-						calidad y experiencia en nuestra barbería
-					</h2>
-				</div>
-				<div class="texto">
-					<p>
-						Nos enorgullece ofrecer servicios de alta calidad para
-						todos, ya sea que busques un corte clásico o un estilo
-						más atrevido, estamos aquí para ayudarte a lucir
-						impecable
-					</p>
-				</div>
-				<div class="btn-redirec-center">
-					<a
-						class="btn-redirec"
-						href="https://api.whatsapp.com/send?phone=9212333178&text=Me gustaría solicitar una cita, por favor. Agradezco su atención."
-						>Agendar una cita</a
-					>
-				</div>
-				<div class="container-herramientas">
-					<div class="herramienta">
-						<div class="circle">
-							<img
-								src="imgs/home/section-one/barbershop.png"
-								alt="Tijeras afiladas y precisas"
-							/>
-						</div>
-						<p>Tijeras afiladas y precisas</p>
-					</div>
-					<div class="herramienta">
-						<div class="circle">
-							<img
-								src="imgs/home/section-one/hair-clipper.png"
-								alt="Máquinas de corte potentes y versátiles"
-							/>
-						</div>
-						<p>Máquinas de corte potentes y versátiles</p>
-					</div>
-					<div class="herramienta">
-						<div class="circle">
-							<img
-								src="imgs/home/section-one/razor-blade.png"
-								alt="Navajas de calidad para un afeitado suave"
-							/>
-						</div>
-						<p>Navajas de calidad para un afeitado suave</p>
-					</div>
-				</div>
-			</div>
-			<div class="container-img-home">
-				<img
-					src="imgs/home/section-one/vista-posterior-hombre-barberia.jpg"
-					alt=""
-				/>
-			</div>
-		</section>
-		<!-- SECCIÓN 2 NUESTROS SERVICIOS -->
-		<section class="section-services">
-			<div class="header-section">
-				<span class="line"></span>
-				<div class="title-section">
-					<h3>Nuestros Servicios</h3>
-				</div>
-				<span class="line"></span>
-			</div>
-			<div class="container-services" id="container-services"></div>
-		</section>
-		<!-- SECCIÓN 3 PRODUCTOS -->
-		<section class="section-products">
-			<div class="contedor-padding-30px">
-				<div class="container-products">
-					<div class="content-product">
-						<p>Shaving Gel Para Afeitar</p>
-						<p>$200 MXN</p>
-						<img
-							src="./imgs/home/section-productos/Shavig-gel.jpg"
-							alt="Shaving Gel Para Afeitar"
-						/>
-					</div>
-					<div class="content-product">
-						<p>Shaving Gel Para Afeitar</p>
-						<p>$100 MXN</p>
-						<img
-							src="./imgs/home/section-productos/gel.jpg"
-							alt="Shaving Gel Para Afeitar"
-						/>
-					</div>
-				</div>
-				<div class="container-products productus-title">
-					<div class="title-section width">
-						<h3>Nuestros productos</h3>
-					</div>
-				</div>
-				<div class="container-products">
-					<div class="content-product display-none">
-						<p>Pomada Cabello Y Barba</p>
-						<p>$125 MXN</p>
-						<img
-							src="./imgs/home/section-productos/Pomade.jpg"
-							alt="Pomada Cabello Y Barba"
-						/>
-					</div>
-					<div class="btn-redirec-center product-center">
-						<a
-							class="btn-redirec redirec-ver-mas"
-							href="products.html"
-							>Ver más</a
-						>
-					</div>
-					<div class="content-product display-none">
-						<p>Fijador En Gel Para Cabello</p>
-						<p>$325 MXN</p>
-						<img
-							src="./imgs/home/section-productos/hair-gel.jpg"
-							alt="Fijador En Gel Para Cabello"
-						/>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- SECCIÓN 4 ESTILOS Y TENDENCIAS-->
-		<section class="estilos_y_tendencias">
-			<div class="header-section">
-				<span class="line"></span>
-				<div class="title-section">
-					<h3>Estilos y tendencias</h3>
-				</div>
-				<span class="line"></span>
-			</div>
-			<section class="age-category">
-				<div class="swiper-hairstyles">
-					<div class="swiper-wrapper" id="swiper-wrapper"></div>
-					<div class="swiper-pagination"></div>
-					<div class="swiper-button-prev"></div>
-					<div class="swiper-button-next"></div>
-					<div class="swiper-scrollbar"></div>
-				</div>
-			</section>
+        <div class="menu__hamburguer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="menu__img"
+            width="30"
+            height="30"
+            viewBox="0 0 24 24"
+            style="fill: rgba(0, 0, 0, 1)"
+          >
+            <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+          </svg>
+        </div>
+      </nav>
+    </header>
+    <!-- SECCIÓN 1 HOME -->
+    <section class="section_home">
+      <div class="container-texts">
+        <div class="prhase-llamativa">
+          <h2>
+            Consigue tu look perfecto con nuestros servicios de calidad y
+            experiencia en nuestra barbería
+          </h2>
+        </div>
+        <div class="texto">
+          <p>
+            Nos enorgullece ofrecer servicios de alta calidad para todos, ya sea
+            que busques un corte clásico o un estilo más atrevido, estamos aquí
+            para ayudarte a lucir impecable.
+          </p>
+        </div>
+        <div class="btn-redirec-center">
+          <a
+            class="btn-redirec"
+            href="https://api.whatsapp.com/send?phone=9212708384&text=Me gustaría solicitar una cita, por favor. Agradezco su atención."
+            >Agendar una cita</a
+          >
+        </div>
+        <div class="container-herramientas">
+          <div class="herramienta">
+            <div class="circle">
+              <img
+                src="imgs/home/section-one/barbershop.png"
+                alt="Tijeras afiladas y precisas"
+              />
+            </div>
+            <p>Tijeras afiladas y precisas</p>
+          </div>
+          <div class="herramienta">
+            <div class="circle">
+              <img
+                src="imgs/home/section-one/hair-clipper.png"
+                alt="Máquinas de corte potentes y versátiles"
+              />
+            </div>
+            <p>Máquinas de corte potentes y versátiles</p>
+          </div>
+          <div class="herramienta">
+            <div class="circle">
+              <img
+                src="imgs/home/section-one/razor-blade.png"
+                alt="Navajas de calidad para un afeitado suave"
+              />
+            </div>
+            <p>Navajas de calidad para un afeitado suave</p>
+          </div>
+        </div>
+      </div>
+      <div class="container-img-home">
+        <img
+          src="imgs/home/section-one/vista-posterior-hombre-barberia.jpg"
+          alt=""
+        />
+      </div>
+    </section>
+    <!-- SECCIÓN 2 NUESTROS SERVICIOS -->
+    <section class="section-services">
+      <div class="header-section">
+        <span class="line"></span>
+        <div class="title-section">
+          <h3>Nuestros Servicios</h3>
+        </div>
+        <span class="line"></span>
+      </div>
+      <div class="container-services" id="container-services"></div>
+    </section>
+    <!-- SECCIÓN 3 PRODUCTOS -->
+    <section class="section-products">
+      <div class="contedor-padding-30px">
+        <div class="container-products">
+          <div class="content-product">
+            <p>Shaving Gel Para Afeitar</p>
+            <p>$200 MXN</p>
+            <img
+              src="./imgs/home/section-productos/Shavig-gel.jpg"
+              alt="Shaving Gel Para Afeitar"
+            />
+          </div>
+          <div class="content-product">
+            <p>Shaving Gel Para Afeitar</p>
+            <p>$100 MXN</p>
+            <img
+              src="./imgs/home/section-productos/gel.jpg"
+              alt="Shaving Gel Para Afeitar"
+            />
+          </div>
+        </div>
+        <div class="container-products productus-title">
+          <div class="title-section width">
+            <h3>Nuestros productos</h3>
+          </div>
+        </div>
+        <div class="container-products">
+          <div class="content-product display-none">
+            <p>Pomada Cabello Y Barba</p>
+            <p>$125 MXN</p>
+            <img
+              src="./imgs/home/section-productos/Pomade.jpg"
+              alt="Pomada Cabello Y Barba"
+            />
+          </div>
+          <div class="btn-redirec-center product-center">
+            <a class="btn-redirec redirec-ver-mas" href="products.html"
+              >Ver más</a
+            >
+          </div>
+          <div class="content-product display-none">
+            <p>Fijador En Gel Para Cabello</p>
+            <p>$325 MXN</p>
+            <img
+              src="./imgs/home/section-productos/hair-gel.jpg"
+              alt="Fijador En Gel Para Cabello"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECCIÓN 4 ESTILOS Y TENDENCIAS-->
+    <section class="estilos_y_tendencias">
+      <div class="header-section">
+        <span class="line"></span>
+        <div class="title-section">
+          <h3>Estilos y tendencias</h3>
+        </div>
+        <span class="line"></span>
+      </div>
+      <section class="age-category">
+        <div class="swiper-hairstyles">
+          <div class="swiper-wrapper" id="swiper-wrapper"></div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </section>
 
       <div class="btn-redirec-center">
         <a class="btn-redirec redirec-ver-mas" href="hairstyles.html"

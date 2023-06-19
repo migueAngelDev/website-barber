@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Chewy&family=Dosis:wght@200&family=Nunito:wght@300&family=Russo+One&family=Shadows+Into+Light&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
 
 :root {
   --main-principal-bg: #ffffff;
@@ -7,9 +7,16 @@
   --textos: #576490;
   --textos-titulos-llamativos: #eec170;
   --font-weight-bold: bold;
+  --font-weight-bold: semibold;
   --font-weight-100: 100;
   --font-weight-200: 200;
   --font-weight-300: 300;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+  --font-weight-700: 700;
+  --font-weight-800: 800;
+  --font-weight-900: 900;
   --color-btn: #eec170;
   --color-btn-hover: #f1b955;
   --iconos: #2c2a2a;
@@ -47,7 +54,7 @@
   background: var(--color-btn);
   box-shadow: var(--box-shadow);
   color: var(--textos);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-600);
 }
 
 /* Tamaño de Ancho para el botón de compartir testimonios */
@@ -75,7 +82,7 @@
 .title-section {
   width: 320px;
   text-align: center;
-  padding: 25px 80px;
+  padding: 25px 50px;
   border-radius: var(--border-radius-5);
   background-color: var(--main-principal-bg);
   box-shadow: var(--box-shadow);
@@ -92,6 +99,16 @@
   height: 10px;
   background-color: var(--main-principal-bg);
   box-shadow: var(--box-shadow);
+}
+
+@media (max-width: 500px) {
+  .line {
+    display: none;
+  }
+  .header-section {
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /* Termina el diseño */
@@ -148,7 +165,8 @@
 
 .herramienta p {
   margin-top: 20px;
-  line-height: 2em;
+  line-height: 2.8em;
+  height: 75px;
 }
 
 .container-img-home {
@@ -165,8 +183,8 @@
 }
 
 .circle {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -584,6 +602,7 @@
 
 .testimonios {
   padding: 30px 0;
+  text-align: justify;
 }
 
 .container-testimonials {
@@ -591,9 +610,8 @@
   justify-content: space-between;
   margin: 50px 30px;
   gap: 50px;
-  padding: 0 80px;
+  padding: 0 50px;
   flex-wrap: wrap;
-  border: 1px solid firebrick;
 }
 
 .card-opinion {
@@ -601,13 +619,14 @@
   box-shadow: var(--box-shadow);
   padding: 10px;
   width: 330px;
-  height: 200px;
+  height: auto;
 }
 
 .description-usr {
   font-weight: bolder;
   display: flex;
   width: 100%;
+  height: 50px;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
@@ -632,11 +651,13 @@
   width: 30px;
   border-radius: var(--border-radius-100);
   height: 30px;
-  margin-right: 30px;
+  margin-right: 20px;
   box-shadow: var(--box-shadow);
 }
 
 .content-comments {
+  width: 100%;
+  height: 100px;
   color: var(--textos);
   line-height: 25px;
   font-size: 15px;
@@ -644,4 +665,30 @@
   box-shadow: var(--box-shadow);
   padding: 10px;
   border-radius: var(--border-radius-5);
+  word-wrap: break-word;
+}
+
+@media (max-width: 500px) {
+  .card-opinion {
+    height: auto;
+    width: 100%;
+  }
+
+  .container-testimonials {
+    padding: 0;
+  }
+}
+@media (max-width: 350px) {
+  .description-usr {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .content-comments {
+    height: 150px;
+  }
+
+  .description-usr {
+    height: auto;
+  }
 }

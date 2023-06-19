@@ -1,7 +1,7 @@
 .menu {
   font-family: Nunito, sans-serif;
   height: 80px;
-  font-weight: bold;
+  font-weight: var(--font-weight-600);
   background-color: var(--main-principal-bg);
   box-shadow: var(--box-shadow);
   position: fixed;

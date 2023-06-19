@@ -150,27 +150,27 @@ const contenedor = document.getElementById("swiper-wrapper");
 const newService = [
   {
     imagen: "./imgs/servicios/cortes/hombre/largo_y_suelto.jpg",
-    titulo: "Largo y suelto",
-  },
-  {
-    imagen: "./imgs/servicios/cortes/hombre/punta.jpg",
-    titulo: "De punta",
-  },
-  {
-    imagen: "./imgs/servicios/cortes/hombre/texturizado.jpg",
-    titulo: "Texturizado",
-  },
-  {
-    imagen: "./imgs/servicios/cortes/hombre/conico.jpg",
-    titulo: "Cónico",
-  },
-  {
-    imagen: "./imgs/servicios/cortes/hombre/mohicano.jpg",
-    titulo: "Mohicano",
+    titulo: "Largo",
   },
   {
     imagen: "./imgs/servicios/cortes/hairstyles/womens_hairstyles.jpg",
     titulo: "Bob",
+  },
+  {
+    imagen: "./imgs/servicios/cortes/hombre/punta.jpg",
+    titulo: "Punta",
+  },
+  {
+    imagen: "./imgs/servicios/cortes/hombre/militar.jpg",
+    titulo: "Militar",
+  },
+  {
+    imagen: "./imgs/servicios/cortes/hombre/caesar.jpg",
+    titulo: "Caesar",
+  },
+  {
+    imagen: "./imgs/servicios/cortes/hombre/conico.jpg",
+    titulo: "Cónico",
   },
 ];
 
