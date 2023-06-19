@@ -1,196 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Opniopnes || BarberShop: Los Ángeles</title>
-		<link rel="stylesheet" href="./css/formulario/style.css" />
-	</head>
-	<body>
-		<main>
-			<div class="header-section">
-				<span class="line"></span>
-				<div class="title-section">
-					<h3>Nuestros Servicios</h3>
-				</div>
-				<span class="line"></span>
-			</div>
-			<section class="container-box">
-				<div class="content1">
-					<div class="check-success">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							height="48"
-							viewBox="0 -960 960 960"
-							width="48"
-							fill="#ffffff"
-						>
-							<path
-								d="m346-60-76-130-151-31 17-147-96-112 96-111-17-147 151-31 76-131 134 62 134-62 77 131 150 31-17 147 96 111-96 112 17 147-150 31-77 130-134-62-134 62Zm27-79 107-45 110 45 67-100 117-30-12-119 81-92-81-94 12-119-117-28-69-100-108 45-110-45-67 100-117 28 12 119-81 94 81 92-12 121 117 28 70 100Zm107-341Zm-43 133 227-225-45-41-182 180-95-99-46 45 141 140Z"
-							/>
-						</svg>
-					</div>
-					<div class="content-text-info">
-						<p>
-							Recibir opiniones de nuestros clientes es
-							fundamental para mejorar nuestros servicios y
-							mantenernos actualizados en las tendencias y
-							necesidades del mercado. Además, nos permite conocer
-							la experiencia que han tenido en nuestro
-							establecimiento y poder corregir posibles errores o
-							aspectos a mejorar.
-						</p>
-					</div>
-					<div class="content-text-info">
-						<p>
-							Asimismo, las opiniones positivas pueden servir como
-							referencia para nuevos clientes interesados en
-							nuestros servicios. Por todo esto, valoramos y
-							agradecemos la retroalimentación de nuestros
-							clientes.
-						</p>
-					</div>
-					<div class="content-img-info">
-						<img
-							src="./imgs/formulario/valoracion.jpg"
-							alt="evaluacion"
-						/>
-					</div>
-				</div>
-				<div class="content2">
-					<form id="formOpiniones">
-						<div class="content-input">
-							<label for="nameUser"
-								>Ingresa tu(s) nombre(s):</label
-							>
-							<input type="text" id="nameUser"  required/>
-						</div>
-						<div class="content-input">
-							<label for="lastName">Ingresa tus apellidos:</label>
-							<input type="text" id="lastName" required/>
-						</div>
-						<div class="content-input">
-							<label for="emailUser"
-								>Agrega tu correo electrónico:</label
-							>
-							<input type="email" id="emailUser" required/>
-						</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opniopnes || BarberShop: Los Ángeles</title>
+    <link rel="stylesheet" href="./css/formulario/style.css" />
+    <link rel="stylesheet" href="/css/home/stylesnav.css" />
+  </head>
+  <body>
+    <header class="menu">
+      <nav class="menu-container">
+        <div class="logo">
+          <a href="index.html"><img src="./imgs/logo.png" alt="" /></a>
+        </div>
 
-						<div class="content-input">
-							<div class="container-photo">
-								<label for="photo" class="input-photo"
-									>Agrega una imagen</label
-								>
-								<input
-									type="file"
-									id="photo"
-									accept="image/png, image/jpeg"
-								/>
+        <div class="logo2">
+          <p>Barber Shop: Los Ángeles</p>
+        </div>
+        <ul class="menu-content">
+          <li class="menu-wrapper">
+            <a href="index.html" class="menu__link">Inicio</a>
+          </li>
+          <li class="menu-wrapper menu-wrapper--show">
+            <a class="menu__link"
+              >Servicios
+              <svg
+                class="menu__arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                style="fill: #000000"
+              >
+                <path
+                  d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"
+                ></path></svg
+            ></a>
 
-								<div id="previewPhoto"></div>
-							</div>
-						</div>
-						<div class="content-input">
-							<label for="calification">Califícanos:</label>
-							<div class="stars-range">
-								<div class="stars">
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="20"
-										height="20"
-										viewBox="0 0 26 26"
-									>
-										<polygon
-											points="13 0 16.3 8 25 8.2 18.7 13.7 20.2 22.5 13 17.6 5.8 22.5 7.3 13.7 1 8.2 9.7 8 13 0"
-											fill="#fff"
-											stroke="#000"
-										/>
-									</svg>
-								</div>
-								<div class="stars">
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="20"
-										height="20"
-										viewBox="0 0 26 26"
-									>
-										<polygon
-											points="13 0 16.3 8 25 8.2 18.7 13.7 20.2 22.5 13 17.6 5.8 22.5 7.3 13.7 1 8.2 9.7 8 13 0"
-											fill="#fff"
-											stroke="#000"
-										/>
-									</svg>
-								</div>
-								<div class="stars">
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="20"
-										height="20"
-										viewBox="0 0 26 26"
-									>
-										<polygon
-											points="13 0 16.3 8 25 8.2 18.7 13.7 20.2 22.5 13 17.6 5.8 22.5 7.3 13.7 1 8.2 9.7 8 13 0"
-											fill="#fff"
-											stroke="#000"
-										/>
-									</svg>
-								</div>
-								<div class="stars">
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="20"
-										height="20"
-										viewBox="0 0 26 26"
-									>
-										<polygon
-											points="13 0 16.3 8 25 8.2 18.7 13.7 20.2 22.5 13 17.6 5.8 22.5 7.3 13.7 1 8.2 9.7 8 13 0"
-											fill="#fff"
-											stroke="#000"
-										/>
-									</svg>
-								</div>
-								<div class="stars">
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="20"
-										height="20"
-										viewBox="0 0 26 26"
-									>
-										<polygon
-											points="13 0 16.3 8 25 8.2 18.7 13.7 20.2 22.5 13 17.6 5.8 22.5 7.3 13.7 1 8.2 9.7 8 13 0"
-											fill="#fff"
-											stroke="#000"
-										/>
-									</svg>
-								</div>
-							</div>
-						</div>
+            <ul class="menu-content-group">
+              <li class="menu-wrapper-group">
+                <a href="hairstyles.html" class="menu__link menu-link--group"
+                  >Cortes de barba y cabello</a
+                >
+              </li>
+              <li class="menu__inside">
+                <a href="unas.html" class="menu__link menu-link--group"
+                  >Manicure</a
+                >
+              </li>
+              <li class="menu__inside">
+                <a href="unas.html" class="menu__link menu-link--group"
+                  >Pedicure</a
+                >
+              </li>
+              <li class="menu__inside">
+                <a href="unas.html" class="menu__link menu-link--group"
+                  >Tintes y permanentes</a
+                >
+              </li>
+            </ul>
+          </li>
 
-						<div class="content-input">
-							<label for="opinion">Compartenos tu opinión:</label>
-							<textarea
-								id="opinion"
-								rows="5"
-								maxlength="175"
-								required
-							></textarea>
-							<div class="container-maxlength">
-								<div id="maxLengthTextArea">0/175</div>
-							</div>
-						</div>
+          <li class="menu-wrapper">
+            <a href="products.html" class="menu__link">Productos</a>
+          </li>
 
-						<div class="content-submit">
-							<input
-								type="submit"
-								value="Enviar"
-								id="btn-submit"
-							/>
-						</div>
-					</form>
-				</div>
-			</section>
-		</main>
-		<script src="./js/formulario/effectStars.js"></script>
-		<script src="./js/formulario/formulario.js" type="module"></script>
-	</body>
+          <li class="menu-wrapper">
+            <a href="formulario.html" class="menu__link">Formulario</a>
+          </li>
+        </ul>
+
+        <div class="menu__hamburguer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="menu__img"
+            width="30"
+            height="30"
+            viewBox="0 0 24 24"
+            style="fill: rgba(0, 0, 0, 1)"
+          >
+            <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+          </svg>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="header-section">
+        <span class="line"></span>
+        <div class="title-section">
+          <h3>Nuestros Servicios</h3>
+        </div>
+        <span class="line"></span>
+      </div>
+      <section class="container-box">
+        <div class="content1">
+          <div class="check-success">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="48"
+              viewBox="0 -960 960 960"
+              width="48"
+              fill="#ffffff"
+            >
+              <path
+                d="m346-60-76-130-151-31 17-147-96-112 96-111-17-147 151-31 76-131 134 62 134-62 77 131 150 31-17 147 96 111-96 112 17 147-150 31-77 130-134-62-134 62Zm27-79 107-45 110 45 67-100 117-30-12-119 81-92-81-94 12-119-117-28-69-100-108 45-110-45-67 100-117 28 12 119-81 94 81 92-12 121 117 28 70 100Zm107-341Zm-43 133 227-225-45-41-182 180-95-99-46 45 141 140Z"
+              />
+            </svg>
+          </div>
+          <div class="content-text-info">
+            <p>
+              Recibir opiniones de nuestros clientes es fundamental para mejorar
+              nuestros servicios y mantenernos actualizados en las tendencias y
+              necesidades del mercado. Además, nos permite conocer la
+              experiencia que han tenido en nuestro establecimiento y poder
+              corregir posibles errores o aspectos a mejorar.
+            </p>
+          </div>
+          <div class="content-text-info">
+            <p>
+              Asimismo, las opiniones positivas pueden servir como referencia
+              para nuevos clientes interesados en nuestros servicios. Por todo
+              esto, valoramos y agradecemos la retroalimentación de nuestros
+              clientes.
+            </p>
+          </div>
+          <div class="content-img-info">
+            <img src="./imgs/formulario/valoracion.jpg" alt="evaluacion" />
+          </div>
+        </div>
+        <div class="content2">
+          <form id="formOpiniones">
+            <div class="content-input">
+              <label for="nameUser">Ingresa tu(s) nombre(s):</label>
+              <input type="text" id="nameUser" required />
+            </div>
+            <div class="content-input">
+              <label for="lastName">Ingresa tus apellidos:</label>
+              <input type="text" id="lastName" required />
+            </div>
+            <div class="content-input">
+              <label for="emailUser">Agrega tu correo electrónico:</label>
+              <input type="email" id="emailUser" required />
+            </div>
+
+            <div class="content-input">
+              <div class="container-photo">
+                <label for="photo" class="input-photo">Agrega una imagen</label>
+                <input type="file" id="photo" accept="image/png, image/jpeg" />
+
+                <div id="previewPhoto"></div>
+              </div>
+            </div>
+            <div class="content-input">
+              <label for="calification">Califícanos:</label>
+              <div class="stars-range">
+                <div class="stars">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 26 26"
+                  >
+                    <polygon
+                      points="13 0 16.3 8 25 8.2 18.7 13.7 20.2 22.5 13 17.6 5.8 22.5 7.3 13.7 1 8.2 9.7 8 13 0"
+                      fill="#fff"
+                      stroke="#000"
+                    />
+                  </svg>
+                </div>
+                <div class="stars">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 26 26"
+                  >
+                    <polygon
+                      points="13 0 16.3 8 25 8.2 18.7 13.7 20.2 22.5 13 17.6 5.8 22.5 7.3 13.7 1 8.2 9.7 8 13 0"
+                      fill="#fff"
+                      stroke="#000"
+                    />
+                  </svg>
+                </div>
+                <div class="stars">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 26 26"
+                  >
+                    <polygon
+                      points="13 0 16.3 8 25 8.2 18.7 13.7 20.2 22.5 13 17.6 5.8 22.5 7.3 13.7 1 8.2 9.7 8 13 0"
+                      fill="#fff"
+                      stroke="#000"
+                    />
+                  </svg>
+                </div>
+                <div class="stars">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 26 26"
+                  >
+                    <polygon
+                      points="13 0 16.3 8 25 8.2 18.7 13.7 20.2 22.5 13 17.6 5.8 22.5 7.3 13.7 1 8.2 9.7 8 13 0"
+                      fill="#fff"
+                      stroke="#000"
+                    />
+                  </svg>
+                </div>
+                <div class="stars">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 26 26"
+                  >
+                    <polygon
+                      points="13 0 16.3 8 25 8.2 18.7 13.7 20.2 22.5 13 17.6 5.8 22.5 7.3 13.7 1 8.2 9.7 8 13 0"
+                      fill="#fff"
+                      stroke="#000"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-input">
+              <label for="opinion">Compartenos tu opinión:</label>
+              <textarea
+                id="opinion"
+                rows="5"
+                maxlength="175"
+                required
+              ></textarea>
+              <div class="container-maxlength">
+                <div id="maxLengthTextArea">0/175</div>
+              </div>
+            </div>
+
+            <div class="content-submit">
+              <input type="submit" value="Enviar" id="btn-submit" />
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="./js/formulario/effectStars.js"></script>
+    <script src="./js/formulario/formulario.js" type="module"></script>
+  </body>
 </html>

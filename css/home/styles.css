@@ -1,19 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Chewy&family=Dosis:wght@200&family=Nunito:wght@300&family=Russo+One&family=Shadows+Into+Light&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
 
 :root {
   --main-principal-bg: #ffffff;
-  --main-secondary-bg: #f2f2f2;
+  --main-secondary-bg: #f4f4f4;
   --textos-destacados: #000000;
   --textos: #576490;
   --textos-titulos-llamativos: #eec170;
   --font-weight-bold: bold;
+  --font-weight-bold: semibold;
   --font-weight-100: 100;
   --font-weight-200: 200;
   --font-weight-300: 300;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+  --font-weight-700: 700;
+  --font-weight-800: 800;
+  --font-weight-900: 900;
   --color-btn: #eec170;
   --color-btn-hover: #f1b955;
   --iconos: #2c2a2a;
   --box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  --box-shadow-hover: rgba(207, 205, 205, 0.2) 0px 2px 8px 0px;
   --border-radius-5: 5px;
   --border-radius-10: 10px;
   --border-radius-100: 100%;
@@ -44,10 +52,9 @@
   padding: 10px 15px;
   border-radius: var(--border-radius-5);
   font-size: 1em;
-  background: var(--color-btn);
   box-shadow: var(--box-shadow);
-  color: var(--textos);
-  font-weight: var(--font-weight-bold);
+  color: var(--color-btn-hover);
+  font-weight: var(--font-weight-600);
 }
 
 /* Tamaño de Ancho para el botón de compartir testimonios */
@@ -57,8 +64,7 @@
 }
 
 .btn-redirec:hover {
-  background: var(--color-btn-hover);
-  color: var(--textos-destacados);
+  box-shadow: var(--box-shadow-hover);
 }
 
 /* Aquí termmina el diseño del botón */
@@ -75,7 +81,7 @@
 .title-section {
   width: 320px;
   text-align: center;
-  padding: 25px 80px;
+  padding: 25px 50px;
   border-radius: var(--border-radius-5);
   background-color: var(--main-principal-bg);
   box-shadow: var(--box-shadow);
@@ -158,7 +164,8 @@
 
 .herramienta p {
   margin-top: 20px;
-  line-height: 2em;
+  line-height: 2.8em;
+  height: 75px;
 }
 
 .container-img-home {
@@ -175,8 +182,8 @@
 }
 
 .circle {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -594,6 +601,14 @@
 
 .testimonios {
   padding: 30px 0;
+  text-align: justify;
+}
+
+.display {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 30px 20px;
 }
 
 .container-testimonials {
@@ -606,79 +621,24 @@
   position: relative;
   padding: 0 30px;
 }
-
-@media (max-width: 1200px) {
-  .container-testimonials {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 1000px) {
-  .container-testimonials {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 600px) {
-  .display {
-    align-items: center;
-    justify-content: center;
-  }
-  .container-testimonials {
-    width: auto;
-    padding: 0;
-  }
-  .card-opinion {
-    height: auto;
-  }
-
-  .description-usr {
-    flex-direction: column;
-    width: auto;
-  }
-
-  .carousel-controls {
-    display: flex;
-  }
-}
-
-@media (max-width: 360px) {
-  .card-opinion {
-    width: 250px !important;
-  }
-}
-
-@media (max-width: 280px) {
-  .card-opinion {
-    width: 200px !important;
-  }
-
-  .content-comments {
-    height: 200px !important;
-  }
-}
-
 /* s */
 
 .card-opinion {
   border-radius: var(--border-radius-5);
   box-shadow: var(--box-shadow);
   padding: 10px;
-  width: 330px;
-  height: 200px;
+  width: 320px;
+  height: auto;
 }
 
 .description-usr {
   font-weight: bolder;
   display: flex;
   width: 100%;
+  height: 50px;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
-  box-shadow: var(--box-shadow);
-  padding: 10px;
-  border-radius: var(--border-radius-5);
 }
 
 .container-ranking {
@@ -697,16 +657,34 @@
   width: 30px;
   border-radius: var(--border-radius-100);
   height: 30px;
-  margin-right: 30px;
+  margin-right: 20px;
   box-shadow: var(--box-shadow);
 }
 
 .content-comments {
+  width: 100%;
+  height: 130px;
   color: var(--textos);
   line-height: 25px;
   font-size: 15px;
   font-weight: var(--font-weight-bold);
-  box-shadow: var(--box-shadow);
-  padding: 10px;
+  word-wrap: break-word;
+}
+
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-controls button {
+  width: 40px;
+  height: 40px;
+  background: #ccc;
+  font-size: 20px;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
   border-radius: var(--border-radius-5);
 }
