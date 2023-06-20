@@ -56,12 +56,6 @@ const PRODUCTS = [
 		contador: 0,
 	},
 	{
-		nombre: "Gel para peinar",
-		imagen: "./imgs/productos/gel.jpeg",
-		precio: 200,
-		contador: 0,
-	},
-	{
 		nombre: "Afeitadora eléctrica",
 		imagen: "./imgs/productos/afeitadora-corte.jpg",
 		precio: 1800,
@@ -86,21 +80,51 @@ const PRODUCTS = [
 		contador: 0,
 	},
 	{
-		nombre: "Maquinilla para afeitar",
-		imagen: "./imgs/productos/maquinilla-afeitar.jpeg",
-		precio: 500,
-		contador: 0,
-	},
-	{
-		nombre: "Spray de peinado",
-		imagen: "./imgs/productos/spray.jpeg",
-		precio: 240,
-		contador: 0,
-	},
-	{
 		nombre: "kit de cuidado para la barba",
 		imagen: "./imgs/productos/kit-barba.jpeg",
 		precio: 1000,
+		contador: 0,
+	},
+	{
+		nombre: "Gel para el cabello",
+		imagen: "./imgs/productos/gel.jpeg",
+		precio: 30,
+		contador: 0,
+	},
+	{
+		nombre: "Spray para el cabello",
+		imagen: "./imgs/productos/spray.jpeg",
+		precio: 85,
+		contador: 0,
+	},
+	{
+		nombre: "Crema para peinar",
+		imagen: "./imgs/productos/crema-para-peinar.jpeg",
+		precio: 175,
+		contador: 0,
+	},
+	{
+		nombre: "Shampoo para el cabello",
+		imagen: "./imgs/productos/shampoo.jpeg",
+		precio: 125,
+		contador: 0,
+	},
+	{
+		nombre: "Paquete pequeño de navajas",
+		imagen: "./imgs/productos/paquete-peque.jpeg",
+		precio: 35,
+		contador: 0,
+	},
+	{
+		nombre: "Paquete grande de navajas",
+		imagen: "./imgs/productos/paquete-gra.jpeg",
+		precio: 235,
+		contador: 0,
+	},
+	{
+		nombre: "Peine para los piojos",
+		imagen: "./imgs/productos/peine-piojos.jpeg",
+		precio: 75,
 		contador: 0,
 	},
 ];
