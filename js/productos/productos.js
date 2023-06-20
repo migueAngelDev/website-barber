@@ -20,6 +20,36 @@ const PRODUCTS = [
 		contador: 0,
 	},
 	{
+		nombre: "Crema para peinar",
+		imagen: "./imgs/productos/crema-para-peinar.jpeg",
+		precio: 175,
+		contador: 0,
+	},
+	{
+		nombre: "Shampoo para el cabello",
+		imagen: "./imgs/productos/shampoo.jpeg",
+		precio: 125,
+		contador: 0,
+	},
+	{
+		nombre: "Paquete pequeño de navajas",
+		imagen: "./imgs/productos/paquete-peque.jpeg",
+		precio: 35,
+		contador: 0,
+	},
+	{
+		nombre: "Paquete grande de navajas",
+		imagen: "./imgs/productos/paquete-gra.jpeg",
+		precio: 235,
+		contador: 0,
+	},
+	{
+		nombre: "Peine para los piojos",
+		imagen: "./imgs/productos/peine-piojos.jpeg",
+		precio: 75,
+		contador: 0,
+	},
+	{
 		nombre: "Cera para bigote",
 		imagen: "./imgs/productos/gel-barba.jpeg",
 		precio: 200,
@@ -95,36 +125,6 @@ const PRODUCTS = [
 		nombre: "Spray para el cabello",
 		imagen: "./imgs/productos/spray.jpeg",
 		precio: 85,
-		contador: 0,
-	},
-	{
-		nombre: "Crema para peinar",
-		imagen: "./imgs/productos/crema-para-peinar.jpeg",
-		precio: 175,
-		contador: 0,
-	},
-	{
-		nombre: "Shampoo para el cabello",
-		imagen: "./imgs/productos/shampoo.jpeg",
-		precio: 125,
-		contador: 0,
-	},
-	{
-		nombre: "Paquete pequeño de navajas",
-		imagen: "./imgs/productos/paquete-peque.jpeg",
-		precio: 35,
-		contador: 0,
-	},
-	{
-		nombre: "Paquete grande de navajas",
-		imagen: "./imgs/productos/paquete-gra.jpeg",
-		precio: 235,
-		contador: 0,
-	},
-	{
-		nombre: "Peine para los piojos",
-		imagen: "./imgs/productos/peine-piojos.jpeg",
-		precio: 75,
 		contador: 0,
 	},
 ];
