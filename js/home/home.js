@@ -32,25 +32,25 @@ const services = [
       "Ofrecemos cortes de cabello personalizados, tomando en cuenta sus necesidades y preferencias.",
   },
   {
-    imagen: "./imgs/home/section-servicios/vista-primer-plano.jpg",
+    imagen: "./imgs/home/section-servicios/permanente.jpeg",
     titulo: "Permanentes",
     servicio:
       "Ofrecemos servicios de permanentes para rizar el cabello de forma duradera y natural.",
   },
   {
-    imagen: "./imgs/home/section-servicios/vista-primer-plano.jpg",
+    imagen: "./imgs/home/section-servicios/lineas.jpg",
     titulo: "Líneas",
     servicio:
       "Ofrecemos servicios de arreglo de líneas de barba, patillas y nuca para hombres.",
   },
   {
-    imagen: "./imgs/home/section-servicios/vista-primer-plano.jpg",
+    imagen: "./imgs/home/section-servicios/cejas.jpeg",
     titulo: "Limpieza de Cejas",
     servicio:
       "Ofrecemos servicios de diseño y arreglo de cejas para lucir unas cejas perfectas y definidas.",
   },
   {
-    imagen: "./imgs/home/section-servicios/vista-primer-plano.jpg",
+    imagen: "./imgs/home/section-servicios/pestañas.jpg",
     titulo: "Pestañas",
     servicio:
       "Si deseas lucir pestañas más largas, espesas y definidas, ofrecemos servicios de extenciones de pestañas.",
@@ -68,7 +68,7 @@ const services = [
       "Para los amantes de la barba, ofrecemos servicios de corte, afeitado, diseño de barba y bigote.",
   },
   {
-    imagen: "./imgs/home/section-servicios/vista-primer-plano.jpg",
+    imagen: "./imgs/home/section-servicios/tintes.jpeg",
     titulo: "Tintes",
     servicio:
       "Si buscas un cambio de imagen, te ofrecemos servicios de tintes de cabello para darle un nuevo estilo.",
