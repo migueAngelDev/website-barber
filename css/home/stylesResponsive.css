@@ -37,7 +37,7 @@
 
 @media (max-width: 700px) {
   .text-service {
-    height: 40px;
+    height: auto;
   }
 
   .wrapper-service {
@@ -54,6 +54,10 @@
 @media (max-width: 280px) {
   .text-service {
     height: 100px;
+  }
+
+  .wrapper-service {
+    height: auto;
   }
 }
 
