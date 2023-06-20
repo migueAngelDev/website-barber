@@ -23,7 +23,7 @@ fetch("js/servicios/cortes/data.json")
             //SE CREA EL DIV PRINCIPAL DE LA CARTA Y SE LE AGREGA LA CLASE PREVIAMENTE CREADA EN CSS PARA DICHO ELEMENTO
             const hairstyleDiv = document.createElement("div");
             hairstyleDiv.classList.add("hairstyle-card");
-
+            
             //SE CREA LA CONSTANTE QUE CONTENDRÁ LA IMAGEN DEL CORTE, COMO ELEMENTO SE REQUIERE CREAR UN "img"
             const hairstyleImg = document.createElement("img");
             hairstyleImg.classList.add("hairstyle-card-img");

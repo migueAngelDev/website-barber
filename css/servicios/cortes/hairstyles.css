@@ -34,6 +34,7 @@
   display: flex;
   flex-direction: column;
   box-shadow: var(--box-shadow);
+  margin-top: 80px;
   margin-bottom: 2.5rem;
 }
 
@@ -82,7 +83,7 @@
 }
 
 .select-gender {
-  font-weight: var(--font-weight-bold);
+  font-weight: 700;
   font-size: 1.5rem;
 }
 
@@ -116,7 +117,7 @@
 .hairstyle-options {
   font-size: 1.375rem;
   color: var(--textos-titulos-llamativos);
-  font-weight: var(--font-weight-bold);
+  font-weight: 700;
   text-align: center;
 }
 
@@ -138,6 +139,10 @@
 .swiper-wrapper .swiper-slide {
   display: flex;
   justify-content: center;
+}
+
+.swiper-slide{
+  height: auto !important;
 }
 
 .swiper-hairstyles {
@@ -185,6 +190,7 @@
 
 .hairstyle-file {
   width: 60%;
+  height: 100%;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -205,20 +211,21 @@
 .hairstyle-img {
   width: 100%;
   border-radius: 5px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
 }
 
 .hairstyle-file h4 {
   color: #000000;
   font-size: 1.125rem;
-  font-weight: var(--font-weight-bold);
+  font-weight: 700;
   text-align: center;
-  white-space: nowrap;
 }
 
 .hairstyle-file p {
   color: var(--textos);
   font-size: 1.125rem;
-  font-weight: var(--font-weight-bold);
+  font-weight: 700;
   text-align: center;
 }
 
@@ -274,8 +281,6 @@
 .gallery-container {
   display: grid;
   grid-template-rows: var(--rows, 0fr);
-  /*display: flex;
-    flex-flow: row wrap;*/
   gap: 3.125rem;
   padding: 1.25rem;
   justify-content: center;
@@ -284,6 +289,7 @@
 
 .hairstyle-card {
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -296,19 +302,20 @@
 .hairstyle-card-img {
   width: 100%;
   border-radius: 5px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
 }
 
 .hairstyle-card-text {
   color: var(--textos);
   font-size: 1.125rem;
-  font-weight: var(--font-weight-bold);
+  font-weight: 700;
   text-align: center;
 }
 
 .hairstyle-card-name {
   font-size: 1.125rem;
   text-align: center;
-  white-space: nowrap;
 }
 
 .checkbox-gallery {

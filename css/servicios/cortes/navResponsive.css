@@ -1,0 +1,228 @@
+@media (max-width: 1280px) {
+    .section_home {
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 10px;
+    }
+  
+    .container-texts {
+      height: auto;
+      width: 90%;
+      gap: 50px;
+    }
+  
+    .container-img-home {
+      display: none;
+    }
+  
+    .prhase-llamativa h2 {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .herramienta {
+      display: grid;
+    }
+    .herramienta p {
+      display: none;
+    }
+    /*  .circle img {
+      width: 50%; */
+  }
+  
+  /* SECCION 2 */
+  
+  @media (max-width: 480px) {
+    .container-services {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .title-service,
+    .text-service {
+      height: auto;
+    }
+  }
+  
+  /* SECCION 3 */
+  @media (max-width: 700px) {
+    .section-products {
+      height: 80vh;
+    }
+    .product-center {
+      margin: 0 auto;
+    }
+  
+    .display-none {
+      display: none;
+    }
+  
+    .content-product img {
+      height: auto;
+      width: 200px;
+      object-fit: cover;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    .container-products {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .container-products img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  
+  @media (max-width: 380px) {
+    .section-products {
+      height: 80vh;
+    }
+    .container-products img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
+  @media (max-width: 280px) {
+    .section-products {
+      height: 90vh;
+    }
+  }
+  /* SECCION 6 */
+  
+  @media screen and (max-width: 768px) {
+    .container-horarios {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  
+    .content-horarios-img img {
+      width: 100%;
+      height: auto;
+      max-height: 400px;
+    }
+  
+    .horario {
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* SECCION 7*/
+  @media (max-width: 1440px) {
+    .container-location {
+      height: auto;
+      padding: 20px;
+    }
+  
+    .address {
+      width: 70%;
+      margin-top: 10px;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .location-map {
+      width: 70%;
+    }
+  
+    .location-map iframe {
+      width: 100%;
+      border-radius: 30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .address {
+      width: 100%;
+    }
+    .location-map {
+      width: 100%;
+    }
+  }
+  
+  /* SECCION 8 */
+  
+  @media (max-width: 720px) {
+    .container-reservacione-frases {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+  
+  /* FOOTER */
+  
+  @media (max-width: 860px) {
+    .twoColums {
+      grid-template-columns: auto;
+    }
+  
+    .footer-colum {
+      padding: 10px;
+    }
+  
+    .footer-about-redes {
+      margin-top: 30px;
+    }
+  
+    .container-redes-socials {
+      width: 150px;
+    }
+  
+    .item-img {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .footer-service {
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+    }
+  
+    .footer-service p {
+      margin-top: 10px;
+    }
+  
+    .footer-service p:nth-child(n + 5) {
+      grid-column: auto;
+      grid-row: auto;
+      text-align: left;
+    }
+  
+    .footer-service p:nth-child(n + 6) {
+      grid-column: auto;
+      grid-row: auto;
+      text-align: left;
+    }
+  
+    .footer-service p {
+      padding-left: 10px;
+    }
+  
+    .footer-service p:nth-child(odd) {
+      border-left: 5px solid var(--main-principal-bg);
+    }
+    .footer-service p:nth-child(even) {
+      border-left: 5px solid var(--main-secondary-bg);
+    }
+  }
+  
+  @media (max-width: 520px) {
+    .footer-testimonios-valoracion {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .footer-valoracion a {
+      margin: 0;
+      margin-right: 30px;
+    }
+  }
+  
+  @media (max-width: 280px) {
+    .footer-colum {
+      padding: 2px;
+    }
+  }
