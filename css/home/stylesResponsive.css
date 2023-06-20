@@ -35,13 +35,25 @@
 
 /* SECCION 2 */
 
-@media (max-width: 480px) {
+@media (max-width: 700px) {
+  .text-service {
+    height: 40px;
+  }
+
+  .wrapper-service {
+    height: 270px;
+  }
+}
+
+@media (max-width: 500px) {
   .container-services {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
-  .title-service,
+}
+
+@media (max-width: 280px) {
   .text-service {
-    height: auto;
+    height: 100px;
   }
 }
 

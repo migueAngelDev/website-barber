@@ -53,7 +53,7 @@ const services = [
     imagen: "./imgs/home/section-servicios/pestañas.jpg",
     titulo: "Pestañas",
     servicio:
-      "Si deseas lucir pestañas más largas, espesas y definidas, ofrecemos servicios de extenciones de pestañas.",
+      "Pestañas más largas, espesas y definidas? Ofrecemos servicios de extenciones de pestañas.",
   },
   {
     imagen: "./imgs/servicios/unas/manicura.jpg",
