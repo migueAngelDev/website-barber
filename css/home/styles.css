@@ -52,6 +52,7 @@
   border-radius: var(--border-radius-5);
   font-size: 1em;
   box-shadow: var(--box-shadow);
+  background-color: var(--main-principal-bg);
   color: var(--color-btn-hover);
   font-weight: var(--font-weight-600);
 }
@@ -63,6 +64,8 @@
 }
 
 .btn-redirec:hover {
+  background: var(--color-btn);
+  color: var(--main-principal-bg);
   box-shadow: var(--box-shadow-hover);
 }
 
@@ -493,6 +496,7 @@
 .one-colum {
   text-align: center;
   gap: 20px;
+  /*   text-wrap: balance; */
 }
 
 .footer-about-title {
@@ -540,11 +544,8 @@
   text-align: justify;
 }
 
+.footer-valoracion,
 .footer-testimonios-valoracion {
-  display: flex;
-}
-
-.footer-valoracion {
   display: flex;
 }
 
@@ -607,16 +608,15 @@
   display: flex;
   width: 100%;
   align-items: center;
-  padding: 30px 20px;
+  justify-content: space-around;
+  padding: 40px 20px;
 }
 
 .container-testimonials {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 80px;
-  justify-items: center; /* Centrar horizontalmente */
-  align-items: center; /* Centrar verticalmente */
-  width: 100%;
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 80px;
   position: relative;
   padding: 0 30px;
 }
@@ -626,7 +626,7 @@
   border-radius: var(--border-radius-5);
   box-shadow: var(--box-shadow);
   padding: 10px;
-  width: 320px;
+  width: 300px;
   height: auto;
 }
 
@@ -662,7 +662,7 @@
 
 .content-comments {
   width: 100%;
-  height: 130px;
+  height: 150px;
   color: var(--textos);
   line-height: 25px;
   font-size: 15px;
