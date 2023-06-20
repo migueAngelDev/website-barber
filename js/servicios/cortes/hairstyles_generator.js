@@ -2,6 +2,7 @@
 const galeriaLacio = document.getElementById("galeria-lacio");
 const galeriaOndulado = document.getElementById("galeria-ondulado");
 const galeriaRizado = document.getElementById("galeria-rizado");
+const galeriaBarba = document.getElementById("galeria-barba");
 const sliderAdultos = document.getElementById("slider-adultos");
 const sliderJovenes = document.getElementById("slider-jovenes");
 const sliderNinos = document.getElementById("slider-ninos");
@@ -20,6 +21,8 @@ fetch("js/servicios/cortes/data.json")
             hairstyleLi.setAttribute("hair-type", hairstyle.type);
             hairstyleLi.setAttribute("age", hairstyle.age);
             hairstyleLi.classList.add("hairstyle-container");
+
+            
             //SE CREA EL DIV PRINCIPAL DE LA CARTA Y SE LE AGREGA LA CLASE PREVIAMENTE CREADA EN CSS PARA DICHO ELEMENTO
             const hairstyleDiv = document.createElement("div");
             hairstyleDiv.classList.add("hairstyle-card");
@@ -56,6 +59,9 @@ fetch("js/servicios/cortes/data.json")
                 galeriaOndulado.appendChild(hairstyleLi);
             } else if (galleryType == "rizado"){
                 galeriaRizado.appendChild(hairstyleLi);
+            } else if (galleryType == "barba"){
+                hairstyleIntro.textContent = `Estilo:`;
+                galeriaBarba.appendChild(hairstyleLi);
             }
 
             /***************** SLIDERS **********************/
