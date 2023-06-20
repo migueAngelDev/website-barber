@@ -337,7 +337,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 30px 30px 0;
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-600);
 }
 
 .container-horarios .horario:nth-child(even) {
@@ -457,7 +457,7 @@
   display: grid;
   place-items: center;
   color: var(--textos);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-600);
 }
 
 .wrapper-frase-btn {

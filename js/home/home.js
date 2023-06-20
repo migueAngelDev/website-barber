@@ -100,8 +100,8 @@ const contenedor = document.getElementById("swiper-wrapper");
 
 const newService = [
   {
-    imagen: "./imgs/servicios/cortes/hombre/largo_y_suelto.jpg",
-    titulo: "Largo",
+    imagen: "./imgs/servicios/cortes/hombre/conico.jpg",
+    titulo: "Cónico",
   },
   {
     imagen: "./imgs/servicios/cortes/hairstyles/womens_hairstyles.jpg",
@@ -120,8 +120,8 @@ const newService = [
     titulo: "Caesar",
   },
   {
-    imagen: "./imgs/servicios/cortes/hombre/conico.jpg",
-    titulo: "Cónico",
+    imagen: "./imgs/servicios/cortes/hombre/erizo.webp",
+    titulo: "Erizo",
   },
 ];
 
@@ -259,18 +259,21 @@ window.addEventListener("DOMContentLoaded", async () => {
 
     containerTestimonials.innerHTML = visibleOpinions.join("");
 
-    // Actualizar estilos del botón "nextBtn"
     if (currentIndex < Math.floor(opinions.length / itemsPerPage)) {
       nextButton.style.backgroundColor = "black";
     } else {
       nextButton.style.backgroundColor = "gray";
     }
 
-    // Actualizar estilos del botón "prevBtn"
     if (currentIndex > 0) {
       prevButton.style.backgroundColor = "black";
     } else {
       prevButton.style.backgroundColor = "gray";
+    }
+
+    // Verificar si no hay más "card-opinion" disponibles
+    if (end >= opinions.length) {
+      nextButton.style.backgroundColor = "gray";
     }
   };
 
