@@ -916,6 +916,188 @@
             "type": "rizado",
             "img": "imgs/servicios/cortes/nina/rizado_corto.jpg",
             "name": "Rizado corto"
+        },
+        {
+            "category": "mens",
+            "age": "joven",
+            "type": "barba",
+            "img": "imgs/servicios/cortes/barba/completa.jpg",
+            "name": "Completa"
+        },
+        {
+            "category": "mens",
+            "age": "joven",
+            "type": "barba",
+            "img": "imgs/servicios/cortes/barba/candado.jpg",
+            "name": "Candado"
+        },
+        {
+            "category": "mens",
+            "age": "joven",
+            "type": "barba",
+            "img": "imgs/servicios/cortes/barba/circulo.png",
+            "name": "Círculo"
+        },
+        {
+            "category": "mens",
+            "age": "joven",
+            "type": "barba",
+            "img": "imgs/servicios/cortes/barba/perilla_completa.png",
+            "name": "Perilla completa"
+        },
+        {
+            "category": "mens",
+            "age": "joven",
+            "type": "barba",
+            "img": "imgs/servicios/cortes/barba/vikinga.jpg",
+            "name": "Vikinga"
+        },
+        {
+            "category": "mens",
+            "age": "joven",
+            "type": "barba",
+            "img": "imgs/servicios/cortes/barba/balbo.jpg",
+            "name": "Balbo"
+        },
+        {
+            "category": "mens",
+            "age": "joven",
+            "type": "barba",
+            "img": "imgs/servicios/cortes/barba/tres_dias.jpg",
+            "name": "Tres días"
+        },
+        {
+            "category": "mens",
+            "age": "joven",
+            "type": "barba",
+            "img": "imgs/servicios/cortes/barba/chivo.avif",
+            "name": "Chivo"
+        },
+        {
+            "category": "mens",
+            "age": "joven",
+            "type": "barba",
+            "img": "imgs/servicios/cortes/barba/perilla.avif",
+            "name": "Perilla"
+        },
+        {
+            "category": "mens",
+            "age": "joven",
+            "type": "barba",
+            "img": "imgs/servicios/cortes/barba/mostacho.jpg",
+            "name": "Mostacho"
+        },
+        {
+            "category": "mens",
+            "age": "joven",
+            "type": "barba",
+            "img": "imgs/servicios/cortes/barba/bigote_lapiz.jpg",
+            "name": "Bigote lápiz"
+        },
+        {
+            "category": "mens",
+            "age": "joven",
+            "type": "barba",
+            "img": "imgs/servicios/cortes/barba/bigote_cepillo.webp",
+            "name": "Bigote cepillo"
+        },
+        {
+            "category": "mens",
+            "age": "joven",
+            "type": "barba",
+            "img": "imgs/servicios/cortes/barba/bigote_dali.webp",
+            "name": "Bigote dalí"
+        },
+        {
+            "category": "mens",
+            "age": "adulto",
+            "type": "barba",
+            "img": "imgs/servicios/cortes/barba/completa.jpg",
+            "name": "Completa"
+        },
+        {
+            "category": "mens",
+            "age": "adulto",
+            "type": "barba",
+            "img": "imgs/servicios/cortes/barba/candado.jpg",
+            "name": "Candado"
+        },
+        {
+            "category": "mens",
+            "age": "adulto",
+            "type": "barba",
+            "img": "imgs/servicios/cortes/barba/circulo.png",
+            "name": "Círculo"
+        },
+        {
+            "category": "mens",
+            "age": "adulto",
+            "type": "barba",
+            "img": "imgs/servicios/cortes/barba/perilla_completa.png",
+            "name": "Perilla completa"
+        },
+        {
+            "category": "mens",
+            "age": "adulto",
+            "type": "barba",
+            "img": "imgs/servicios/cortes/barba/vikinga.jpg",
+            "name": "Vikinga"
+        },
+        {
+            "category": "mens",
+            "age": "adulto",
+            "type": "barba",
+            "img": "imgs/servicios/cortes/barba/balbo.jpg",
+            "name": "Balbo"
+        },
+        {
+            "category": "mens",
+            "age": "adulto",
+            "type": "barba",
+            "img": "imgs/servicios/cortes/barba/tres_dias.jpg",
+            "name": "Tres días"
+        },
+        {
+            "category": "mens",
+            "age": "adulto",
+            "type": "barba",
+            "img": "imgs/servicios/cortes/barba/chivo.avif",
+            "name": "Chivo"
+        },
+        {
+            "category": "mens",
+            "age": "adulto",
+            "type": "barba",
+            "img": "imgs/servicios/cortes/barba/perilla.avif",
+            "name": "Perilla"
+        },
+        {
+            "category": "mens",
+            "age": "adulto",
+            "type": "barba",
+            "img": "imgs/servicios/cortes/barba/mostacho.jpg",
+            "name": "Mostacho"
+        },
+        {
+            "category": "mens",
+            "age": "adulto",
+            "type": "barba",
+            "img": "imgs/servicios/cortes/barba/bigote_lapiz.jpg",
+            "name": "Bigote lápiz"
+        },
+        {
+            "category": "mens",
+            "age": "adulto",
+            "type": "barba",
+            "img": "imgs/servicios/cortes/barba/bigote_cepillo.webp",
+            "name": "Bigote cepillo"
+        },
+        {
+            "category": "mens",
+            "age": "adulto",
+            "type": "barba",
+            "img": "imgs/servicios/cortes/barba/bigote_dali.webp",
+            "name": "Bigote dalí"
         }
     ]
 }

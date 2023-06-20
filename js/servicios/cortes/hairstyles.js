@@ -30,6 +30,12 @@ $(document).ready(function () {
         $('.hairstyle-container-slider').hide();
         //MOSTRANDO CORTES DEL GÉNERO SELECCIONADO
         $('.hairstyle-container-slider[category="' + categoryHairstyle + '"]').show();
+
+        if(categoryHairstyle == "womens"){
+            $('#gallery-barba').hide();
+        } else{
+            $('#gallery-barba').show();
+        }
     });
 
     $('#hairstyles-ages').change(function () {
