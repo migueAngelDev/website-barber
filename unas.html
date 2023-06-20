@@ -7,42 +7,76 @@
     <meta name="description" content="" />
     <title>Document</title>
     <link rel="stylesheet" href="css/servicios/unas/style.css" />
+    <link rel="stylesheet" href="./css/home/stylesnav.css" />
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <img
-          src="imgs/home/section-one/logo_Barbería.png"
-          alt="logo de la barberia"
-        />
-      </div>
-      <div class="logo_2">Barber Shop: Los Ángeles</div>
-      <nav class="nav-bar">
-        <ul class="nav-bar-ul">
-          <li>
-            <a href="index.html">Inicio</a>
+    <header class="menu">
+      <nav class="menu-container">
+        <div class="logo">
+          <a href="index.html"><img src="./imgs/logo.png" alt="" /></a>
+        </div>
+
+        <div class="logo2">
+          <p>Barber Shop: Los Ángeles</p>
+        </div>
+        <ul class="menu-content">
+          <li class="menu-wrapper">
+            <a href="index.html" class="menu__link">Inicio</a>
           </li>
-          <li class="groups">
-            <a href="#"
+          <li class="menu-wrapper menu-wrapper--show">
+            <a class="menu__link"
               >Servicios
-              <span><img src="./imgs/home/icons/dropdown.svg" /></span>
-            </a>
-            <ul class="category">
-              <li><a href="hairstyles.html">Cortes de cabello y barba</a></li>
-              <li><a href="unas.html">Manicure</a></li>
-              <li><a href="unas.html">Pedicure</a></li>
-              <li><a href="#">Tintes y permanentes</a></li>
+              <svg
+                class="menu__arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                style="fill: #000000"
+              >
+                <path
+                  d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"
+                ></path></svg
+            ></a>
+
+            <ul class="menu-content-group">
+              <li class="menu-wrapper-group">
+                <a href="hairstyles.html" class="menu__link menu-link--group"
+                  >Cortes de Barba y Cabello</a
+                >
+              </li>
+              <li class="menu__inside">
+                <a href="unas.html" class="menu__link menu-link--group"
+                  >Manicure y Pedicure</a
+                >
+              </li>
             </ul>
           </li>
-          <li>
-            <a href="products.html">Productos</a>
+
+          <li class="menu-wrapper">
+            <a href="products.html" class="menu__link">Productos</a>
           </li>
-          <li>
-            <a href="#">Formulario</a>
+
+          <li class="menu-wrapper">
+            <a href="formulario.html" class="menu__link">Formulario</a>
           </li>
         </ul>
+
+        <div class="menu__hamburguer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="menu__img"
+            width="30"
+            height="30"
+            viewBox="0 0 24 24"
+            style="fill: rgba(0, 0, 0, 1)"
+          >
+            <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+          </svg>
+        </div>
       </nav>
     </header>
+
     <section class="section-unas">
       <div class="header-section">
         <span class="line"></span>

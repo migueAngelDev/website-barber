@@ -170,172 +170,6 @@ newService.forEach((service) => {
   containerOpinions.innerHTML = structureHTML;
 }); */
 
-/* window.addEventListener("DOMContentLoaded", async () => {
-  const querySnapshot = await getOpinones();
-  let structureHTML = "";
-
-  querySnapshot.forEach((doc) => {
-    const item = doc.data();
-    let rankingHTML = "";
-
-    for (let i = 1; i <= 5; i++) {
-      if (i <= item.calificacion) {
-        rankingHTML += `
-          <svg
-            class="star-svg"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            style="stroke: #f1b955; fill: #f1b955"
-          >
-            <path
-              class="star-path"
-              d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"
-             style="fill: #f1b955"
-              ></path>
-          </svg>`;
-      } else {
-        rankingHTML += `
-          <svg
-            class="star-svg"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            style="stroke: #f1b955"
-          >
-            <path
-              class="star-path"
-              d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"
-             
-            ></path>
-          </svg>`;
-      }
-    }
-
-    structureHTML += `
-      <div class="card-opinion">
-        <section class="description-usr">
-          <div>
-            <img src="${item.foto}" alt="${item.nombre}">
-            <p>${item.nombre}</p>
-          </div>
-          <section class="container-ranking">
-            ${rankingHTML}
-          </section>
-        </section>
-        <div class="content-comments">
-          <p>${item.opinion}</p>
-        </div>
-      </div>
-    `;
-  });
-
-  containerOpinions.innerHTML = structureHTML;
-}); */
-
-/* window.addEventListener("DOMContentLoaded", async () => {
-  const querySnapshot = await getOpinones();
-  let opinions = [];
-
-  querySnapshot.forEach((doc) => {
-    const item = doc.data();
-    let rankingHTML = "";
-
-    for (let i = 1; i <= 5; i++) {
-      if (i <= item.calificacion) {
-        rankingHTML += `
-          <svg
-            class="star-svg"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            style="stroke: #f1b955; fill: #f1b955"
-          >
-            <path
-              class="star-path"
-              d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"
-              style="fill: #f1b955"
-            ></path>
-          </svg>`;
-      } else {
-        rankingHTML += `
-          <svg
-            class="star-svg"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            style="stroke: #f1b955"
-          >
-            <path
-              class="star-path"
-              d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"
-            ></path>
-          </svg>`;
-      }
-    }
-
-    const opinionHTML = `
-      <div class="card-opinion">
-        <section class="description-usr">
-          <div>
-            <img src="${item.foto}" alt="${item.nombre}">
-            <p>${item.nombre}</p>
-          </div>
-          <section class="container-ranking">
-            ${rankingHTML}
-          </section>
-        </section>
-        <div class="content-comments">
-          <p>${item.opinion}</p>
-        </div>
-      </div>
-    `;
-
-    opinions.push(opinionHTML);
-  });
-
-  const containerTestimonials = document.getElementById(
-    "container-testimonials"
-  );
-  let currentIndex = 0;
-  const itemsPerPage = 6;
-
-  function updateTestimonials() {
-    const start = currentIndex * itemsPerPage;
-    const end = start + itemsPerPage;
-    const visibleOpinions = opinions.slice(start, end);
-
-    containerTestimonials.innerHTML = visibleOpinions.join("");
-  }
-
-  function showNextTestimonials() {
-    if (currentIndex < Math.floor(opinions.length / itemsPerPage)) {
-      currentIndex++;
-      updateTestimonials();
-    }
-  }
-
-  function showPreviousTestimonials() {
-    if (currentIndex > 0) {
-      currentIndex--;
-      updateTestimonials();
-    }
-  }
-
-  const nextButton = document.getElementById("nextBtn");
-  const prevButton = document.getElementById("prevBtn");
-
-  nextButton.addEventListener("click", showNextTestimonials);
-  prevButton.addEventListener("click", showPreviousTestimonials);
-
-  updateTestimonials();
-});
- */
-
 window.addEventListener("DOMContentLoaded", async () => {
   const querySnapshot = await getOpinones();
   let structureHTML = "";
@@ -351,8 +185,8 @@ window.addEventListener("DOMContentLoaded", async () => {
           <svg
             class="star-svg"
             xmlns="http://www.w3.org/2000/svg"
-            width="18"
-            height="18"
+            width="16"
+            height="16"
             viewBox="0 0 24 24"
             style="stroke: #f1b955; fill: #f1b955"
           >
@@ -367,8 +201,8 @@ window.addEventListener("DOMContentLoaded", async () => {
           <svg
             class="star-svg"
             xmlns="http://www.w3.org/2000/svg"
-            width="18"
-            height="18"
+            width="16"
+            height="16"
             viewBox="0 0 24 24"
             style="stroke: #f1b955"
           >
@@ -411,7 +245,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   const updateItemsPerPage = () => {
     if (window.innerWidth >= 1024) {
       itemsPerPage = 6;
-    } else if (window.innerWidth >= 1200) {
+    } else if (window.innerWidth >= 810) {
       itemsPerPage = 4;
     } else {
       itemsPerPage = 2;
@@ -453,7 +287,10 @@ window.addEventListener("DOMContentLoaded", async () => {
   };
 
   const nextButtonHandler = () => {
-    if (currentIndex < Math.floor(opinions.length / itemsPerPage)) {
+    const totalOpinions = opinions.length;
+    const totalPages = Math.ceil(totalOpinions / itemsPerPage);
+
+    if (currentIndex < totalPages - 1) {
       currentIndex++;
       containerTestimonials.style.transition = "opacity 0.4s";
       containerTestimonials.style.opacity = 0;
@@ -465,6 +302,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   };
 
   const resizeHandler = () => {
+    currentIndex = 0;
     updateItemsPerPage();
     updateTestimonials();
   };

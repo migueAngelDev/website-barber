@@ -99,31 +99,24 @@
 @media (max-width: 1200px) {
   .container-testimonials {
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   .container-testimonials {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 600px) {
-  .display {
-    align-items: center;
-    justify-content: center;
-  }
-  .container-testimonials {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     width: auto;
     padding: 0;
   }
-  .card-opinion {
-    height: auto;
+  .display {
+    align-items: center;
   }
 
   .description-usr {
     flex-direction: column;
+    gap: 20px;
     width: auto;
   }
 
@@ -134,19 +127,24 @@
 
 @media (max-width: 400px) {
   .card-opinion {
-    width: 200px !important;
-  }
-}
-
-@media (max-width: 280px) {
-  .card-opinion {
-    width: 200px !important;
+    width: 240px;
   }
 
   .content-comments {
-    height: 200px !important;
+    height: 225px;
   }
 }
+
+@media (max-width: 300px) {
+  .card-opinion {
+    width: 200px;
+  }
+
+  .content-comments {
+    height: 240px;
+  }
+}
+
 /* SECCION 6 */
 
 @media screen and (max-width: 768px) {
