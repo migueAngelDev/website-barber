@@ -1,1103 +1,1103 @@
 {
-    "hairstyles": [
-        {
-            "category": "mens",
-            "age": "adulto",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/hombre/clasico.jpg",
-            "name": "Clásico"
-        },
-        {
-            "category": "mens",
-            "age": "joven",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/hombre/desvanecido.jpg",
-            "name": "Desvanecido"
-        },
-        {
-            "category": "mens",
-            "age": "joven",
-            "type": "ondulado",
-            "img": "imgs/servicios/cortes/hombre/texturizado.jpg",
-            "name": "Texturizado"
-        },
-        {
-            "category": "mens",
-            "age": "adulto",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/hombre/largo_y_suelto.jpg",
-            "name": "Largo y suelto"
-        },
-        {
-            "category": "mens",
-            "age": "adulto",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/hombre/conico.jpg",
-            "name": "Cónico"
-        },
-        {
-            "category": "mens",
-            "age": "adulto",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/hombre/militar.jpg",
-            "name": "Militar"
-        },
-        {
-            "category": "mens",
-            "age": "joven",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/hombre/punta.jpg",
-            "name": "De punta"
-        },
-        {
-            "category": "mens",
-            "age": "adulto",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/hombre/buzz.jpg",
-            "name": "Buzz"
-        },
-        {
-            "category": "mens",
-            "img": "imgs/servicios/cortes/hombre/mohicano.jpg",
-            "age": "joven",
-            "type": "ondulado",
-            "name": "Mohicano"
-        },
-        {
-            "category": "mens",
-            "age": "adulto",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/hombre/pompadour.png",
-            "name": "Pompadour"
-        },
-        {
-            "category": "mens",
-            "age": "adulto",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/hombre/undercut.jpg",
-            "name": "Undercut"
-        },
-        {
-            "category": "mens",
-            "age": "adulto",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/hombre/caesar.jpg",
-            "name": "Caesar"
-        },
-        {
-            "category": "mens",
-            "age": "nino",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/nino/desvanecido.jpg",
-            "name": "Desvanecido"
-        },
-        {
-            "category": "mens",
-            "age": "nino",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/nino/hacia_atras.jpg",
-            "name": "Peinado hacia atrás"
-        },
-        {
-            "category": "mens",
-            "age": "nino",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/nino/tazon.jpg",
-            "name": "Tazón"
-        },
-        {
-            "category": "mens",
-            "age": "nino",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/nino/cepillo.jpg",
-            "name": "Cepillo"
-        },
-        {
-            "category": "mens",
-            "age": "nino",
-            "type": "ondulado",
-            "img": "imgs/servicios/cortes/nino/capas_largas.jpg",
-            "name": "Capas largas"
-        },
-        {
-            "category": "mens",
-            "age": "nino",
-            "type": "rizado",
-            "img": "imgs/servicios/cortes/nino/crop.webp",
-            "name": "Crop"
-        },
-        {
-            "category": "mens",
-            "age": "nino",
-            "type": "rizado",
-            "img": "imgs/servicios/cortes/nino/cesar_curly.webp",
-            "name": "Cesar"
-        },
-        {
-            "category": "womens",
-            "age": "adulto",
-            "type": "rizado",
-            "img": "imgs/servicios/cortes/mujer/erizo.webp",
-            "name": "Erizo"
-        },
-        {
-            "category": "mens",
-            "age": "nino",
-            "type": "ondulado",
-            "img": "imgs/servicios/cortes/nino/texturizado.webp",
-            "name": "Texturizado"
-        },
-        {
-            "category": "mens",
-            "age": "nino",
-            "type": "ondulado",
-            "img": "imgs/servicios/cortes/nino/surfista.jpg",
-            "name": "Surfista"
-        },
-        {
-            "category": "mens",
-            "age": "nino",
-            "type": "rizado",
-            "img": "imgs/servicios/cortes/nino/degradado_rizos.jpg",
-            "name": "Degradado con rizos"
-        },
-        {
-            "category": "mens",
-            "age": "nino",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/nino/undercut.webp",
-            "name": "Undercut"
-        },
-        {
-            "category": "mens",
-            "age": "nino",
-            "type": "ondulado",
-            "img": "imgs/servicios/cortes/nino/canadiense.webp",
-            "name": "Canadiense"
-        },
-        {
-            "category": "mens",
-            "age": "nino",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/nino/sagitario.webp",
-            "name": "Sagitario"
-        },
-        {
-            "category": "mens",
-            "age": "nino",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/nino/semibox.webp",
-            "name": "Semibox"
-        },
-        {
-            "category": "mens",
-            "age": "nino",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/nino/cesar_lacio.webp",
-            "name": "Cesar"
-        },
-        {
-            "category": "womens",
-            "age": "adulto",
-            "type": "ondulado",
-            "img": "imgs/servicios/cortes/mujer/rachel.webp",
-            "name": "Rachel"
-        },
-        {
-            "category": "womens",
-            "age": "adulto",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/mujer/bob.webp",
-            "name": "Bob"
-        },
-        {
-            "category": "womens",
-            "age": "joven",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/mujer/bob_joven.webp",
-            "name": "Bob"
-        },
-        {
-            "category": "womens",
-            "age": "joven",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/mujer/recto_largo.webp",
-            "name": "Recto largo"
-        },
-        {
-            "category": "womens",
-            "age": "joven",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/mujer/en_capas.jpg",
-            "name": "En capas"
-        },
-        {
-            "category": "womens",
-            "age": "adulto",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/mujer/sasson.webp",
-            "name": "Sasson"
-        },
-        {
-            "category": "womens",
-            "age": "adulto",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/mujer/page.jpg",
-            "name": "Page"
-        },
-        {
-            "category": "womens",
-            "age": "joven",
-            "type": "ondulado",
-            "img": "imgs/servicios/cortes/mujer/mallet.webp",
-            "name": "Mallet"
-        },
-        {
-            "category": "womens",
-            "age": "adulto",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/mujer/moscovita.webp",
-            "name": "Moscovita"
-        },
-        {
-            "category": "womens",
-            "age": "adulto",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/mujer/pixie.jpg",
-            "name": "Pixie"
-        },
-        {
-            "category": "womens",
-            "age": "adulto",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/mujer/gorro.webp",
-            "name": "Gorro"
-        },
-        {
-            "category": "womens",
-            "age": "joven",
-            "type": "ondulado",
-            "img": "imgs/servicios/cortes/mujer/shaggy.webp",
-            "name": "Shaggy"
-        },
-        {
-            "category": "womens",
-            "age": "joven",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/mujer/recto.webp",
-            "name": "Recto"
-        },
-        {
-            "category": "womens",
-            "age": "adulto",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/mujer/cola_de_zorro.webp",
-            "name": "En V"
-        },
-        {
-            "category": "womens",
-            "age": "joven",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/mujer/cola_de_zorro.webp",
-            "name": "En V"
-        },
-        {
-            "category": "womens",
-            "age": "joven",
-            "type": "ondulado",
-            "img": "imgs/servicios/cortes/mujer/undercut.webp",
-            "name": "Undercut"
-        },
-        {
-            "category": "womens",
-            "age": "adulto",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/mujer/tomboy.webp",
-            "name": "Tomboy"
-        },
-        {
-            "category": "womens",
-            "age": "joven",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/mujer/escalera.webp",
-            "name": "Escalera"
-        },
-        {
-            "category": "womens",
-            "age": "joven",
-            "type": "ondulado",
-            "img": "imgs/servicios/cortes/mujer/wolf_cut.jpg",
-            "name": "Wolf"
-        },
-        {
-            "category": "womens",
-            "age": "joven",
-            "type": "ondulado",
-            "img": "imgs/servicios/cortes/mujer/bob_ondulado.jpg",
-            "name": "Bob ondulado"
-        },
-        {
-            "category": "womens",
-            "age": "adulto",
-            "type": "ondulado",
-            "img": "imgs/servicios/cortes/mujer/desvanecido.jpg",
-            "name": "Desvanecido"
-        },
-        {
-            "category": "womens",
-            "age": "joven",
-            "type": "rizado",
-            "img": "imgs/servicios/cortes/mujer/bob_rizado.jpg",
-            "name": "Bob rizado"
-        },
-        {
-            "category": "womens",
-            "age": "adulto",
-            "type": "rizado",
-            "img": "imgs/servicios/cortes/mujer/bob_rizado.jpg",
-            "name": "Bob rizado"
-        },
-        {
-            "category": "womens",
-            "age": "adulto",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/mujer/garson.webp",
-            "name": "Garson"
-        },
-        {
-            "category": "womens",
-            "age": "joven",
-            "type": "rizado",
-            "img": "imgs/servicios/cortes/mujer/afro.jpg",
-            "name": "Afro"
-        },
-        {
-            "category": "womens",
-            "age": "adulto",
-            "type": "rizado",
-            "img": "imgs/servicios/cortes/mujer/afro.jpg",
-            "name": "Afro"
-        },
-        {
-            "category": "womens",
-            "age": "joven",
-            "type": "ondulado",
-            "img": "imgs/servicios/cortes/mujer/sirena.jpg",
-            "name": "Sirena"
-        },
-        {
-            "category": "womens",
-            "age": "joven",
-            "type": "ondulado",
-            "img": "imgs/servicios/cortes/mujer/mullet.webp",
-            "name": "Mullet"
-        },
-        {
-            "category": "womens",
-            "age": "joven",
-            "type": "ondulado",
-            "img": "imgs/servicios/cortes/mujer/lob_capas.png",
-            "name": "Lob a capas"
-        },
-        {
-            "category": "womens",
-            "age": "adulto",
-            "type": "rizado",
-            "img": "imgs/servicios/cortes/mujer/tomboy_rizado.webp",
-            "name": "Tomboy"
-        },
-        {
-            "category": "womens",
-            "age": "joven",
-            "type": "rizado",
-            "img": "imgs/servicios/cortes/mujer/tomboy_rizado.webp",
-            "name": "Tomboy"
-        },
-        {
-            "category": "womens",
-            "age": "adulto",
-            "type": "ondulado",
-            "img": "imgs/servicios/cortes/mujer/butterfly.jpg",
-            "name": "Butterfly"
-        },
-        {
-            "category": "womens",
-            "age": "adulto",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/mujer/largo_desfilado.jpg",
-            "name": "Largo desfilado"
-        },
-        {
-            "category": "womens",
-            "age": "adulto",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/mujer/flequillo_recto.jpg",
-            "name": "Flequillo recto"
-        },
-        {
-            "category": "womens",
-            "age": "joven",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/mujer/flequillo_recto.jpg",
-            "name": "Flequillo recto"
-        },
-        {
-            "category": "womens",
-            "age": "joven",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/mujer/flequillo_cortina.jpg",
-            "name": "Flequillo cortina"
-        },
-        {
-            "category": "womens",
-            "age": "joven",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/mujer/largo_ultra_pulido.jpg",
-            "name": "Largo ultra pulido"
-        },
-        {
-            "category": "womens",
-            "age": "adulto",
-            "type": "ondulado",
-            "img": "imgs/servicios/cortes/mujer/largo_volumen.jpg",
-            "name": "Largo con volumen"
-        },
-        {
-            "category": "womens",
-            "age": "adulto",
-            "type": "ondulado",
-            "img": "imgs/servicios/cortes/mujer/flequillo_volumen.jpg",
-            "name": "Flequillo con volumen"
-        },
-        {
-            "category": "womens",
-            "age": "adulto",
-            "type": "ondulado",
-            "img": "imgs/servicios/cortes/mujer/lob.jpg",
-            "name": "Lob"
-        },
-        {
-            "category": "womens",
-            "age": "joven",
-            "type": "ondulado",
-            "img": "imgs/servicios/cortes/mujer/media_melena.jpg",
-            "name": "Media melena"
-        },
-        {
-            "category": "womens",
-            "age": "adulto",
-            "type": "ondulado",
-            "img": "imgs/servicios/cortes/mujer/shaggy_largo.jpg",
-            "name": "Shaggy largo"
-        },
-        {
-            "category": "womens",
-            "age": "joven",
-            "type": "ondulado",
-            "img": "imgs/servicios/cortes/mujer/recto_con_ondas.jpg",
-            "name": "Recto con ondas"
-        },
-        {
-            "category": "womens",
-            "age": "joven",
-            "type": "ondulado",
-            "img": "imgs/servicios/cortes/mujer/degradado.jpg",
-            "name": "Degradado"
-        },
-        {
-            "category": "womens",
-            "age": "joven",
-            "type": "rizado",
-            "img": "imgs/servicios/cortes/mujer/rizado_capas.webp",
-            "name": "Rizado a capas"
-        },
-        {
-            "category": "womens",
-            "age": "adulto",
-            "type": "rizado",
-            "img": "imgs/servicios/cortes/mujer/bob_midi.webp",
-            "name": "Bob midi"
-        },
-        {
-            "category": "womens",
-            "age": "adulto",
-            "type": "rizado",
-            "img": "imgs/servicios/cortes/mujer/french_bob_rizz.webp",
-            "name": "Bob francés rizado"
-        },
-        {
-            "category": "womens",
-            "age": "joven",
-            "type": "rizado",
-            "img": "imgs/servicios/cortes/mujer/redondo.webp",
-            "name": "Redondo"
-        },
-        {
-            "category": "womens",
-            "age": "adulto",
-            "type": "rizado",
-            "img": "imgs/servicios/cortes/mujer/bolacurl.webp",
-            "name": "Bolacurl"
-        },
-        {
-            "category": "womens",
-            "age": "joven",
-            "type": "rizado",
-            "img": "imgs/servicios/cortes/mujer/minibob.webp",
-            "name": "Minibob"
-        },
-        {
-            "category": "womens",
-            "age": "adulto",
-            "type": "rizado",
-            "img": "imgs/servicios/cortes/mujer/corto_redondo.webp",
-            "name": "Corto y redondo"
-        },
-        {
-            "category": "womens",
-            "age": "adulto",
-            "type": "rizado",
-            "img": "imgs/servicios/cortes/mujer/pixie_rizado.webp",
-            "name": "Pixie rizado"
-        },
-        {
-            "category": "womens",
-            "age": "adulto",
-            "type": "ondulado",
-            "img": "imgs/servicios/cortes/mujer/shag_70.webp",
-            "name": "Shag"
-        },
-        {
-            "category": "womens",
-            "age": "adulto",
-            "type": "ondulado",
-            "img": "imgs/servicios/cortes/mujer/mullet_ondulado.webp",
-            "name": "Mullet ondulado"
-        },
-        {
-            "category": "mens",
-            "age": "joven",
-            "type": "ondulado",
-            "img": "imgs/servicios/cortes/hombre/crop.webp",
-            "name": "Crop"
-        },
-        {
-            "category": "mens",
-            "age": "adulto",
-            "type": "ondulado",
-            "img": "imgs/servicios/cortes/hombre/medio_largo_capas.jpg",
-            "name": "Medio largo con capas"
-        },
-        {
-            "category": "mens",
-            "age": "joven",
-            "type": "rizado",
-            "img": "imgs/servicios/cortes/hombre/cesar_rizado.webp",
-            "name": "Cesar"
-        },
-        {
-            "category": "mens",
-            "age": "joven",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/hombre/faux_hawk.webp",
-            "name": "Faux-Hawk"
-        },
-        {
-            "category": "mens",
-            "age": "adulto",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/hombre/faux_hawk2.webp",
-            "name": "Faux-Hawk"
-        },
-        {
-            "category": "mens",
-            "age": "joven",
-            "type": "rizado",
-            "img": "imgs/servicios/cortes/hombre/undercut_rizado.webp",
-            "name": "Undercut"
-        },
-        {
-            "category": "mens",
-            "age": "adulto",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/hombre/top_knot.webp",
-            "name": "Top Knot"
-        },
-        {
-            "category": "mens",
-            "age": "joven",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/hombre/top_knot.webp",
-            "name": "Top Knot"
-        },
-        {
-            "category": "mens",
-            "age": "joven",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/hombre/clasico.jpg",
-            "name": "Clásico"
-        },
-        {
-            "category": "mens",
-            "age": "joven",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/hombre/flattop.webp",
-            "name": "Flattop"
-        },
-        {
-            "category": "mens",
-            "age": "joven",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/hombre/gorro.webp",
-            "name": "Gorro"
-        },
-        {
-            "category": "mens",
-            "age": "adulto",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/hombre/flattop2.webp",
-            "name": "Flattop"
-        },
-        {
-            "category": "mens",
-            "age": "joven",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/hombre/erizo.webp",
-            "name": "Erizo"
-        },
-        {
-            "category": "mens",
-            "age": "adulto",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/hombre/erizo2.webp",
-            "name": "Erizo"
-        },
-        {
-            "category": "mens",
-            "age": "joven",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/hombre/sagitario.webp",
-            "name": "Sagitario"
-        },
-        {
-            "category": "mens",
-            "age": "joven",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/hombre/medio_puntas_despeinadas.jpg",
-            "name": "Medio con puntas despeinadas"
-        },
-        {
-            "category": "mens",
-            "age": "joven",
-            "type": "ondulado",
-            "img": "imgs/servicios/cortes/hombre/flequillo_suelto.webp",
-            "name": "Flequillo suelto"
-        },
-        {
-            "category": "mens",
-            "age": "adulto",
-            "type": "ondulado",
-            "img": "imgs/servicios/cortes/hombre/flequillo_suelto.webp",
-            "name": "Flequillo suelto"
-        },
-        {
-            "category": "mens",
-            "age": "joven",
-            "type": "ondulado",
-            "img": "imgs/servicios/cortes/hombre/flequillo_corto_despeinado.webp",
-            "name": "Flequillo corto despeinado"
-        },
-        {
-            "category": "mens",
-            "age": "adulto",
-            "type": "rizado",
-            "img": "imgs/servicios/cortes/hombre/canadiense_rizz.webp",
-            "name": "Canadiense"
-        },
-        {
-            "category": "mens",
-            "age": "joven",
-            "type": "rizado",
-            "img": "imgs/servicios/cortes/hombre/crop_rizz.webp",
-            "name": "Crop"
-        },
-        {
-            "category": "mens",
-            "age": "joven",
-            "type": "rizado",
-            "img": "imgs/servicios/cortes/hombre/top_knot_rizz.webp",
-            "name": "Top Knot"
-        },
-        {
-            "category": "mens",
-            "age": "joven",
-            "type": "rizado",
-            "img": "imgs/servicios/cortes/hombre/pompadour_rizz.webp",
-            "name": "Pompadour"
-        },
-        {
-            "category": "mens",
-            "age": "adulto",
-            "type": "ondulado",
-            "img": "imgs/servicios/cortes/hombre/semibox.webp",
-            "name": "Semibox"
-        },
-        {
-            "category": "mens",
-            "age": "joven",
-            "type": "ondulado",
-            "img": "imgs/servicios/cortes/hombre/semibox.webp",
-            "name": "Semibox"
-        },
-        {
-            "category": "mens",
-            "age": "joven",
-            "type": "ondulado",
-            "img": "imgs/servicios/cortes/hombre/taper_fade.webp",
-            "name": "Taper Fade"
-        },
-        {
-            "category": "mens",
-            "age": "jove",
-            "type": "rizado",
-            "img": "imgs/servicios/cortes/hombre/desvanecido_rizado.webp",
-            "name": "Desvanecido rizado"
-        },
-        {
-            "category": "mens",
-            "age": "adulto",
-            "type": "rizado",
-            "img": "imgs/servicios/cortes/hombre/rizos_y_flequillo.jpg",
-            "name": "Rizos y flequillo"
-        },
-        {
-            "category": "mens",
-            "age": "adulto",
-            "type": "rizado",
-            "img": "imgs/servicios/cortes/hombre/afro.webp",
-            "name": "Afro"
-        },
-        {
-            "category": "mens",
-            "age": "joven",
-            "type": "rizado",
-            "img": "imgs/servicios/cortes/hombre/afro.webp",
-            "name": "Afro"
-        },
-        {
-            "category": "mens",
-            "age": "adulto",
-            "type": "rizado",
-            "img": "imgs/servicios/cortes/hombre/hongo_rizz.jpg",
-            "name": "Hongo"
-        },
-        {
-            "category": "mens",
-            "age": "adulto",
-            "type": "rizado",
-            "img": "imgs/servicios/cortes/hombre/rizado_bajo.jpg",
-            "name": "Rizado bajo"
-        },
-        {
-            "category": "mens",
-            "age": "joven",
-            "type": "rizado",
-            "img": "imgs/servicios/cortes/hombre/con_raya_definido.jpg",
-            "name": "Con raya y definido"
-        },
-        {
-            "category": "mens",
-            "age": "adulto",
-            "type": "rizado",
-            "img": "imgs/servicios/cortes/hombre/afro_moderno.jpg",
-            "name": "Afro moderno"
-        },
-        {
-            "category": "mens",
-            "age": "adulto",
-            "type": "ondulado",
-            "img": "imgs/servicios/cortes/hombre/surfer.jpg",
-            "name": "Surfer"
-        },
-        {
-            "category": "mens",
-            "age": "adulto",
-            "type": "ondulado",
-            "img": "imgs/servicios/cortes/hombre/crop.jpg",
-            "name": "Texturizado con puntas desfiladas"
-        },
-        {
-            "category": "womens",
-            "age": "nino",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/hairstyles/girls_hairstyles.jpg",
-            "name": "Bob"
-        },
-        {
-            "category": "womens",
-            "age": "nino",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/nina/escalera.webp",
-            "name": "Escalera"
-        },
-        {
-            "category": "womens",
-            "age": "nino",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/nina/bob_flequillo.webp",
-            "name": "Bob con flequillo"
-        },
-        {
-            "category": "womens",
-            "age": "nino",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/nina/pixie.jpg",
-            "name": "Pixie"
-        },
-        {
-            "category": "womens",
-            "age": "nino",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/nina/en_capas.jpg",
-            "name": "En capas"
-        },
-        {
-            "category": "womens",
-            "age": "nino",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/nina/media_melena.webp",
-            "name": "Media melena"
-        },
-        {
-            "category": "womens",
-            "age": "nino",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/nina/flequillo.jpg",
-            "name": "Con flequillo"
-        },
-        {
-            "category": "womens",
-            "age": "nino",
-            "type": "lacio",
-            "img": "imgs/servicios/cortes/nina/asimetrico.jpg",
-            "name": "Asimétrico"
-        },
-        {
-            "category": "womens",
-            "age": "nino",
-            "type": "ondulado",
-            "img": "imgs/servicios/cortes/nina/bob_ondulado.jpg",
-            "name": "Bob ondulado"
-        },
-        {
-            "category": "womens",
-            "age": "nino",
-            "type": "ondulado",
-            "img": "imgs/servicios/cortes/nina/shaggy.jpg",
-            "name": "Shaggy"
-        },
-        {
-            "category": "womens",
-            "age": "nino",
-            "type": "ondulado",
-            "img": "imgs/servicios/cortes/nina/cascada.jpg",
-            "name": "En cascada"
-        },
-        {
-            "category": "womens",
-            "age": "nino",
-            "type": "rizado",
-            "img": "imgs/servicios/cortes/nina/melena_rizada.jpg",
-            "name": "Melena rizada"
-        },
-        {
-            "category": "womens",
-            "age": "nino",
-            "type": "rizado",
-            "img": "imgs/servicios/cortes/nina/rizado_corto.jpg",
-            "name": "Rizado corto"
-        },
-        {
-            "category": "mens",
-            "age": "joven",
-            "type": "barba",
-            "img": "imgs/servicios/cortes/barba/completa.jpg",
-            "name": "Completa"
-        },
-        {
-            "category": "mens",
-            "age": "joven",
-            "type": "barba",
-            "img": "imgs/servicios/cortes/barba/candado.jpg",
-            "name": "Candado"
-        },
-        {
-            "category": "mens",
-            "age": "joven",
-            "type": "barba",
-            "img": "imgs/servicios/cortes/barba/circulo.png",
-            "name": "Círculo"
-        },
-        {
-            "category": "mens",
-            "age": "joven",
-            "type": "barba",
-            "img": "imgs/servicios/cortes/barba/perilla_completa.png",
-            "name": "Perilla completa"
-        },
-        {
-            "category": "mens",
-            "age": "joven",
-            "type": "barba",
-            "img": "imgs/servicios/cortes/barba/vikinga.jpg",
-            "name": "Vikinga"
-        },
-        {
-            "category": "mens",
-            "age": "joven",
-            "type": "barba",
-            "img": "imgs/servicios/cortes/barba/balbo.jpg",
-            "name": "Balbo"
-        },
-        {
-            "category": "mens",
-            "age": "joven",
-            "type": "barba",
-            "img": "imgs/servicios/cortes/barba/tres_dias.jpg",
-            "name": "Tres días"
-        },
-        {
-            "category": "mens",
-            "age": "joven",
-            "type": "barba",
-            "img": "imgs/servicios/cortes/barba/chivo.avif",
-            "name": "Chivo"
-        },
-        {
-            "category": "mens",
-            "age": "joven",
-            "type": "barba",
-            "img": "imgs/servicios/cortes/barba/perilla.avif",
-            "name": "Perilla"
-        },
-        {
-            "category": "mens",
-            "age": "joven",
-            "type": "barba",
-            "img": "imgs/servicios/cortes/barba/mostacho.jpg",
-            "name": "Mostacho"
-        },
-        {
-            "category": "mens",
-            "age": "joven",
-            "type": "barba",
-            "img": "imgs/servicios/cortes/barba/bigote_lapiz.jpg",
-            "name": "Bigote lápiz"
-        },
-        {
-            "category": "mens",
-            "age": "joven",
-            "type": "barba",
-            "img": "imgs/servicios/cortes/barba/bigote_cepillo.webp",
-            "name": "Bigote cepillo"
-        },
-        {
-            "category": "mens",
-            "age": "joven",
-            "type": "barba",
-            "img": "imgs/servicios/cortes/barba/bigote_dali.webp",
-            "name": "Bigote dalí"
-        },
-        {
-            "category": "mens",
-            "age": "adulto",
-            "type": "barba",
-            "img": "imgs/servicios/cortes/barba/completa.jpg",
-            "name": "Completa"
-        },
-        {
-            "category": "mens",
-            "age": "adulto",
-            "type": "barba",
-            "img": "imgs/servicios/cortes/barba/candado.jpg",
-            "name": "Candado"
-        },
-        {
-            "category": "mens",
-            "age": "adulto",
-            "type": "barba",
-            "img": "imgs/servicios/cortes/barba/circulo.png",
-            "name": "Círculo"
-        },
-        {
-            "category": "mens",
-            "age": "adulto",
-            "type": "barba",
-            "img": "imgs/servicios/cortes/barba/perilla_completa.png",
-            "name": "Perilla completa"
-        },
-        {
-            "category": "mens",
-            "age": "adulto",
-            "type": "barba",
-            "img": "imgs/servicios/cortes/barba/vikinga.jpg",
-            "name": "Vikinga"
-        },
-        {
-            "category": "mens",
-            "age": "adulto",
-            "type": "barba",
-            "img": "imgs/servicios/cortes/barba/balbo.jpg",
-            "name": "Balbo"
-        },
-        {
-            "category": "mens",
-            "age": "adulto",
-            "type": "barba",
-            "img": "imgs/servicios/cortes/barba/tres_dias.jpg",
-            "name": "Tres días"
-        },
-        {
-            "category": "mens",
-            "age": "adulto",
-            "type": "barba",
-            "img": "imgs/servicios/cortes/barba/chivo.avif",
-            "name": "Chivo"
-        },
-        {
-            "category": "mens",
-            "age": "adulto",
-            "type": "barba",
-            "img": "imgs/servicios/cortes/barba/perilla.avif",
-            "name": "Perilla"
-        },
-        {
-            "category": "mens",
-            "age": "adulto",
-            "type": "barba",
-            "img": "imgs/servicios/cortes/barba/mostacho.jpg",
-            "name": "Mostacho"
-        },
-        {
-            "category": "mens",
-            "age": "adulto",
-            "type": "barba",
-            "img": "imgs/servicios/cortes/barba/bigote_lapiz.jpg",
-            "name": "Bigote lápiz"
-        },
-        {
-            "category": "mens",
-            "age": "adulto",
-            "type": "barba",
-            "img": "imgs/servicios/cortes/barba/bigote_cepillo.webp",
-            "name": "Bigote cepillo"
-        },
-        {
-            "category": "mens",
-            "age": "adulto",
-            "type": "barba",
-            "img": "imgs/servicios/cortes/barba/bigote_dali.webp",
-            "name": "Bigote dalí"
-        }
-    ]
+	"hairstyles": [
+		{
+			"category": "mens",
+			"age": "adulto",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/hombre/clasico.jpg",
+			"name": "Clásico"
+		},
+		{
+			"category": "mens",
+			"age": "joven",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/hombre/desvanecido.jpg",
+			"name": "Desvanecido"
+		},
+		{
+			"category": "mens",
+			"age": "joven",
+			"type": "ondulado",
+			"img": "imgs/servicios/cortes/hombre/texturizado.jpg",
+			"name": "Texturizado"
+		},
+		{
+			"category": "mens",
+			"age": "adulto",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/hombre/largo_y_suelto.jpg",
+			"name": "Largo y suelto"
+		},
+		{
+			"category": "mens",
+			"age": "adulto",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/hombre/conico.jpg",
+			"name": "Cónico"
+		},
+		{
+			"category": "mens",
+			"age": "adulto",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/hombre/militar.jpg",
+			"name": "Militar"
+		},
+		{
+			"category": "mens",
+			"age": "joven",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/hombre/punta.jpg",
+			"name": "De punta"
+		},
+		{
+			"category": "mens",
+			"age": "adulto",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/hombre/buzz.jpg",
+			"name": "Buzz"
+		},
+		{
+			"category": "mens",
+			"img": "imgs/servicios/cortes/hombre/mohicano.jpg",
+			"age": "joven",
+			"type": "ondulado",
+			"name": "Mohicano"
+		},
+		{
+			"category": "mens",
+			"age": "adulto",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/hombre/pompadour.png",
+			"name": "Pompadour"
+		},
+		{
+			"category": "mens",
+			"age": "adulto",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/hombre/undercut.jpg",
+			"name": "Undercut"
+		},
+		{
+			"category": "mens",
+			"age": "adulto",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/hombre/caesar.jpg",
+			"name": "Caesar"
+		},
+		{
+			"category": "mens",
+			"age": "nino",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/nino/desvanecido.jpg",
+			"name": "Desvanecido"
+		},
+		{
+			"category": "mens",
+			"age": "nino",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/nino/hacia_atras.jpg",
+			"name": "Peinado hacia atrás"
+		},
+		{
+			"category": "mens",
+			"age": "nino",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/nino/tazon.jpg",
+			"name": "Tazón"
+		},
+		{
+			"category": "mens",
+			"age": "nino",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/nino/cepillo.jpg",
+			"name": "Cepillo"
+		},
+		{
+			"category": "mens",
+			"age": "nino",
+			"type": "ondulado",
+			"img": "imgs/servicios/cortes/nino/capas_largas.jpg",
+			"name": "Capas largas"
+		},
+		{
+			"category": "mens",
+			"age": "nino",
+			"type": "rizado",
+			"img": "imgs/servicios/cortes/nino/crop.webp",
+			"name": "Crop"
+		},
+		{
+			"category": "mens",
+			"age": "nino",
+			"type": "rizado",
+			"img": "imgs/servicios/cortes/nino/cesar_curly.webp",
+			"name": "Cesar"
+		},
+		{
+			"category": "womens",
+			"age": "adulto",
+			"type": "rizado",
+			"img": "imgs/servicios/cortes/mujer/erizo.webp",
+			"name": "Erizo"
+		},
+		{
+			"category": "mens",
+			"age": "nino",
+			"type": "ondulado",
+			"img": "imgs/servicios/cortes/nino/texturizado.webp",
+			"name": "Texturizado"
+		},
+		{
+			"category": "mens",
+			"age": "nino",
+			"type": "ondulado",
+			"img": "imgs/servicios/cortes/nino/surfista.jpg",
+			"name": "Surfista"
+		},
+		{
+			"category": "mens",
+			"age": "nino",
+			"type": "rizado",
+			"img": "imgs/servicios/cortes/nino/degradado_rizos.jpg",
+			"name": "Degradado con rizos"
+		},
+		{
+			"category": "mens",
+			"age": "nino",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/nino/undercut.webp",
+			"name": "Undercut"
+		},
+		{
+			"category": "mens",
+			"age": "nino",
+			"type": "ondulado",
+			"img": "imgs/servicios/cortes/nino/canadiense.webp",
+			"name": "Canadiense"
+		},
+		{
+			"category": "mens",
+			"age": "nino",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/nino/sagitario.webp",
+			"name": "Sagitario"
+		},
+		{
+			"category": "mens",
+			"age": "nino",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/nino/semibox.webp",
+			"name": "Semibox"
+		},
+		{
+			"category": "mens",
+			"age": "nino",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/nino/cesar_lacio.webp",
+			"name": "Cesar"
+		},
+		{
+			"category": "womens",
+			"age": "adulto",
+			"type": "ondulado",
+			"img": "imgs/servicios/cortes/mujer/rachel.webp",
+			"name": "Rachel"
+		},
+		{
+			"category": "womens",
+			"age": "adulto",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/mujer/bob.webp",
+			"name": "Bob"
+		},
+		{
+			"category": "womens",
+			"age": "joven",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/mujer/bob_joven.webp",
+			"name": "Bob"
+		},
+		{
+			"category": "womens",
+			"age": "joven",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/mujer/recto_largo.webp",
+			"name": "Recto largo"
+		},
+		{
+			"category": "womens",
+			"age": "joven",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/mujer/en_capas.jpg",
+			"name": "En capas"
+		},
+		{
+			"category": "womens",
+			"age": "adulto",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/mujer/sasson.webp",
+			"name": "Sasson"
+		},
+		{
+			"category": "womens",
+			"age": "adulto",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/mujer/page.jpg",
+			"name": "Page"
+		},
+		{
+			"category": "womens",
+			"age": "joven",
+			"type": "ondulado",
+			"img": "imgs/servicios/cortes/mujer/mallet.webp",
+			"name": "Mallet"
+		},
+		{
+			"category": "womens",
+			"age": "adulto",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/mujer/moscovita.webp",
+			"name": "Moscovita"
+		},
+		{
+			"category": "womens",
+			"age": "adulto",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/mujer/pixie.jpg",
+			"name": "Pixie"
+		},
+		{
+			"category": "womens",
+			"age": "adulto",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/mujer/gorro.webp",
+			"name": "Gorro"
+		},
+		{
+			"category": "womens",
+			"age": "joven",
+			"type": "ondulado",
+			"img": "imgs/servicios/cortes/mujer/shaggy.webp",
+			"name": "Shaggy"
+		},
+		{
+			"category": "womens",
+			"age": "joven",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/mujer/recto.webp",
+			"name": "Recto"
+		},
+		{
+			"category": "womens",
+			"age": "adulto",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/mujer/cola_de_zorro.webp",
+			"name": "En V"
+		},
+		{
+			"category": "womens",
+			"age": "joven",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/mujer/cola_de_zorro.webp",
+			"name": "En V"
+		},
+		{
+			"category": "womens",
+			"age": "joven",
+			"type": "ondulado",
+			"img": "imgs/servicios/cortes/mujer/undercut.webp",
+			"name": "Undercut"
+		},
+		{
+			"category": "womens",
+			"age": "adulto",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/mujer/tomboy.webp",
+			"name": "Tomboy"
+		},
+		{
+			"category": "womens",
+			"age": "joven",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/mujer/escalera.webp",
+			"name": "Escalera"
+		},
+		{
+			"category": "womens",
+			"age": "joven",
+			"type": "ondulado",
+			"img": "imgs/servicios/cortes/mujer/wolf_cut.jpg",
+			"name": "Wolf"
+		},
+		{
+			"category": "womens",
+			"age": "joven",
+			"type": "ondulado",
+			"img": "imgs/servicios/cortes/mujer/bob_ondulado.jpg",
+			"name": "Bob ondulado"
+		},
+		{
+			"category": "womens",
+			"age": "adulto",
+			"type": "ondulado",
+			"img": "imgs/servicios/cortes/mujer/desvanecido.jpg",
+			"name": "Desvanecido"
+		},
+		{
+			"category": "womens",
+			"age": "joven",
+			"type": "rizado",
+			"img": "imgs/servicios/cortes/mujer/bob_rizado.jpg",
+			"name": "Bob rizado"
+		},
+		{
+			"category": "womens",
+			"age": "adulto",
+			"type": "rizado",
+			"img": "imgs/servicios/cortes/mujer/bob_rizado.jpg",
+			"name": "Bob rizado"
+		},
+		{
+			"category": "womens",
+			"age": "adulto",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/mujer/garson.webp",
+			"name": "Garson"
+		},
+		{
+			"category": "womens",
+			"age": "joven",
+			"type": "rizado",
+			"img": "imgs/servicios/cortes/mujer/afro.jpg",
+			"name": "Afro"
+		},
+		{
+			"category": "womens",
+			"age": "adulto",
+			"type": "rizado",
+			"img": "imgs/servicios/cortes/mujer/afro.jpg",
+			"name": "Afro"
+		},
+		{
+			"category": "womens",
+			"age": "joven",
+			"type": "ondulado",
+			"img": "imgs/servicios/cortes/mujer/sirena.jpg",
+			"name": "Sirena"
+		},
+		{
+			"category": "womens",
+			"age": "joven",
+			"type": "ondulado",
+			"img": "imgs/servicios/cortes/mujer/mullet.webp",
+			"name": "Mullet"
+		},
+		{
+			"category": "womens",
+			"age": "joven",
+			"type": "ondulado",
+			"img": "imgs/servicios/cortes/mujer/lob_capas.png",
+			"name": "Lob a capas"
+		},
+		{
+			"category": "womens",
+			"age": "adulto",
+			"type": "rizado",
+			"img": "imgs/servicios/cortes/mujer/tomboy_rizado.webp",
+			"name": "Tomboy"
+		},
+		{
+			"category": "womens",
+			"age": "joven",
+			"type": "rizado",
+			"img": "imgs/servicios/cortes/mujer/tomboy_rizado.webp",
+			"name": "Tomboy"
+		},
+		{
+			"category": "womens",
+			"age": "adulto",
+			"type": "ondulado",
+			"img": "imgs/servicios/cortes/mujer/butterfly.jpg",
+			"name": "Butterfly"
+		},
+		{
+			"category": "womens",
+			"age": "adulto",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/mujer/largo_desfilado.jpg",
+			"name": "Largo desfilado"
+		},
+		{
+			"category": "womens",
+			"age": "adulto",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/mujer/flequillo_recto.jpg",
+			"name": "Flequillo recto"
+		},
+		{
+			"category": "womens",
+			"age": "joven",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/mujer/flequillo_recto.jpg",
+			"name": "Flequillo recto"
+		},
+		{
+			"category": "womens",
+			"age": "joven",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/mujer/flequillo_cortina.jpg",
+			"name": "Flequillo cortina"
+		},
+		{
+			"category": "womens",
+			"age": "joven",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/mujer/largo_ultra_pulido.jpg",
+			"name": "Largo ultra pulido"
+		},
+		{
+			"category": "womens",
+			"age": "adulto",
+			"type": "ondulado",
+			"img": "imgs/servicios/cortes/mujer/largo_volumen.jpg",
+			"name": "Largo con volumen"
+		},
+		{
+			"category": "womens",
+			"age": "adulto",
+			"type": "ondulado",
+			"img": "imgs/servicios/cortes/mujer/flequillo_volumen.jpg",
+			"name": "Flequillo con volumen"
+		},
+		{
+			"category": "womens",
+			"age": "adulto",
+			"type": "ondulado",
+			"img": "imgs/servicios/cortes/mujer/lob.jpg",
+			"name": "Lob"
+		},
+		{
+			"category": "womens",
+			"age": "joven",
+			"type": "ondulado",
+			"img": "imgs/servicios/cortes/mujer/media_melena.jpg",
+			"name": "Media melena"
+		},
+		{
+			"category": "womens",
+			"age": "adulto",
+			"type": "ondulado",
+			"img": "imgs/servicios/cortes/mujer/shaggy_largo.jpg",
+			"name": "Shaggy largo"
+		},
+		{
+			"category": "womens",
+			"age": "joven",
+			"type": "ondulado",
+			"img": "imgs/servicios/cortes/mujer/recto_con_ondas.jpg",
+			"name": "Recto con ondas"
+		},
+		{
+			"category": "womens",
+			"age": "joven",
+			"type": "ondulado",
+			"img": "imgs/servicios/cortes/mujer/degradado.jpg",
+			"name": "Degradado"
+		},
+		{
+			"category": "womens",
+			"age": "joven",
+			"type": "rizado",
+			"img": "imgs/servicios/cortes/mujer/rizado_capas.webp",
+			"name": "Rizado a capas"
+		},
+		{
+			"category": "womens",
+			"age": "adulto",
+			"type": "rizado",
+			"img": "imgs/servicios/cortes/mujer/bob_midi.webp",
+			"name": "Bob midi"
+		},
+		{
+			"category": "womens",
+			"age": "adulto",
+			"type": "rizado",
+			"img": "imgs/servicios/cortes/mujer/french_bob_rizz.webp",
+			"name": "Bob francés rizado"
+		},
+		{
+			"category": "womens",
+			"age": "joven",
+			"type": "rizado",
+			"img": "imgs/servicios/cortes/mujer/redondo.webp",
+			"name": "Redondo"
+		},
+		{
+			"category": "womens",
+			"age": "adulto",
+			"type": "rizado",
+			"img": "imgs/servicios/cortes/mujer/bolacurl.webp",
+			"name": "Bolacurl"
+		},
+		{
+			"category": "womens",
+			"age": "joven",
+			"type": "rizado",
+			"img": "imgs/servicios/cortes/mujer/minibob.webp",
+			"name": "Minibob"
+		},
+		{
+			"category": "womens",
+			"age": "adulto",
+			"type": "rizado",
+			"img": "imgs/servicios/cortes/mujer/corto_redondo.webp",
+			"name": "Corto y redondo"
+		},
+		{
+			"category": "womens",
+			"age": "adulto",
+			"type": "rizado",
+			"img": "imgs/servicios/cortes/mujer/pixie_rizado.webp",
+			"name": "Pixie rizado"
+		},
+		{
+			"category": "womens",
+			"age": "adulto",
+			"type": "ondulado",
+			"img": "imgs/servicios/cortes/mujer/shag_70.webp",
+			"name": "Shag"
+		},
+		{
+			"category": "womens",
+			"age": "adulto",
+			"type": "ondulado",
+			"img": "imgs/servicios/cortes/mujer/mullet_ondulado.webp",
+			"name": "Mullet ondulado"
+		},
+		{
+			"category": "mens",
+			"age": "joven",
+			"type": "ondulado",
+			"img": "imgs/servicios/cortes/hombre/crop.webp",
+			"name": "Crop"
+		},
+		{
+			"category": "mens",
+			"age": "adulto",
+			"type": "ondulado",
+			"img": "imgs/servicios/cortes/hombre/medio_largo_capas.jpg",
+			"name": "Medio largo con capas"
+		},
+		{
+			"category": "mens",
+			"age": "joven",
+			"type": "rizado",
+			"img": "imgs/servicios/cortes/hombre/cesar_rizado.webp",
+			"name": "Cesar"
+		},
+		{
+			"category": "mens",
+			"age": "joven",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/hombre/faux_hawk.webp",
+			"name": "Faux-Hawk"
+		},
+		{
+			"category": "mens",
+			"age": "adulto",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/hombre/faux_hawk2.webp",
+			"name": "Faux-Hawk"
+		},
+		{
+			"category": "mens",
+			"age": "joven",
+			"type": "rizado",
+			"img": "imgs/servicios/cortes/hombre/undercut_rizado.webp",
+			"name": "Undercut"
+		},
+		{
+			"category": "mens",
+			"age": "adulto",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/hombre/top_knot.webp",
+			"name": "Top Knot"
+		},
+		{
+			"category": "mens",
+			"age": "joven",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/hombre/top_knot.webp",
+			"name": "Top Knot"
+		},
+		{
+			"category": "mens",
+			"age": "joven",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/hombre/clasico.jpg",
+			"name": "Clásico"
+		},
+		{
+			"category": "mens",
+			"age": "joven",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/hombre/flattop.webp",
+			"name": "Flattop"
+		},
+		{
+			"category": "mens",
+			"age": "joven",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/hombre/gorro.webp",
+			"name": "Gorro"
+		},
+		{
+			"category": "mens",
+			"age": "adulto",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/hombre/flattop2.webp",
+			"name": "Flattop"
+		},
+		{
+			"category": "mens",
+			"age": "joven",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/hombre/erizo.webp",
+			"name": "Erizo"
+		},
+		{
+			"category": "mens",
+			"age": "adulto",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/hombre/erizo2.webp",
+			"name": "Erizo"
+		},
+		{
+			"category": "mens",
+			"age": "joven",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/hombre/sagitario.webp",
+			"name": "Sagitario"
+		},
+		{
+			"category": "mens",
+			"age": "joven",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/hombre/medio_puntas_despeinadas.jpg",
+			"name": "Medio con puntas despeinadas"
+		},
+		{
+			"category": "mens",
+			"age": "joven",
+			"type": "ondulado",
+			"img": "imgs/servicios/cortes/hombre/flequillo_suelto.webp",
+			"name": "Flequillo suelto"
+		},
+		{
+			"category": "mens",
+			"age": "adulto",
+			"type": "ondulado",
+			"img": "imgs/servicios/cortes/hombre/flequillo_suelto.webp",
+			"name": "Flequillo suelto"
+		},
+		{
+			"category": "mens",
+			"age": "joven",
+			"type": "ondulado",
+			"img": "imgs/servicios/cortes/hombre/flequillo_corto_despeinado.webp",
+			"name": "Flequillo corto despeinado"
+		},
+		{
+			"category": "mens",
+			"age": "adulto",
+			"type": "rizado",
+			"img": "imgs/servicios/cortes/hombre/canadiense_rizz.webp",
+			"name": "Canadiense"
+		},
+		{
+			"category": "mens",
+			"age": "joven",
+			"type": "rizado",
+			"img": "imgs/servicios/cortes/hombre/crop_rizz.webp",
+			"name": "Crop"
+		},
+		{
+			"category": "mens",
+			"age": "joven",
+			"type": "rizado",
+			"img": "imgs/servicios/cortes/hombre/top_knot_rizz.webp",
+			"name": "Top Knot"
+		},
+		{
+			"category": "mens",
+			"age": "joven",
+			"type": "rizado",
+			"img": "imgs/servicios/cortes/hombre/pompadour_rizz.webp",
+			"name": "Pompadour"
+		},
+		{
+			"category": "mens",
+			"age": "adulto",
+			"type": "ondulado",
+			"img": "imgs/servicios/cortes/hombre/semibox.webp",
+			"name": "Semibox"
+		},
+		{
+			"category": "mens",
+			"age": "joven",
+			"type": "ondulado",
+			"img": "imgs/servicios/cortes/hombre/semibox.webp",
+			"name": "Semibox"
+		},
+		{
+			"category": "mens",
+			"age": "joven",
+			"type": "ondulado",
+			"img": "imgs/servicios/cortes/hombre/taper_fade.webp",
+			"name": "Taper Fade"
+		},
+		{
+			"category": "mens",
+			"age": "jove",
+			"type": "rizado",
+			"img": "imgs/servicios/cortes/hombre/desvanecido_rizado.webp",
+			"name": "Desvanecido rizado"
+		},
+		{
+			"category": "mens",
+			"age": "adulto",
+			"type": "rizado",
+			"img": "imgs/servicios/cortes/hombre/rizos_y_flequillo.jpg",
+			"name": "Rizos y flequillo"
+		},
+		{
+			"category": "mens",
+			"age": "adulto",
+			"type": "rizado",
+			"img": "imgs/servicios/cortes/hombre/afro.webp",
+			"name": "Afro"
+		},
+		{
+			"category": "mens",
+			"age": "joven",
+			"type": "rizado",
+			"img": "imgs/servicios/cortes/hombre/afro.webp",
+			"name": "Afro"
+		},
+		{
+			"category": "mens",
+			"age": "adulto",
+			"type": "rizado",
+			"img": "imgs/servicios/cortes/hombre/hongo_rizz.jpg",
+			"name": "Hongo"
+		},
+		{
+			"category": "mens",
+			"age": "adulto",
+			"type": "rizado",
+			"img": "imgs/servicios/cortes/hombre/rizado_bajo.jpg",
+			"name": "Rizado bajo"
+		},
+		{
+			"category": "mens",
+			"age": "joven",
+			"type": "rizado",
+			"img": "imgs/servicios/cortes/hombre/con_raya_definido.jpg",
+			"name": "Con raya y definido"
+		},
+		{
+			"category": "mens",
+			"age": "adulto",
+			"type": "rizado",
+			"img": "imgs/servicios/cortes/hombre/afro_moderno.jpg",
+			"name": "Afro moderno"
+		},
+		{
+			"category": "mens",
+			"age": "adulto",
+			"type": "ondulado",
+			"img": "imgs/servicios/cortes/hombre/surfer.jpg",
+			"name": "Surfer"
+		},
+		{
+			"category": "mens",
+			"age": "adulto",
+			"type": "ondulado",
+			"img": "imgs/servicios/cortes/hombre/crop.jpg",
+			"name": "Texturizado con puntas desfiladas"
+		},
+		{
+			"category": "womens",
+			"age": "nino",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/hairstyles/girls_hairstyles.jpg",
+			"name": "Bob"
+		},
+		{
+			"category": "womens",
+			"age": "nino",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/nina/escalera.webp",
+			"name": "Escalera"
+		},
+		{
+			"category": "womens",
+			"age": "nino",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/nina/bob_flequillo.webp",
+			"name": "Bob con flequillo"
+		},
+		{
+			"category": "womens",
+			"age": "nino",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/nina/pixie.jpg",
+			"name": "Pixie"
+		},
+		{
+			"category": "womens",
+			"age": "nino",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/nina/en_capas.jpg",
+			"name": "En capas"
+		},
+		{
+			"category": "womens",
+			"age": "nino",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/nina/media_melena.webp",
+			"name": "Media melena"
+		},
+		{
+			"category": "womens",
+			"age": "nino",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/nina/flequillo.jpg",
+			"name": "Con flequillo"
+		},
+		{
+			"category": "womens",
+			"age": "nino",
+			"type": "lacio",
+			"img": "imgs/servicios/cortes/nina/asimetrico.jpg",
+			"name": "Asimétrico"
+		},
+		{
+			"category": "womens",
+			"age": "nino",
+			"type": "ondulado",
+			"img": "imgs/servicios/cortes/nina/bob_ondulado.jpg",
+			"name": "Bob ondulado"
+		},
+		{
+			"category": "womens",
+			"age": "nino",
+			"type": "ondulado",
+			"img": "imgs/servicios/cortes/nina/shaggy.jpg",
+			"name": "Shaggy"
+		},
+		{
+			"category": "womens",
+			"age": "nino",
+			"type": "ondulado",
+			"img": "imgs/servicios/cortes/nina/cascada.jpg",
+			"name": "En cascada"
+		},
+		{
+			"category": "womens",
+			"age": "nino",
+			"type": "rizado",
+			"img": "imgs/servicios/cortes/nina/melena_rizada.jpg",
+			"name": "Melena rizada"
+		},
+		{
+			"category": "womens",
+			"age": "nino",
+			"type": "rizado",
+			"img": "imgs/servicios/cortes/nina/rizado_corto.jpg",
+			"name": "Rizado corto"
+		},
+		{
+			"category": "mens",
+			"age": "joven",
+			"type": "barba",
+			"img": "imgs/servicios/cortes/barba/completa.jpg",
+			"name": "Completa"
+		},
+		{
+			"category": "mens",
+			"age": "joven",
+			"type": "barba",
+			"img": "imgs/servicios/cortes/barba/candado.jpg",
+			"name": "Candado"
+		},
+		{
+			"category": "mens",
+			"age": "joven",
+			"type": "barba",
+			"img": "imgs/servicios/cortes/barba/circulo.png",
+			"name": "Círculo"
+		},
+		{
+			"category": "mens",
+			"age": "joven",
+			"type": "barba",
+			"img": "imgs/servicios/cortes/barba/perilla_completa.png",
+			"name": "Perilla completa"
+		},
+		{
+			"category": "mens",
+			"age": "joven",
+			"type": "barba",
+			"img": "imgs/servicios/cortes/barba/vikinga.jpg",
+			"name": "Vikinga"
+		},
+		{
+			"category": "mens",
+			"age": "joven",
+			"type": "barba",
+			"img": "imgs/servicios/cortes/barba/balbo.jpg",
+			"name": "Balbo"
+		},
+		{
+			"category": "mens",
+			"age": "joven",
+			"type": "barba",
+			"img": "imgs/servicios/cortes/barba/tres_dias.jpg",
+			"name": "Tres días"
+		},
+		{
+			"category": "mens",
+			"age": "joven",
+			"type": "barba",
+			"img": "imgs/servicios/cortes/barba/chivo.jpg",
+			"name": "Chivo"
+		},
+		{
+			"category": "mens",
+			"age": "joven",
+			"type": "barba",
+			"img": "imgs/servicios/cortes/barba/perilla.jpg",
+			"name": "Perilla"
+		},
+		{
+			"category": "mens",
+			"age": "joven",
+			"type": "barba",
+			"img": "imgs/servicios/cortes/barba/mostacho.jpg",
+			"name": "Mostacho"
+		},
+		{
+			"category": "mens",
+			"age": "joven",
+			"type": "barba",
+			"img": "imgs/servicios/cortes/barba/bigote_lapiz.jpg",
+			"name": "Bigote lápiz"
+		},
+		{
+			"category": "mens",
+			"age": "joven",
+			"type": "barba",
+			"img": "imgs/servicios/cortes/barba/bigote_cepillo.webp",
+			"name": "Bigote cepillo"
+		},
+		{
+			"category": "mens",
+			"age": "joven",
+			"type": "barba",
+			"img": "imgs/servicios/cortes/barba/bigote_dali.webp",
+			"name": "Bigote dalí"
+		},
+		{
+			"category": "mens",
+			"age": "adulto",
+			"type": "barba",
+			"img": "imgs/servicios/cortes/barba/completa.jpg",
+			"name": "Completa"
+		},
+		{
+			"category": "mens",
+			"age": "adulto",
+			"type": "barba",
+			"img": "imgs/servicios/cortes/barba/candado.jpg",
+			"name": "Candado"
+		},
+		{
+			"category": "mens",
+			"age": "adulto",
+			"type": "barba",
+			"img": "imgs/servicios/cortes/barba/circulo.png",
+			"name": "Círculo"
+		},
+		{
+			"category": "mens",
+			"age": "adulto",
+			"type": "barba",
+			"img": "imgs/servicios/cortes/barba/perilla_completa.png",
+			"name": "Perilla completa"
+		},
+		{
+			"category": "mens",
+			"age": "adulto",
+			"type": "barba",
+			"img": "imgs/servicios/cortes/barba/vikinga.jpg",
+			"name": "Vikinga"
+		},
+		{
+			"category": "mens",
+			"age": "adulto",
+			"type": "barba",
+			"img": "imgs/servicios/cortes/barba/balbo.jpg",
+			"name": "Balbo"
+		},
+		{
+			"category": "mens",
+			"age": "adulto",
+			"type": "barba",
+			"img": "imgs/servicios/cortes/barba/tres_dias.jpg",
+			"name": "Tres días"
+		},
+		{
+			"category": "mens",
+			"age": "adulto",
+			"type": "barba",
+			"img": "imgs/servicios/cortes/barba/chivo.jpg",
+			"name": "Chivo"
+		},
+		{
+			"category": "mens",
+			"age": "adulto",
+			"type": "barba",
+			"img": "imgs/servicios/cortes/barba/perilla.jpg",
+			"name": "Perilla"
+		},
+		{
+			"category": "mens",
+			"age": "adulto",
+			"type": "barba",
+			"img": "imgs/servicios/cortes/barba/mostacho.jpg",
+			"name": "Mostacho"
+		},
+		{
+			"category": "mens",
+			"age": "adulto",
+			"type": "barba",
+			"img": "imgs/servicios/cortes/barba/bigote_lapiz.jpg",
+			"name": "Bigote lápiz"
+		},
+		{
+			"category": "mens",
+			"age": "adulto",
+			"type": "barba",
+			"img": "imgs/servicios/cortes/barba/bigote_cepillo.webp",
+			"name": "Bigote cepillo"
+		},
+		{
+			"category": "mens",
+			"age": "adulto",
+			"type": "barba",
+			"img": "imgs/servicios/cortes/barba/bigote_dali.webp",
+			"name": "Bigote dalí"
+		}
+	]
 }
