@@ -216,3 +216,77 @@
     border-radius: var(--border-radius-5);
   }
   
+
+
+@media (max-width: 860px) {
+  .twoColums {
+    grid-template-columns: auto;
+  }
+
+  .footer-colum {
+    padding: 10px;
+  }
+
+  .footer-about-redes {
+    margin-top: 30px;
+  }
+
+  .container-redes-socials {
+    width: 150px;
+  }
+
+  .item-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .footer-service {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+
+  .footer-service p {
+    margin-top: 10px;
+  }
+
+  .footer-service p:nth-child(n + 5) {
+    grid-column: auto;
+    grid-row: auto;
+    text-align: left;
+  }
+
+  .footer-service p:nth-child(n + 6) {
+    grid-column: auto;
+    grid-row: auto;
+    text-align: left;
+  }
+
+  .footer-service p {
+    padding-left: 10px;
+  }
+
+  .footer-service p:nth-child(odd) {
+    border-left: 5px solid var(--main-principal-bg);
+  }
+  .footer-service p:nth-child(even) {
+    border-left: 5px solid var(--main-secondary-bg);
+  }
+}
+
+@media (max-width: 520px) {
+  .footer-testimonios-valoracion {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-valoracion a {
+    margin: 0;
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 280px) {
+  .footer-colum {
+    padding: 2px;
+  }
+}

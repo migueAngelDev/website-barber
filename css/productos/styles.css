@@ -352,7 +352,6 @@ main {
 
 @media (max-width: 700px) {
   .container-list-items {
-    /* top: 60px; */
     right: 40px;
     width: 380px;
   }
@@ -360,29 +359,27 @@ main {
 
 @media (max-width: 540px) {
   .container-list-items {
-    top: 600px;
+    top: 340px;
     right: 10px;
-    width: 380px;
+    width: 480px;
     max-height: 350px;
   }
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 490px) {
   .container-list-items {
-    top: 540px;
-    right: 10px;
-    width: 280px;
+    width: 380px;
     max-height: 480px;
   }
 }
 
 
 
-@media (max-width: 300px) {
+@media (max-width: 380px) {
   .container-list-items {
-    top: 540px;
-    right: 30px;
+    top: 340px;
+    right: 18px;
     width: 240px;
     max-height: 500px;
   }
