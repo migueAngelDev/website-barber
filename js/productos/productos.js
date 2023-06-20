@@ -17,6 +17,7 @@ const PRODUCTS = [
 		nombre: "Aceite para barba",
 		imagen: "./imgs/productos/aceite-barba.jpeg",
 		precio: 300,
+
 		contador: 0,
 	},
 	{
