@@ -37,13 +37,13 @@ body {
 
 .header-section {
 	width: 100%;
+	margin-top: 100px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
 .title-section {
-	width: 320px;
 	text-align: center;
 	padding: 25px 80px;
 	border-radius: var(--border-radius-5);
